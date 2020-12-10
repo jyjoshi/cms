@@ -10,8 +10,10 @@ com/example/cms/activities/ExistingMenuEditorActivity.java
  com.example.cms.activities.ExistingMenuEditorActivity$1
 com/example/cms/interfaces/MyViewHolder.java
  com.example.cms.interfaces.MyViewHolder
-com/example/cms/activities/HomeActivity.java
- com.example.cms.activities.HomeActivity
+com/example/cms/adapters/ExistingMenuEditorAdapter.java
+ com.example.cms.adapters.ExistingMenuEditorAdapter
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
 com/example/cms/models/FoodQuantity.java
  com.example.cms.models.FoodQuantity
 com/example/cms/activities/PasswordResetActivity.java
@@ -82,12 +84,8 @@ com/example/cms/activities/TestActivity.java
  com.example.cms.activities.TestActivity
 com/example/cms/ui/previousOrders/PreviousOrdersViewModel.java
  com.example.cms.ui.previousOrders.PreviousOrdersViewModel
-com/example/cms/activities/CartActivity.java
- com.example.cms.activities.CartActivity
- com.example.cms.activities.CartActivity$1
- com.example.cms.activities.CartActivity$2
- com.example.cms.activities.CartActivity$3
- com.example.cms.activities.CartActivity$4
+com/example/cms/activities/EnterPhoneActivity.java
+ com.example.cms.activities.EnterPhoneActivity
 com/example/cms/activities/MainActivity.java
  com.example.cms.activities.MainActivity
  com.example.cms.activities.MainActivity$1
@@ -104,9 +102,11 @@ com/example/cms/activities/MenuEditorActivity.java
  com.example.cms.activities.MenuEditorActivity$5$1
 com/example/cms/models/OrderedItem.java
  com.example.cms.models.OrderedItem
-com/example/cms/adapters/ExistingMenuEditorAdapter.java
- com.example.cms.adapters.ExistingMenuEditorAdapter
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
-com/example/cms/activities/EnterPhoneActivity.java
- com.example.cms.activities.EnterPhoneActivity
+com/example/cms/activities/CartActivity.java
+ com.example.cms.activities.CartActivity
+ com.example.cms.activities.CartActivity$1
+ com.example.cms.activities.CartActivity$2
+ com.example.cms.activities.CartActivity$3
+ com.example.cms.activities.CartActivity$4
+com/example/cms/activities/HomeActivity.java
+ com.example.cms.activities.HomeActivity

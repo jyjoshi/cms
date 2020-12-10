@@ -72,6 +72,8 @@ public class CartActivity extends AppCompatActivity {
         result = new ArrayList<Integer>();
         itemsOrdered = new ArrayList<>();
 
+        stringAdress = "";
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
@@ -179,21 +181,8 @@ public class CartActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void placeOrder(View view) {
-        FirebaseDatabase.getInstance().getReference().child("Users").child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserDB temp = snapshot.getValue(UserDB.class);
-                if(temp.getIsTeacher()){
-                    stringAdress = address.getText().toString();
-                }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
+        stringAdress = address.getText().toString();
 
         //Storing time when order was placed
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
@@ -237,19 +226,37 @@ public class CartActivity extends AppCompatActivity {
             }
         });
 
+            FirebaseDatabase.getInstance().getReference().child("Users").child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    UserDB temp = snapshot.getValue(UserDB.class);
+                    if (temp.getIsTeacher()) {
+                        if(stringAdress!="") {
+                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAdress);
+                            root.child(transactionId).setValue(bill);
+                            Log.i("Address : ", "Entered");
+                        }
+                        else{
+                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
+                            root.child(transactionId).setValue(bill);
+                        }
+                    }
+                    else {
+                        Log.i("Address : ", " Empty ");
+                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
+                        root.child(transactionId).setValue(bill);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
 
 
-        //Creating and sending the bill to database
-        if(stringAdress!=null){
-            Log.i("Address : ", "Entered");
-            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAdress);
-            root.child(transactionId).setValue(bill);
-        }
-        else{
-            Log.i("Address : " , " Empty ");
-            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
-            root.child(transactionId).setValue(bill);
-        }
+
+
 
 
         //Deleting the temporary node created.
