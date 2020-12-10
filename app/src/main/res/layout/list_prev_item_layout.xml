@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prev_img_icon"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:id="@+id/text_prev_order"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center"
+        android:text="@string/item_name"
+        android:paddingStart="16dp">
+    </TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

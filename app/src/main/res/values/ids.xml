@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cart_button" type="id">@id/cart_button</item>
+</resources>
