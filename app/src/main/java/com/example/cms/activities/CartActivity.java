@@ -49,7 +49,7 @@ public class CartActivity extends AppCompatActivity {
     DatabaseReference retrieveTemp;
     ArrayList<FoodQuantity> itemsOrdered;
     private EditText address;
-    private String stringAdress;
+    private String stringAddress;
 
     int totalCost;
 
@@ -66,13 +66,13 @@ public class CartActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview_view_order);
         address = findViewById(R.id.address);
 
-        foodName = new ArrayList<String>();
-        quantity = new ArrayList<Integer>();
-        price = new ArrayList<Integer>();
-        result = new ArrayList<Integer>();
+        foodName = new ArrayList<>();
+        quantity = new ArrayList<>();
+        price = new ArrayList<>();
+        result = new ArrayList<>();
         itemsOrdered = new ArrayList<>();
 
-        stringAdress = "";
+        stringAddress = "";
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -182,7 +182,9 @@ public class CartActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void placeOrder(View view) {
 
-        stringAdress = address.getText().toString();
+
+        Log.i("TAG", "INSIDE ORDER FUNCTION");
+        stringAddress = address.getText().toString();
 
         //Storing time when order was placed
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
@@ -203,11 +205,13 @@ public class CartActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DatabaseReference toOrderedItems = FirebaseDatabase.getInstance().getReference().child("OrderedItems");
                 for(DataSnapshot snapshot1 : snapshot.child("tempOrderItems").child(phoneNumber).getChildren()){
+                    Log.i("TAG", "INSIDE TEMPORDERITEMS");
                     String name = snapshot1.getKey();
                     int qty = snapshot1.getValue(Integer.class);
                     for(DataSnapshot snapshot11 : snapshot.child("Menu").getChildren()){
                         MenuItem tempItem = snapshot11.getValue(MenuItem.class);
                         if(tempItem.getName().equals(name)){
+                            Log.i("TAG", "ITEM FOUND IN MENU");
                             String price = tempItem.getPrice();
                             String result = String.valueOf(Integer.parseInt(price)*qty);
                             OrderedItem ob = new OrderedItem(transactionId, name, String.valueOf(qty), price, result);
@@ -231,18 +235,20 @@ public class CartActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     UserDB temp = snapshot.getValue(UserDB.class);
                     if (temp.getIsTeacher()) {
-                        if(stringAdress!="") {
-                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAdress);
+                        Log.i("TAG", "Teacher");
+                        if(!stringAddress.equals("")) {
+                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAddress);
                             root.child(transactionId).setValue(bill);
                             Log.i("Address : ", "Entered");
                         }
                         else{
+                            Log.i("Address ", "Empty");
                             Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
                             root.child(transactionId).setValue(bill);
                         }
                     }
                     else {
-                        Log.i("Address : ", " Empty ");
+                        Log.i("TAG ", "Student");
                         Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
                         root.child(transactionId).setValue(bill);
                     }
@@ -275,10 +281,5 @@ public class CartActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-       DatabaseReference delter = FirebaseDatabase.getInstance().getReference();
-       //delter.child("tempOrderItems").removeValue();//ref will be your node where you are setting Event Listener.
-    }
+
 }

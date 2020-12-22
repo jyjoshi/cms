@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jayjoshi/Desktop/temp/cms-master (1)/cms-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/jayjoshi/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/jayjoshi/.gradle/caches/transforms-2/files-2.1/dd4ba36f6332a41d58236c8817f5cfd8/cardview-1.0.0/res/values-v23/values-v23.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jayjoshi/Desktop/temp/cms-master (1)/cms-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "outputFile": "/Users/jayjoshi/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "/Users/jayjoshi/.gradle/caches/transforms-2/files-2.1/5a0a5d253b938e8a0386b39b912ab5cf/appcompat-1.2.0/res/values-ja/values-ja.xml",
