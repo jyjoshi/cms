@@ -33,6 +33,7 @@ import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class CartActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -83,24 +84,6 @@ public class CartActivity extends AppCompatActivity {
             phoneNumber = (String) b.get("phone");
         }
 
-        retrieveTemp = FirebaseDatabase.getInstance().getReference("temp");
-        retrieveTemp.runTransaction(new Transaction.Handler() {
-            @NonNull
-            @Override
-            public Transaction.Result doTransaction(@NonNull MutableData currentData) {
-                for(MutableData data : currentData.getChildren()){
-                    FoodQuantity temp = data.getValue(FoodQuantity.class);
-                    //TempOrderItems tempOrderItems = new TempOrderItems(phoneNumber, temp.getFoodName(), temp.getQuantity());
-                    FirebaseDatabase.getInstance().getReference().child("tempOrderItems").child(phoneNumber).child(temp.getFoodName()).setValue(temp.getQuantity());
-                }
-                return Transaction.success(currentData);
-            }
-
-            @Override
-            public void onComplete(@Nullable DatabaseError error, boolean committed, @Nullable DataSnapshot currentData) {
-
-            }
-        });
         Log.i("items ", String.valueOf(itemsOrdered.size()));
 
         cartAdapter = new CartAdapter(foodName, quantity, price, result);
@@ -117,7 +100,7 @@ public class CartActivity extends AppCompatActivity {
         root.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot snapshotChildren : snapshot.child("temp").getChildren()){
+                for(DataSnapshot snapshotChildren : snapshot.child("temp").child(phoneNumber).getChildren()){
                     FoodQuantity temp = snapshotChildren.getValue(FoodQuantity.class);
                     foodName.add(temp.getFoodName());
                     quantity.add(temp.getQuantity());
@@ -204,10 +187,11 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DatabaseReference toOrderedItems = FirebaseDatabase.getInstance().getReference().child("OrderedItems");
-                for(DataSnapshot snapshot1 : snapshot.child("tempOrderItems").child(phoneNumber).getChildren()){
+                for(DataSnapshot snapshot1 : snapshot.child("temp").child(phoneNumber).getChildren()){
                     Log.i("TAG", "INSIDE TEMPORDERITEMS");
                     String name = snapshot1.getKey();
-                    int qty = snapshot1.getValue(Integer.class);
+                    FoodQuantity val = snapshot1.getValue(FoodQuantity.class);
+                    int qty = val.getQuantity();
                     for(DataSnapshot snapshot11 : snapshot.child("Menu").getChildren()){
                         MenuItem tempItem = snapshot11.getValue(MenuItem.class);
                         if(tempItem.getName().equals(name)){
@@ -265,10 +249,7 @@ public class CartActivity extends AppCompatActivity {
 
 
 
-        //Deleting the temporary node created.
-        DatabaseReference deleter = FirebaseDatabase.getInstance().getReference();
-        deleter.child("temp").removeValue();
-        /*deleter.child("tempOrderItems").removeValue();*/
+
 
 
 

@@ -61,7 +61,7 @@ public class OrderFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_order, container, false);
         RecyclerView menuList = root.findViewById(R.id.menuList);
         menuList.setLayoutManager(new LinearLayoutManager(getActivity()));
-        MenuAdapter adapter = new MenuAdapter(menuItems, quantity);
+        MenuAdapter adapter = new MenuAdapter(menuItems, quantity, phoneNumber);
         menuList.setAdapter(adapter);
 
         return root;

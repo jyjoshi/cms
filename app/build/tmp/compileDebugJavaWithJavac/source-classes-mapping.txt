@@ -87,7 +87,6 @@ com/example/cms/activities/CartActivity.java
  com.example.cms.activities.CartActivity$1
  com.example.cms.activities.CartActivity$2
  com.example.cms.activities.CartActivity$3
- com.example.cms.activities.CartActivity$4
 com/example/cms/activities/MainActivity.java
  com.example.cms.activities.MainActivity
  com.example.cms.activities.MainActivity$1

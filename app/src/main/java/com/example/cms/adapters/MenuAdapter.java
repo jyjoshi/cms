@@ -33,9 +33,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("temp");
 
 
-    public MenuAdapter(ArrayList<MenuItem> item, ArrayList<Integer> quantity) {
+    public MenuAdapter(ArrayList<MenuItem> item, ArrayList<Integer> quantity, String phoneNumber) {
         this.item = item;
         this.quantity = quantity;
+        this.phoneNumber = phoneNumber;
     }
 
 
@@ -68,7 +69,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                 holder.getTextQuantity().setText(quantity.get(position).toString());
 
                 FoodQuantity temp = new FoodQuantity(item.get(position).getName(),quantity.get(position));
-                root.child(item.get(position).getName()).setValue(temp);
+                root.child(phoneNumber).child(item.get(position).getName()).setValue(temp);
             }
         });
 
@@ -80,7 +81,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                     holder.getTextQuantity().setText(quantity.get(position).toString());
 
                     FoodQuantity temp = new FoodQuantity(item.get(position).getName(),quantity.get(position));
-                    root.child(item.get(position).getName()).setValue(temp);
+                    root.child(phoneNumber).child(item.get(position).getName()).setValue(temp);
                 }
             }
         });

@@ -36,9 +36,14 @@ public class TestActivity extends AppCompatActivity{
             e.printStackTrace();
         }
 
-        //After data has been passed to Order Items we can safely delete this node.
+        //Deleting the temporary node created.
         DatabaseReference deleter = FirebaseDatabase.getInstance().getReference();
-        deleter.child("tempOrderItems").removeValue();
+        deleter.child("temp").removeValue();
+        /*deleter.child("tempOrderItems").removeValue();*/
+
+        /*//After data has been passed to Order Items we can safely delete this node.
+        DatabaseReference deleter = FirebaseDatabase.getInstance().getReference();
+        deleter.child("tempOrderItems").removeValue();*/
 
 
     }
