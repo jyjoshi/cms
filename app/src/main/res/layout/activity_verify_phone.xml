@@ -56,7 +56,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_phone_for_verification" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_phone_for_verification"
+        tools:targetApi="lollipop" />
 
     <ProgressBar
         android:id="@+id/progressBar_verify_phone"

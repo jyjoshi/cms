@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
         android:fontFamily="sans-serif"
-        android:text="Your order has been successfully placed!"
+        android:text="@string/your_order_has_been_successfully_placed"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:fontFamily="sans-serif"
-        android:text="Your food will be waiting for you!"
+        android:text="@string/your_food_will_be_waiting_for_you"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
@@ -48,6 +48,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_tag_faces_24" />
+        app:srcCompat="@drawable/ic_baseline_tag_faces_24"
+        android:contentDescription="@string/smiley" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

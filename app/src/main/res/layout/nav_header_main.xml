@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello,"
+        android:text="@string/hello"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/colorAccent"
         android:textSize="20sp" />
@@ -47,7 +47,9 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:paddingStart="8dp"
+            tools:ignore="RtlSymmetry" />
     </LinearLayout>
 
 </LinearLayout>

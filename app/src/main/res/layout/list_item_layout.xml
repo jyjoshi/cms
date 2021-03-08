@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -18,7 +19,8 @@
             android:contentDescription="@string/todo"
             android:layout_marginVertical="4dp"
             android:layout_marginHorizontal="4dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="RtlHardcoded" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -39,7 +41,8 @@
                 android:text="@string/item_name"
                 android:textColor="@color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textSize="14dp" />
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <TextView
                 android:id="@+id/text_description"
@@ -54,7 +57,8 @@
                 android:text="@string/item_name"
                 android:textColor="@color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textSize="14dp" />
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,7 +80,9 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="left"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textSize="14dp" />
+                    android:textSize="14sp"
+                    android:paddingStart="16dp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -94,7 +100,8 @@
                         android:layout_marginHorizontal="2dp"
                         android:text="@string/minus"
                         android:textColor="@color/white"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
                         android:id="@+id/text_quantity"
@@ -106,9 +113,11 @@
                         android:layout_marginRight="9dp"
                         android:paddingStart="8dp"
                         android:paddingLeft="8dp"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:textColor="@color/white"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center"
+                        android:layout_marginEnd="9dp"
+                        tools:ignore="RtlSymmetry" />
 
 
                     <Button
@@ -119,7 +128,8 @@
                         android:onClick="incrementQuantity"
                         android:text="@string/add"
                         android:textColor="@color/white"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        tools:ignore="UnusedAttribute" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </LinearLayout>
