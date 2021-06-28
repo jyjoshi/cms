@@ -36,7 +36,7 @@ public class TestActivity extends AppCompatActivity{
             e.printStackTrace();
         }
 
-        //Deleting the temporary node created.
+        //Deleting the temporary node created. 
         DatabaseReference deleter = FirebaseDatabase.getInstance().getReference();
         deleter.child("temp").removeValue();
         /*deleter.child("tempOrderItems").removeValue();*/

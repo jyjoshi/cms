@@ -2,42 +2,36 @@ com/example/cms/BuildConfig.java
  com.example.cms.BuildConfig
 com/example/cms/models/MenuItem.java
  com.example.cms.models.MenuItem
-com/example/cms/activities/EnterPhoneActivity.java
- com.example.cms.activities.EnterPhoneActivity
+com/example/cms/ui/order/OrderFragment.java
+ com.example.cms.ui.order.OrderFragment
+ com.example.cms.ui.order.OrderFragment$1
 com/example/cms/activities/ExistingMenuEditorActivity.java
  com.example.cms.activities.ExistingMenuEditorActivity
  com.example.cms.activities.ExistingMenuEditorActivity$1
 com/example/cms/interfaces/MyViewHolder.java
  com.example.cms.interfaces.MyViewHolder
-com/example/cms/models/OrderedItem.java
- com.example.cms.models.OrderedItem
+com/example/cms/activities/HomeActivity.java
+ com.example.cms.activities.HomeActivity
 com/example/cms/models/FoodQuantity.java
  com.example.cms.models.FoodQuantity
 com/example/cms/activities/PasswordResetActivity.java
  com.example.cms.activities.PasswordResetActivity
 com/example/cms/models/UserDB.java
  com.example.cms.models.UserDB
-com/example/cms/activities/MenuEditorActivity.java
- com.example.cms.activities.MenuEditorActivity
- com.example.cms.activities.MenuEditorActivity$1
- com.example.cms.activities.MenuEditorActivity$2
- com.example.cms.activities.MenuEditorActivity$3
- com.example.cms.activities.MenuEditorActivity$4
- com.example.cms.activities.MenuEditorActivity$5
- com.example.cms.activities.MenuEditorActivity$5$1
 com/example/cms/adapters/CartAdapter.java
  com.example.cms.adapters.CartAdapter
  com.example.cms.adapters.CartAdapter$MyViewHolder
+com/example/cms/activities/AdminHomeActivity.java
+ com.example.cms.activities.AdminHomeActivity
 com/example/cms/ui/order/OrderViewModel.java
  com.example.cms.ui.order.OrderViewModel
 com/example/cms/adapters/ViewOrderAdapter.java
  com.example.cms.adapters.ViewOrderAdapter
  com.example.cms.adapters.ViewOrderAdapter$1
  com.example.cms.adapters.ViewOrderAdapter$MyViewHolder
-com/example/cms/adapters/ExistingMenuEditorAdapter.java
- com.example.cms.adapters.ExistingMenuEditorAdapter
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
+com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
+ com.example.cms.ui.previousOrders.PreviousOrdersFragment
+ com.example.cms.ui.previousOrders.PreviousOrdersFragment$1
 com/example/cms/activities/PreviousOrderItemsActivity.java
  com.example.cms.activities.PreviousOrderItemsActivity
  com.example.cms.activities.PreviousOrderItemsActivity$1
@@ -54,9 +48,9 @@ com/example/cms/adapters/MenuAdapter.java
  com.example.cms.adapters.MenuAdapter$MenuViewHolder
 com/example/cms/ui/profile/ProfileViewModel.java
  com.example.cms.ui.profile.ProfileViewModel
-com/example/cms/activities/AdminViewOrderItemsActivity.java
- com.example.cms.activities.AdminViewOrderItemsActivity
- com.example.cms.activities.AdminViewOrderItemsActivity$1
+com/example/cms/ui/profile/ProfileFragment.java
+ com.example.cms.ui.profile.ProfileFragment
+ com.example.cms.ui.profile.ProfileFragment$1
 com/example/cms/activities/SignUpActivity.java
  com.example.cms.activities.SignUpActivity
  com.example.cms.activities.SignUpActivity$1
@@ -93,19 +87,25 @@ com/example/cms/activities/CartActivity.java
  com.example.cms.activities.CartActivity$1
  com.example.cms.activities.CartActivity$2
  com.example.cms.activities.CartActivity$3
-com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
- com.example.cms.ui.previousOrders.PreviousOrdersFragment
- com.example.cms.ui.previousOrders.PreviousOrdersFragment$1
-com/example/cms/ui/order/OrderFragment.java
- com.example.cms.ui.order.OrderFragment
- com.example.cms.ui.order.OrderFragment$1
-com/example/cms/activities/HomeActivity.java
- com.example.cms.activities.HomeActivity
 com/example/cms/activities/MainActivity.java
  com.example.cms.activities.MainActivity
  com.example.cms.activities.MainActivity$1
-com/example/cms/ui/profile/ProfileFragment.java
- com.example.cms.ui.profile.ProfileFragment
- com.example.cms.ui.profile.ProfileFragment$1
-com/example/cms/activities/AdminHomeActivity.java
- com.example.cms.activities.AdminHomeActivity
+com/example/cms/activities/AdminViewOrderItemsActivity.java
+ com.example.cms.activities.AdminViewOrderItemsActivity
+ com.example.cms.activities.AdminViewOrderItemsActivity$1
+com/example/cms/activities/MenuEditorActivity.java
+ com.example.cms.activities.MenuEditorActivity
+ com.example.cms.activities.MenuEditorActivity$1
+ com.example.cms.activities.MenuEditorActivity$2
+ com.example.cms.activities.MenuEditorActivity$3
+ com.example.cms.activities.MenuEditorActivity$4
+ com.example.cms.activities.MenuEditorActivity$5
+ com.example.cms.activities.MenuEditorActivity$5$1
+com/example/cms/models/OrderedItem.java
+ com.example.cms.models.OrderedItem
+com/example/cms/activities/EnterPhoneActivity.java
+ com.example.cms.activities.EnterPhoneActivity
+com/example/cms/adapters/ExistingMenuEditorAdapter.java
+ com.example.cms.adapters.ExistingMenuEditorAdapter
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1

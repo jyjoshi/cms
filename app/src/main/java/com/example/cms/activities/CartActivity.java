@@ -31,11 +31,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
 import com.google.firebase.database.ValueEventListener;
+import com.razorpay.Checkout;
+import com.razorpay.PaymentResultListener;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class CartActivity extends AppCompatActivity {
+public class CartActivity extends AppCompatActivity implements PaymentResultListener {
     RecyclerView recyclerView;
     CartAdapter cartAdapter;
     String phoneNumber;
@@ -164,6 +168,42 @@ public class CartActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void placeOrder(View view) {
+        startPayment();
+    }
+
+    private void startPayment() {
+        Checkout checkout = new Checkout(); //You will be able to see Razorpay window
+        //Whenever dealing with JSON always try to put it in try and catch block as a lot of chance for exceptions.
+        try{
+            JSONObject options = new JSONObject();
+            options.put("name", "CMS");
+            options.put("description", "App Payment");
+            options.put("image","https://s3.amazonaws.com/rzp-mobile/images/rzp.png" );
+            options.put("currency", "INR");
+            int costInPaise = totalCost * 100;
+            options.put("amount", costInPaise);
+
+            //Default values of email id and phone number.
+            JSONObject prefill = new JSONObject();
+            prefill.put("email", "jayjoshi112711@gmail.com");
+            prefill.put("contact", "8169052664");
+
+            options.put("prefill", prefill);
+
+            checkout.open(this, options);
+
+
+
+        }
+        catch (Exception e){
+            Log.e("Razorpay Error", "Error in starting Razorpay Checkout", e);
+        }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public void onPaymentSuccess(String s) {
+
 
 
         Log.i("TAG", "INSIDE ORDER FUNCTION");
@@ -214,46 +254,35 @@ public class CartActivity extends AppCompatActivity {
             }
         });
 
-            FirebaseDatabase.getInstance().getReference().child("Users").child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    UserDB temp = snapshot.getValue(UserDB.class);
-                    if (temp.getIsTeacher()) {
-                        Log.i("TAG", "Teacher");
-                        if(!stringAddress.equals("")) {
-                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAddress);
-                            root.child(transactionId).setValue(bill);
-                            Log.i("Address : ", "Entered");
-                        }
-                        else{
-                            Log.i("Address ", "Empty");
-                            Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
-                            root.child(transactionId).setValue(bill);
-                        }
+        FirebaseDatabase.getInstance().getReference().child("Users").child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                UserDB temp = snapshot.getValue(UserDB.class);
+                if (temp.getIsTeacher()) {
+                    Log.i("TAG", "Teacher");
+                    if(!stringAddress.equals("")) {
+                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAddress);
+                        root.child(transactionId).setValue(bill);
+                        Log.i("Address : ", "Entered");
                     }
-                    else {
-                        Log.i("TAG ", "Student");
+                    else{
+                        Log.i("Address ", "Empty");
                         Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
                         root.child(transactionId).setValue(bill);
                     }
                 }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
+                else {
+                    Log.i("TAG ", "Student");
+                    Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
+                    root.child(transactionId).setValue(bill);
                 }
-            });
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
-
-
-
-
-
-
-
-
-
+            }
+        });
 
         /*startActivity(new Intent(this, TestActivity.class));*/
         Intent intent = new Intent(this, TestActivity.class);
@@ -263,4 +292,8 @@ public class CartActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onPaymentError(int i, String s) {
+
+    }
 }
