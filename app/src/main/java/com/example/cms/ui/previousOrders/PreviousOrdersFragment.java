@@ -29,6 +29,8 @@ public class PreviousOrdersFragment extends Fragment {
     private ArrayList<String> phone;
     private ArrayList<String> time;
     private ArrayList<String> amount;
+
+    LinearLayoutManager linearLayoutManager;
     RecyclerView recyclerView;
     PreviousOrdersAdapter viewOrderAdapter;
 
@@ -49,8 +51,11 @@ public class PreviousOrdersFragment extends Fragment {
 
         dbref = FirebaseDatabase.getInstance().getReference("Bill");
 
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setStackFromEnd(true);
         recyclerView = root.findViewById(R.id.recyclerview_view_order);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(linearLayoutManager);
 
         dbref.addValueEventListener(new ValueEventListener() {
             @Override

@@ -27,6 +27,7 @@ public class PreviousOrderItemsActivity extends AppCompatActivity {
     private ArrayList<OrderedItem> orderedItems;
     private DatabaseReference dbref;
 
+    private LinearLayoutManager linearLayoutManager;
     private RecyclerView recyclerView;
     private OrderItemsAdapter orderItemsAdapter;
 

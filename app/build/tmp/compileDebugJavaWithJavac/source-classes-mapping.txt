@@ -21,24 +21,24 @@ com/example/cms/models/UserDB.java
 com/example/cms/adapters/CartAdapter.java
  com.example.cms.adapters.CartAdapter
  com.example.cms.adapters.CartAdapter$MyViewHolder
-com/example/cms/activities/AdminHomeActivity.java
- com.example.cms.activities.AdminHomeActivity
+com/example/cms/activities/EnterPhoneActivity.java
+ com.example.cms.activities.EnterPhoneActivity
 com/example/cms/ui/order/OrderViewModel.java
  com.example.cms.ui.order.OrderViewModel
 com/example/cms/adapters/ViewOrderAdapter.java
  com.example.cms.adapters.ViewOrderAdapter
  com.example.cms.adapters.ViewOrderAdapter$1
  com.example.cms.adapters.ViewOrderAdapter$MyViewHolder
-com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
- com.example.cms.ui.previousOrders.PreviousOrdersFragment
- com.example.cms.ui.previousOrders.PreviousOrdersFragment$1
-com/example/cms/activities/PreviousOrderItemsActivity.java
- com.example.cms.activities.PreviousOrderItemsActivity
- com.example.cms.activities.PreviousOrderItemsActivity$1
 com/example/cms/adapters/PreviousOrdersAdapter.java
  com.example.cms.adapters.PreviousOrdersAdapter
  com.example.cms.adapters.PreviousOrdersAdapter$1
  com.example.cms.adapters.PreviousOrdersAdapter$MyViewHolder
+com/example/cms/activities/AdminHomeActivity.java
+ com.example.cms.activities.AdminHomeActivity
+com/example/cms/activities/AdminViewOrderActivity.java
+ com.example.cms.activities.AdminViewOrderActivity
+ com.example.cms.activities.AdminViewOrderActivity$1
+ com.example.cms.activities.AdminViewOrderActivity$2
 com/example/cms/activities/AdminMenuEditOptionsActivity.java
  com.example.cms.activities.AdminMenuEditOptionsActivity
 com/example/cms/adapters/MenuAdapter.java
@@ -61,10 +61,10 @@ com/example/cms/activities/VerifyPhoneActivity.java
  com.example.cms.activities.VerifyPhoneActivity$3
 com/example/cms/models/TempOrderItems.java
  com.example.cms.models.TempOrderItems
-com/example/cms/activities/AdminViewOrderActivity.java
- com.example.cms.activities.AdminViewOrderActivity
- com.example.cms.activities.AdminViewOrderActivity$1
- com.example.cms.activities.AdminViewOrderActivity$2
+com/example/cms/adapters/ExistingMenuEditorAdapter.java
+ com.example.cms.adapters.ExistingMenuEditorAdapter
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
+ com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
 com/example/cms/activities/EditFoodActivity.java
  com.example.cms.activities.EditFoodActivity
  com.example.cms.activities.EditFoodActivity$1
@@ -103,9 +103,9 @@ com/example/cms/activities/MenuEditorActivity.java
  com.example.cms.activities.MenuEditorActivity$5$1
 com/example/cms/models/OrderedItem.java
  com.example.cms.models.OrderedItem
-com/example/cms/activities/EnterPhoneActivity.java
- com.example.cms.activities.EnterPhoneActivity
-com/example/cms/adapters/ExistingMenuEditorAdapter.java
- com.example.cms.adapters.ExistingMenuEditorAdapter
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
- com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
+com/example/cms/activities/PreviousOrderItemsActivity.java
+ com.example.cms.activities.PreviousOrderItemsActivity
+ com.example.cms.activities.PreviousOrderItemsActivity$1
+com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
+ com.example.cms.ui.previousOrders.PreviousOrdersFragment
+ com.example.cms.ui.previousOrders.PreviousOrdersFragment$1

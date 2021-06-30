@@ -27,6 +27,7 @@ public class AdminViewOrderActivity extends AppCompatActivity {
     private ArrayList<String> amount;
     RecyclerView recyclerView;
     ViewOrderAdapter viewOrderAdapter;
+    LinearLayoutManager linearLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +44,11 @@ public class AdminViewOrderActivity extends AppCompatActivity {
         //initDataset();
         Log.i("after initializing", String.valueOf((transactionId.size() )));
 
+        linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setStackFromEnd(true);
         recyclerView = findViewById(R.id.recyclerview_view_order);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(linearLayoutManager);
         /*viewOrderAdapter = new ViewOrderAdapter(transactionId, phone, time, amount);
         recyclerView.setAdapter(viewOrderAdapter);*/
 
