@@ -298,13 +298,13 @@
 156        </service>
 157
 158        <provider
-158-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/40af6dbcf89fe120c860849ce0288bc3/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+158-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 159            android:name="com.squareup.picasso.PicassoProvider"
-159-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/40af6dbcf89fe120c860849ce0288bc3/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+159-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 160            android:authorities="com.example.cms.com.squareup.picasso"
-160-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/40af6dbcf89fe120c860849ce0288bc3/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+160-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 161            android:exported="false" />
-161-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/40af6dbcf89fe120c860849ce0288bc3/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+161-->[com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 162        <provider
 162-->[com.google.firebase:firebase-common:19.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/8425cf45411b0c994192ddaae5f0d79c/jetified-firebase-common-19.4.0/AndroidManifest.xml:26:9-31:39
 163            android:name="com.google.firebase.provider.FirebaseInitProvider"
