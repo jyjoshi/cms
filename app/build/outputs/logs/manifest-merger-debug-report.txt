@@ -18,7 +18,7 @@ MERGED from [androidx.navigation:navigation-fragment:2.3.1] /home/jay/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/58c8596dddce58ab00e5ba40a1a0b221/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/2b50a8a98e7c9ce897d1a951dbcedf59/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:15:1-39:12
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/jay/.gradle/caches/transforms-2/files-2.1/84dd6f8ae9c008cf345b1c62409b13c7/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/3984f412c6ba51a14ba8106345531465/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/c795fd9574f7c05b6bcd7ddb85ced60a/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:17:1-36:12
@@ -128,8 +128,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/jay/.gradle
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/2b50a8a98e7c9ce897d1a951dbcedf59/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/jay/.gradle/caches/transforms-2/files-2.1/84dd6f8ae9c008cf345b1c62409b13c7/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/jay/.gradle/caches/transforms-2/files-2.1/84dd6f8ae9c008cf345b1c62409b13c7/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/3984f412c6ba51a14ba8106345531465/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
@@ -274,8 +274,8 @@ MERGED from [com.google.firebase:firebase-auth:20.0.1] /home/jay/.gradle/caches/
 MERGED from [com.google.firebase:firebase-auth:20.0.1] /home/jay/.gradle/caches/transforms-2/files-2.1/116ba14eac3517e23f9d49126d8cf8d8/jetified-firebase-auth-20.0.1/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:29:5-37:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/jay/.gradle/caches/transforms-2/files-2.1/84dd6f8ae9c008cf345b1c62409b13c7/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/jay/.gradle/caches/transforms-2/files-2.1/84dd6f8ae9c008cf345b1c62409b13c7/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/3984f412c6ba51a14ba8106345531465/jetified-firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
@@ -583,13 +583,13 @@ ADDED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/cache
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:19.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/b0cb39f5c68a2189e8f9a919365b6633/jetified-firebase-storage-19.2.0/AndroidManifest.xml:34:17-107
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/a9c0b4303c56a30b1faaa76b0697df3b/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/jay/.gradle/caches/transforms-2/files-2.1/919259c79a12d15fd5fe490c537ee6f8/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/c795fd9574f7c05b6bcd7ddb85ced60a/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:18.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/4676b7fe6fdda56f8ec006a1ded151e0/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:25:5-68

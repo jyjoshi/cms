@@ -57,6 +57,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
     private String stringAddress;
 
     int totalCost;
+    Integer token;
 
 
 
@@ -221,11 +222,18 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
 
 
+
+
         //Create the orderItems in database
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                token = snapshot.child("Token").getValue(Integer.class) + 1;
+                if(token.equals(10000)){
+                    token = 1001;
+                }
+                ref.child("Token").setValue(token);
                 DatabaseReference toOrderedItems = FirebaseDatabase.getInstance().getReference().child("OrderedItems");
                 for(DataSnapshot snapshot1 : snapshot.child("temp").child(phoneNumber).getChildren()){
                     Log.i("TAG", "INSIDE TEMPORDERITEMS");
@@ -261,19 +269,19 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                 if (temp.getIsTeacher()) {
                     Log.i("TAG", "Teacher");
                     if(!stringAddress.equals("")) {
-                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAddress);
+                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, stringAddress, token);
                         root.child(transactionId).setValue(bill);
                         Log.i("Address : ", "Entered");
                     }
                     else{
                         Log.i("Address ", "Empty");
-                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
+                        Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, token);
                         root.child(transactionId).setValue(bill);
                     }
                 }
                 else {
                     Log.i("TAG ", "Student");
-                    Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber);
+                    Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, token);
                     root.child(transactionId).setValue(bill);
                 }
             }
