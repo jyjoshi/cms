@@ -25,6 +25,7 @@ public class AdminViewOrderActivity extends AppCompatActivity {
     private ArrayList<String> phone;
     private ArrayList<String> time;
     private ArrayList<String> amount;
+    private ArrayList<String> token;
     RecyclerView recyclerView;
     ViewOrderAdapter viewOrderAdapter;
     LinearLayoutManager linearLayoutManager;
@@ -34,6 +35,7 @@ public class AdminViewOrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_view_order);
 
+        token = new ArrayList<>();
         transactionId = new ArrayList<>();
         phone = new ArrayList<>();
         time = new ArrayList<>();
@@ -61,8 +63,9 @@ public class AdminViewOrderActivity extends AppCompatActivity {
                     phone.add(temp.getPhone());
                     amount.add(temp.getTotalPrice());
                     time.add(temp.getTime());
+                    token.add(temp.getToken().toString());
                     Log.i("Check", "transaction"+transactionId);
-                    viewOrderAdapter = new ViewOrderAdapter(AdminViewOrderActivity.this, transactionId, phone, time, amount);
+                    viewOrderAdapter = new ViewOrderAdapter(AdminViewOrderActivity.this, transactionId, phone, time, amount, token);
                     recyclerView.setAdapter(viewOrderAdapter);
                 }
 
