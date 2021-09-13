@@ -29,6 +29,7 @@ public class PreviousOrdersFragment extends Fragment {
     private ArrayList<String> phone;
     private ArrayList<String> time;
     private ArrayList<String> amount;
+    private ArrayList<String> token;
 
     LinearLayoutManager linearLayoutManager;
     RecyclerView recyclerView;
@@ -48,6 +49,7 @@ public class PreviousOrdersFragment extends Fragment {
         phone = new ArrayList<>();
         time = new ArrayList<>();
         amount = new ArrayList<>();
+        token = new ArrayList<>();
 
         dbref = FirebaseDatabase.getInstance().getReference("Bill");
 
@@ -63,12 +65,13 @@ public class PreviousOrdersFragment extends Fragment {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Bill temp = dataSnapshot.getValue(Bill.class);
                     if(temp.getPhone().equals(phoneNumber)) {
-                        transactionId.add(temp.getTransactionId());
+                        transactionId.add(temp.getTransactionId().toString());
                         phone.add(temp.getPhone());
                         amount.add(temp.getTotalPrice());
                         time.add(temp.getTime());
+                        token.add(temp.getToken().toString());
                         Log.i("Check", "transaction" + transactionId);
-                        viewOrderAdapter = new PreviousOrdersAdapter(getContext(), transactionId, phone, time, amount);
+                        viewOrderAdapter = new PreviousOrdersAdapter(getContext(), transactionId, phone, time, amount, token);
                         recyclerView.setAdapter(viewOrderAdapter);
                     }
                 }

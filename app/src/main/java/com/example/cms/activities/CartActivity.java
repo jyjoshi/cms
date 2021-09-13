@@ -229,11 +229,6 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                token = snapshot.child("Token").getValue(Integer.class) + 1;
-                if(token.equals(10000)){
-                    token = 1001;
-                }
-                ref.child("Token").setValue(token);
                 DatabaseReference toOrderedItems = FirebaseDatabase.getInstance().getReference().child("OrderedItems");
                 for(DataSnapshot snapshot1 : snapshot.child("temp").child(phoneNumber).getChildren()){
                     Log.i("TAG", "INSIDE TEMPORDERITEMS");
@@ -262,10 +257,15 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
             }
         });
 
-        FirebaseDatabase.getInstance().getReference().child("Users").child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
+        FirebaseDatabase.getInstance().getReference().addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserDB temp = snapshot.getValue(UserDB.class);
+                token = snapshot.child("Token").getValue(Integer.class) + 1;
+                if(token.equals(10000)){
+                    token = 1001;
+                }
+                ref.child("Token").setValue(token);
+                UserDB temp = snapshot.child("Users").child(phoneNumber).getValue(UserDB.class);
                 if (temp.getIsTeacher()) {
                     Log.i("TAG", "Teacher");
                     if(!stringAddress.equals("")) {

@@ -1,5 +1,6 @@
 package com.example.cms.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -17,18 +18,20 @@ import com.example.cms.R;
 import java.util.ArrayList;
 
 public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAdapter.MyViewHolder>{
+    private ArrayList<String> token;
     private ArrayList<String> transactionId;
     private ArrayList<String> phone;
     private ArrayList<String> time;
     private ArrayList<String> amount;
     private Context context;
     ImageView imageView;
-    public PreviousOrdersAdapter( Context context, ArrayList<String> transactionId,ArrayList<String> phone, ArrayList<String> time, ArrayList<String> amount){
+    public PreviousOrdersAdapter(Context context, ArrayList<String> transactionId, ArrayList<String> phone, ArrayList<String> time, ArrayList<String> amount, ArrayList<String> token){
         this.amount = amount;
         this.transactionId = transactionId;
         this.phone = phone;
         this.time = time;
         this.context = context;
+        this.token = token;
     }
     @NonNull
     @Override
@@ -38,8 +41,8 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.getName().setText(transactionId.get(position));
+    public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        holder.getName().setText(token.get(position));
         holder.getQty().setText(String.valueOf(phone.get(position)));
         holder.getPrice().setText(String.valueOf(time.get(position)));
         holder.getamount().setText(String.valueOf(amount.get(position)));
