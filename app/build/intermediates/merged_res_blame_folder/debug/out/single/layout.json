@@ -48,12 +48,12 @@
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_enter_phone.xml"
     },
     {
-        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_admin_menu_edit_options.xml",
-        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_admin_menu_edit_options.xml"
-    },
-    {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_order.xml",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/fragment_order.xml"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_admin_menu_edit_options.xml",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_admin_menu_edit_options.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_item_layout.xml",

@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cms.activities.PreviousOrderItemsActivity;
@@ -27,7 +28,8 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
     private ArrayList<String> time;
     private ArrayList<String> amount;
     private Context context;
-    ImageView imageView;
+
+
     public CurrentOrdersAdapter(Context context, ArrayList<String> transactionId, ArrayList<String> status, ArrayList<String> time, ArrayList<String> amount, ArrayList<String> token){
         this.amount = amount;
         this.transactionId = transactionId;
@@ -43,11 +45,16 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
         return new MyViewHolder(v);
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.getToken().setText(token.get(position));
         holder.getTime().setText(String.valueOf(time.get(position)));
-        holder.getAmount().setText(String.valueOf(status.get(position)));
+        holder.getAmount().setText(String.valueOf(amount.get(position)));
+        if(status.get(position).equals("1")){
+            holder.status_btn.setBackgroundColor(R.color.white);
+            holder.status_btn.setText("R");
+        }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,11 +66,48 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
             }
         });
         holder.status_btn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint({"ResourceAsColor", "SetTextI18n"})//What is this
             @Override
             public void onClick(View v) {
+                if(status.get(position).equals("0")){
+                    holder.status_btn.setBackgroundColor(R.color.white);
+                    holder.status_btn.setText("R");
+                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).setValue("1");
+                    status.set(position, "1");
+                }
+                else{
+                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).removeValue();
+                    amount.remove(position);
+                    transactionId.remove(position);
+                    token.remove(position);
+                    time.remove(position);
+                    status.remove(position);
+                    notifyItemRemoved(position);
+                    notifyItemRangeChanged(position, transactionId.size());
+//                    holder.itemView.setVisibility(View.GONE);
+                }
+
 
             }
         });
+//        holder.status_btn.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//                if(status.get(position).equals("1")){
+//                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).removeValue();
+//                    amount.remove(position);
+//                    transactionId.remove(position);
+//                    token.remove(position);
+//                    time.remove(position);
+//                    status.remove(position);
+//                    notifyItemRemoved(position);
+//                    notifyItemRangeChanged(position, transactionId.size());
+//                    holder.itemView.setVisibility(View.GONE);
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
 
 
     }

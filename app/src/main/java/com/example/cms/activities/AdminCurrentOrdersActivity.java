@@ -55,7 +55,7 @@ public class AdminCurrentOrdersActivity extends AppCompatActivity {
         /*CurrentOrdersAdapter = new CurrentOrdersAdapter(transactionId, phone, time, amount);
         recyclerView.setAdapter(CurrentOrdersAdapter);*/
 
-        dbref.addValueEventListener(new ValueEventListener() {
+        dbref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.child("Status").getChildren()){
@@ -72,9 +72,10 @@ public class AdminCurrentOrdersActivity extends AppCompatActivity {
                     amount.add(bill.getTotalPrice());
 
                     Log.i("Check", "transaction"+transactionId);
-                    currentOrdersAdapter = new CurrentOrdersAdapter(AdminCurrentOrdersActivity.this, transactionId, status, time, amount, token);
-                    recyclerView.setAdapter(currentOrdersAdapter);
+
                 }
+                currentOrdersAdapter = new CurrentOrdersAdapter(AdminCurrentOrdersActivity.this, transactionId, status, time, amount, token);
+                recyclerView.setAdapter(currentOrdersAdapter);
 
             }
 

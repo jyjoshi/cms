@@ -42,10 +42,11 @@
 
         <Button
             android:id="@+id/btn_status"
+            android:background="@color/red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/textview"
+            android:text="NR"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/white" />
 

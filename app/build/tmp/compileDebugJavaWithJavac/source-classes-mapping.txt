@@ -38,9 +38,8 @@ com/example/cms/databinding/ActivityAdminCurrentOrdersBinding.java
 com/example/cms/adapters/CartAdapter.java
  com.example.cms.adapters.CartAdapter
  com.example.cms.adapters.CartAdapter$MyViewHolder
-com/example/cms/activities/AdminViewOrderItemsActivity.java
- com.example.cms.activities.AdminViewOrderItemsActivity
- com.example.cms.activities.AdminViewOrderItemsActivity$1
+com/example/cms/activities/AdminHomeActivity.java
+ com.example.cms.activities.AdminHomeActivity
 com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
  com.example.cms.ui.previousOrders.PreviousOrdersFragment
  com.example.cms.ui.previousOrders.PreviousOrdersFragment$1
@@ -165,15 +164,16 @@ com/example/cms/activities/CartActivity.java
  com.example.cms.activities.CartActivity$3
 com/example/cms/databinding/ActivityEditFoodBinding.java
  com.example.cms.databinding.ActivityEditFoodBinding
+com/example/cms/activities/AdminViewOrderItemsActivity.java
+ com.example.cms.activities.AdminViewOrderItemsActivity
+ com.example.cms.activities.AdminViewOrderItemsActivity$1
+com/example/cms/activities/AdminOrderActivity.java
+ com.example.cms.activities.AdminOrderActivity
 com/example/cms/adapters/CurrentOrdersAdapter.java
  com.example.cms.adapters.CurrentOrdersAdapter
  com.example.cms.adapters.CurrentOrdersAdapter$1
  com.example.cms.adapters.CurrentOrdersAdapter$2
  com.example.cms.adapters.CurrentOrdersAdapter$MyViewHolder
-com/example/cms/activities/AdminHomeActivity.java
- com.example.cms.activities.AdminHomeActivity
 com/example/cms/activities/AdminCurrentOrdersActivity.java
  com.example.cms.activities.AdminCurrentOrdersActivity
  com.example.cms.activities.AdminCurrentOrdersActivity$1
-com/example/cms/activities/AdminOrderActivity.java
- com.example.cms.activities.AdminOrderActivity
