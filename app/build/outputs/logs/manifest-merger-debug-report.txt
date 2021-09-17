@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/jay/.gradle/caches/transforms-2/files-2.1/ee61602b5ac254049f8133bd0c109798/jetified-viewbinding-4.2.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/a04de8d012bff92772212d443e3adfcd/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.razorpay:checkout:1.6.6] /home/jay/.gradle/caches/transforms-2/files-2.1/7753e31bb910794f383e4a23aeb9f832/jetified-checkout-1.6.6/AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.browser:browser:1.3.0] /home/jay/.gradle/caches/transforms-2/files-2.1/76d08869cf7939edbe2c46aaeb7723d3/browser-1.3.0/AndroidManifest.xml:17:1-24:12
@@ -24,14 +25,14 @@ MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/jay/.gradle
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/c795fd9574f7c05b6bcd7ddb85ced60a/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-installations:16.3.4] /home/jay/.gradle/caches/transforms-2/files-2.1/152d10b30b5f7fd854be98b71120c779/jetified-firebase-installations-16.3.4/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:19.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/8425cf45411b0c994192ddaae5f0d79c/jetified-firebase-common-19.4.0/AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/dee14ceef7411ee35203cdaf9479ba73/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/055ba27c51a402be6b654f2697711f65/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/32fddba15a2097a5cfd4412fa7726000/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/439493303c87c785c9a971d9843f615a/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/54b0be9302f3fcbffaee0bacec79bed0/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /home/jay/.gradle/caches/transforms-2/files-2.1/8952bd3cc4557a2c3e50b4e571d46e04/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/91f08b26d1725f31a2839258483291c5/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/9b04ec548925338a362aeb3fc1937d6d/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/2f3d7637012b5e6485bf0f3c490202d6/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
@@ -77,29 +78,31 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/jay/.gradle/caches/tra
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/66b46af7c95d861533e3cd78748a1332/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/671bdf3d52f8644597451272716945e4/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/4c9bc914641fd2ef9a1370d256fd2710/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-30
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:4:5-30
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:7:5-51
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:1-60:12
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:5:11-69
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/jay/.gradle/caches/transforms-2/files-2.1/ee61602b5ac254049f8133bd0c109798/jetified-viewbinding-4.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/jay/.gradle/caches/transforms-2/files-2.1/ee61602b5ac254049f8133bd0c109798/jetified-viewbinding-4.2.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/a04de8d012bff92772212d443e3adfcd/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/a04de8d012bff92772212d443e3adfcd/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.razorpay:checkout:1.6.6] /home/jay/.gradle/caches/transforms-2/files-2.1/7753e31bb910794f383e4a23aeb9f832/jetified-checkout-1.6.6/AndroidManifest.xml:5:5-7:41
@@ -140,10 +143,6 @@ MERGED from [com.google.firebase:firebase-installations:16.3.4] /home/jay/.gradl
 MERGED from [com.google.firebase:firebase-installations:16.3.4] /home/jay/.gradle/caches/transforms-2/files-2.1/152d10b30b5f7fd854be98b71120c779/jetified-firebase-installations-16.3.4/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:19.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/8425cf45411b0c994192ddaae5f0d79c/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:19.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/8425cf45411b0c994192ddaae5f0d79c/jetified-firebase-common-19.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/dee14ceef7411ee35203cdaf9479ba73/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/jay/.gradle/caches/transforms-2/files-2.1/dee14ceef7411ee35203cdaf9479ba73/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/055ba27c51a402be6b654f2697711f65/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -154,8 +153,12 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jay/.gradle/cac
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/jay/.gradle/caches/transforms-2/files-2.1/439493303c87c785c9a971d9843f615a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/54b0be9302f3fcbffaee0bacec79bed0/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/54b0be9302f3fcbffaee0bacec79bed0/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/f2c7c967279ee681f9cc5d9b5af20a7f/jetified-play-services-auth-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /home/jay/.gradle/caches/transforms-2/files-2.1/8952bd3cc4557a2c3e50b4e571d46e04/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-collection:17.0.1] /home/jay/.gradle/caches/transforms-2/files-2.1/8952bd3cc4557a2c3e50b4e571d46e04/jetified-firebase-database-collection-17.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/jay/.gradle/caches/transforms-2/files-2.1/52085cfd79e6e27480c989095453d35d/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/91f08b26d1725f31a2839258483291c5/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/91f08b26d1725f31a2839258483291c5/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/9b04ec548925338a362aeb3fc1937d6d/jetified-play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
@@ -246,20 +249,20 @@ MERGED from [androidx.print:print:1.0.0] /home/jay/.gradle/caches/transforms-2/f
 MERGED from [androidx.print:print:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/671bdf3d52f8644597451272716945e4/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/4c9bc914641fd2ef9a1370d256fd2710/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/jay/.gradle/caches/transforms-2/files-2.1/4c9bc914641fd2ef9a1370d256fd2710/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
-INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
+INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
 	tools:overrideLibrary
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:15-51
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:15-51
 	android:targetSdkVersion
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:5-53
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:6:5-54
 		INJECTED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:12:5-58:19
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:8:5-61:19
 MERGED from [com.razorpay:checkout:1.6.6] /home/jay/.gradle/caches/transforms-2/files-2.1/7753e31bb910794f383e4a23aeb9f832/jetified-checkout-1.6.6/AndroidManifest.xml:11:5-30:19
 MERGED from [com.razorpay:checkout:1.6.6] /home/jay/.gradle/caches/transforms-2/files-2.1/7753e31bb910794f383e4a23aeb9f832/jetified-checkout-1.6.6/AndroidManifest.xml:11:5-30:19
 MERGED from [com.google.firebase:firebase-database:19.5.1] /home/jay/.gradle/caches/transforms-2/files-2.1/76226f4e696ff6a10adc8a6c1971e8d2/jetified-firebase-database-19.5.1/AndroidManifest.xml:28:5-36:19
@@ -319,113 +322,129 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/jay/.gradle/cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /home/jay/.gradle/caches/transforms-2/files-2.1/555d9cf7d0b54a105f37cfdf76be1e6c/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:17:9-35
-	android:label
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:15:9-41
-	android:roundIcon
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:16:9-54
-	android:icon
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:14:9-43
-	android:allowBackup
 		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:18:9-65
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:14:9-65
+activity#com.example.cms.activities.AdminCurrentOrdersActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:15:9-17:39
+	android:exported
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:17:13-36
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:16:13-66
+activity#com.example.cms.activities.AdminOrderActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:18:9-22:50
+	android:label
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:21:13-63
+	android:exported
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:20:13-36
+	android:theme
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:22:13-47
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:19:13-58
 activity#com.example.cms.activities.EditFoodActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:19:9-74
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:23:9-65
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:19:19-62
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:23:19-62
 activity#com.example.cms.ui.EditFoodItemActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:20:9-61
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:24:9-61
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:20:19-58
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:24:19-58
 activity#com.example.cms.activities.PreviousOrderItemsActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:21:9-75
-	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:21:19-72
-activity#com.example.cms.activities.PasswordResetActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:22:9-70
-	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:22:19-67
-activity#com.example.cms.activities.EnterPhoneActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:23:9-67
-	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:23:19-64
-activity#com.example.cms.activities.AdminMenuEditOptionsActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:24:9-77
-	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:24:19-74
-activity#com.example.cms.activities.ExistingMenuEditorActivity
 ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:25:9-75
 	android:name
 		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:25:19-72
+activity#com.example.cms.activities.PasswordResetActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:26:9-70
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:26:19-67
+activity#com.example.cms.activities.EnterPhoneActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:27:9-67
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:27:19-64
+activity#com.example.cms.activities.AdminMenuEditOptionsActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:28:9-77
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:28:19-74
+activity#com.example.cms.activities.ExistingMenuEditorActivity
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:29:9-75
+	android:name
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:29:19-72
 activity#com.example.cms.activities.VerifyPhoneActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:26:9-68
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:30:9-68
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:26:19-65
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:30:19-65
 activity#com.example.cms.activities.AdminViewOrderItemsActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:27:9-76
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:31:9-76
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:27:19-73
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:31:19-73
 activity#com.example.cms.activities.AdminViewOrderActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:28:9-71
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:32:9-71
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:28:19-68
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:32:19-68
 activity#com.example.cms.activities.CartActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:29:9-61
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:33:9-61
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:29:19-58
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:33:19-58
 activity#com.example.cms.activities.HomeActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:30:9-33:60
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:34:9-37:60
 	android:label
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:32:13-56
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:36:13-56
 	android:theme
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:33:13-57
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:37:13-57
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:31:13-52
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:35:13-52
 activity#com.example.cms.activities.AdminHomeActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:34:9-36:69
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:38:9-40:69
 	android:parentActivityName
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:36:13-66
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:40:13-66
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:35:13-57
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:39:13-57
 activity#com.example.cms.activities.MenuEditorActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:37:9-39:74
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:41:9-43:74
 	android:parentActivityName
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:39:13-71
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:43:13-71
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:38:13-58
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:42:13-58
 activity#com.example.cms.activities.TestActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:40:9-42:69
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:44:9-46:69
 	android:parentActivityName
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:42:13-66
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:46:13-66
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:41:13-52
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:45:13-52
 activity#com.example.cms.activities.SignUpActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:43:9-45:69
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:47:9-49:69
 	android:parentActivityName
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:45:13-66
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:49:13-66
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:44:13-54
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:48:13-54
 activity#com.example.cms.activities.MainActivity
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:46:9-52:20
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:50:9-56:20
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:46:19-58
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:50:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:47:13-51:29
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:51:13-55:29
 action#android.intent.action.MAIN
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:48:17-69
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:52:17-69
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:48:25-66
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:52:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:50:17-77
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:54:17-77
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:50:27-74
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:54:27-74
 meta-data#com.razorpay.ApiKey
-ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:54:9-57:15
+ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:58:9-60:55
 	android:value
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:56:13-52
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:60:13-52
 	android:name
-		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:55:13-47
+		ADDED from /home/jay/StudioProjects/cms/app/src/main/AndroidManifest.xml:59:13-47
 uses-permission#android.permission.INTERNET
 ADDED from [com.razorpay:checkout:1.6.6] /home/jay/.gradle/caches/transforms-2/files-2.1/7753e31bb910794f383e4a23aeb9f832/jetified-checkout-1.6.6/AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-database:19.5.1] /home/jay/.gradle/caches/transforms-2/files-2.1/76226f4e696ff6a10adc8a6c1971e8d2/jetified-firebase-database-19.5.1/AndroidManifest.xml:26:5-67

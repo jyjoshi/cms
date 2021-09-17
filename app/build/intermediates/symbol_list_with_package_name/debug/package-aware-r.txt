@@ -2148,6 +2148,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toAllOrder
+id toCurrentOrder
 id toMenu
 id toMenuEditor
 id toOrderList
@@ -2245,8 +2247,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_current_orders
 layout activity_admin_home
 layout activity_admin_menu_edit_options
+layout activity_admin_order
 layout activity_admin_view_order
 layout activity_admin_view_order_items
 layout activity_cart
@@ -2388,6 +2392,7 @@ string add_new_item
 string add_teacher
 string address
 string address_text
+string all_orders
 string amount
 string app_name
 string appbar_scrolling_view_behavior
@@ -2418,6 +2423,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string confirm_password
 string copy_toast_msg
+string current_orders
 string default_web_client_id
 string description
 string edit_existing_items
@@ -2435,6 +2441,7 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string firebase_database_url
+string first_fragment_label
 string first_name
 string food_name
 string forgot_password
@@ -2445,6 +2452,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello
+string hello_first_fragment
+string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_name
@@ -2504,6 +2513,7 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string new_user
+string next
 string only_for_teachers
 string order_now
 string password
@@ -2514,6 +2524,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string phone
 string place_order
+string previous
 string previous_orders
 string price
 string profile
@@ -2524,11 +2535,13 @@ string reset_password
 string result
 string save_changes
 string search_menu_title
+string second_fragment_label
 string send_otp
 string smiley
 string status_bar_notification_info_overflow
 string textview
 string time
+string title_activity_admin_order
 string title_activity_home
 string todo
 string todo2
@@ -2550,6 +2563,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppBarOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2781,6 +2795,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style NoActionBar
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2795,6 +2810,7 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style PopupOverlay
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon

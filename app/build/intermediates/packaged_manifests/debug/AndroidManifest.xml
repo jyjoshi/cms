@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <manifest xmlns:tools="http://schemas.android.com/tools"> -->
-<!-- <uses-sdk tools:overrideLibrary="com.razorpay"/> -->
-<!-- </manifest> -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cms"
     android:versionCode="1"
@@ -28,6 +25,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name="com.example.cms.activities.AdminCurrentOrdersActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.cms.activities.AdminOrderActivity"
+            android:exported="true"
+            android:label="@string/title_activity_admin_order"
+            android:theme="@style/NoActionBar" />
         <activity android:name="com.example.cms.activities.EditFoodActivity" />
         <activity android:name="com.example.cms.ui.EditFoodItemActivity" />
         <activity android:name="com.example.cms.activities.PreviousOrderItemsActivity" />

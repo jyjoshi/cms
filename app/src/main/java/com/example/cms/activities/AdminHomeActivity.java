@@ -17,7 +17,7 @@ public class AdminHomeActivity extends AppCompatActivity {
     }
 
     public void toOrderList(View view) {
-        startActivity(new Intent(view.getContext(), AdminViewOrderActivity.class));
+        startActivity(new Intent(view.getContext(), AdminOrderActivity.class));
     }
 
     public void toMenu(View view) {

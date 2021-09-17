@@ -12,12 +12,12 @@
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/jay/StudioProjects/cms/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_activity_verify_phone.xml.flat",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_verify_phone.xml"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_activity_admin_order.xml.flat",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_admin_order.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_nav_header_main.xml.flat",
@@ -126,6 +130,10 @@
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_fragment_previous_orders.xml.flat",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/fragment_previous_orders.xml"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_activity_admin_current_orders.xml.flat",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_admin_current_orders.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/res/merged/debug/layout_item_2_columns.xml.flat",

@@ -284,6 +284,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                     Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, token);
                     root.child(transactionId).setValue(bill);
                 }
+                FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId).setValue(0); // Set the status regardless of who ordered to 0
             }
 
             @Override
