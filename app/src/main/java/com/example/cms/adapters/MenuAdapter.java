@@ -28,7 +28,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     ArrayList<Integer> quantity;
     ArrayList<MenuItem> item;
     Context context;
-    Button b1;
     String phoneNumber;
     DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("temp");
 

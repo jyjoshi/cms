@@ -1775,6 +1775,7 @@ int id alertTitle 0x7f08004d
 int id aligned 0x7f08004e
 int id all 0x7f08004f
 int id always 0x7f080050
+int id amount 0x7f0801ea
 int id animateToEnd 0x7f080051
 int id animateToStart 0x7f080052
 int id asConfigured 0x7f080053
@@ -1796,6 +1797,7 @@ int id browser_actions_menu_item_text 0x7f080062
 int id browser_actions_menu_items 0x7f080063
 int id browser_actions_menu_view 0x7f080064
 int id btnSaveChanges 0x7f080065
+int id btn_status 0x7f0801eb
 int id button 0x7f080066
 int id button2 0x7f080067
 int id button3 0x7f080068
@@ -2167,6 +2169,7 @@ int id transition_position 0x7f0801d5
 int id transition_scene_layoutid_cache 0x7f0801d6
 int id transition_transform 0x7f0801d7
 int id triangle 0x7f0801d8
+int id uid 0x7f0801ec
 int id unchecked 0x7f0801d9
 int id uniform 0x7f0801da
 int id unlabeled 0x7f0801db
@@ -2268,6 +2271,7 @@ int layout app_bar_main 0x7f0b002d
 int layout browser_actions_context_menu_page 0x7f0b002e
 int layout browser_actions_context_menu_row 0x7f0b002f
 int layout content_main 0x7f0b0030
+int layout current_order_item_layout 0x7f0b0080
 int layout custom_dialog 0x7f0b0031
 int layout design_bottom_navigation_item 0x7f0b0032
 int layout design_bottom_sheet_dialog 0x7f0b0033
@@ -2537,6 +2541,7 @@ int string search_menu_title 0x7f1100b3
 int string second_fragment_label 0x7f1100b4
 int string send_otp 0x7f1100b5
 int string smiley 0x7f1100b6
+int string status 0x7f1100c8
 int string status_bar_notification_info_overflow 0x7f1100b7
 int string textview 0x7f1100b8
 int string time 0x7f1100b9

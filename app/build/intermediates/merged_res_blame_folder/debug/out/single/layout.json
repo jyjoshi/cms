@@ -48,12 +48,12 @@
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_enter_phone.xml"
     },
     {
-        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_order.xml",
-        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/fragment_order.xml"
-    },
-    {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_admin_menu_edit_options.xml",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_admin_menu_edit_options.xml"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_order.xml",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/fragment_order.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_item_layout.xml",
@@ -66,6 +66,10 @@
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_menu_editor.xml",
         "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/activity_menu_editor.xml"
+    },
+    {
+        "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/current_order_item_layout.xml",
+        "source": "/home/jay/StudioProjects/cms/app/src/main/res/layout/current_order_item_layout.xml"
     },
     {
         "merged": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_admin_view_order.xml",

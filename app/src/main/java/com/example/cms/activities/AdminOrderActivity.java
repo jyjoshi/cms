@@ -16,7 +16,7 @@ public class AdminOrderActivity extends AppCompatActivity {
     }
 
     public void toCurrentOrders(View view) {
-        startActivity(new Intent(view.getContext(), AdminMenuEditOptionsActivity.class));
+        startActivity(new Intent(view.getContext(), AdminCurrentOrdersActivity.class));
     }
 
     public void toAllOrder(View view) {
