@@ -42,10 +42,9 @@ public class ExistingMenuEditorActivity extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.child("Menu").getChildren()){
                     MenuItem menuItem = dataSnapshot.getValue(MenuItem.class);
                     menuItems.add(menuItem);
-                    existingMenuEditorAdapter = new ExistingMenuEditorAdapter(getApplicationContext(), menuItems);
-                    recyclerView.setAdapter(existingMenuEditorAdapter);
-
                 }
+                existingMenuEditorAdapter = new ExistingMenuEditorAdapter(getApplicationContext(), menuItems);
+                recyclerView.setAdapter(existingMenuEditorAdapter);
             }
 
             @Override

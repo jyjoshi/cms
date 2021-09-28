@@ -1,30 +1,17 @@
-com/example/cms/ui/previousOrders/PreviousOrdersViewModel.java
- com.example.cms.ui.previousOrders.PreviousOrdersViewModel
-com/example/cms/models/MenuItem.java
- com.example.cms.models.MenuItem
-com/example/cms/BuildConfig.java
- com.example.cms.BuildConfig
-com/example/cms/interfaces/MyViewHolder.java
- com.example.cms.interfaces.MyViewHolder
-com/example/cms/models/UserDB.java
- com.example.cms.models.UserDB
-com/example/cms/models/Bill.java
- com.example.cms.models.Bill
-com/example/cms/ui/profile/ProfileViewModel.java
- com.example.cms.ui.profile.ProfileViewModel
-com/example/cms/models/FoodQuantity.java
- com.example.cms.models.FoodQuantity
-com/example/cms/models/TempOrderItems.java
- com.example.cms.models.TempOrderItems
-com/example/cms/models/OrderedItem.java
- com.example.cms.models.OrderedItem
-com/example/cms/ui/order/OrderViewModel.java
- com.example.cms.ui.order.OrderViewModel
+com/example/cms/adapters/AdminViewMenuAdapter.java
+ com.example.cms.adapters.AdminViewMenuAdapter
+ com.example.cms.adapters.AdminViewMenuAdapter$AdminViewMenuHolder
 com/example/cms/databinding/Item2ColumnsBinding.java
  com.example.cms.databinding.Item2ColumnsBinding
+com/example/cms/models/MenuItem.java
+ com.example.cms.models.MenuItem
 com/example/cms/ui/order/OrderFragment.java
  com.example.cms.ui.order.OrderFragment
  com.example.cms.ui.order.OrderFragment$1
+com/example/cms/activities/EnterPhoneActivity.java
+ com.example.cms.activities.EnterPhoneActivity
+com/example/cms/interfaces/MyViewHolder.java
+ com.example.cms.interfaces.MyViewHolder
 com/example/cms/activities/HomeActivity.java
  com.example.cms.activities.HomeActivity
 com/example/cms/databinding/ActivityExistingMenuEditorBinding.java
@@ -33,13 +20,17 @@ com/example/cms/databinding/CurrentOrderItemLayoutBinding.java
  com.example.cms.databinding.CurrentOrderItemLayoutBinding
 com/example/cms/databinding/ContentMainBinding.java
  com.example.cms.databinding.ContentMainBinding
+com/example/cms/services/MyFirebaseMessagingService.java
+ com.example.cms.services.MyFirebaseMessagingService
+com/example/cms/databinding/ActivityAdminViewMenuBinding.java
+ com.example.cms.databinding.ActivityAdminViewMenuBinding
 com/example/cms/databinding/ActivityAdminCurrentOrdersBinding.java
  com.example.cms.databinding.ActivityAdminCurrentOrdersBinding
+com/example/cms/databinding/FragmentProfileBinding.java
+ com.example.cms.databinding.FragmentProfileBinding
 com/example/cms/adapters/CartAdapter.java
  com.example.cms.adapters.CartAdapter
  com.example.cms.adapters.CartAdapter$MyViewHolder
-com/example/cms/activities/AdminHomeActivity.java
- com.example.cms.activities.AdminHomeActivity
 com/example/cms/ui/previousOrders/PreviousOrdersFragment.java
  com.example.cms.ui.previousOrders.PreviousOrdersFragment
  com.example.cms.ui.previousOrders.PreviousOrdersFragment$1
@@ -48,6 +39,8 @@ com/example/cms/databinding/ListItemLayoutBinding.java
 com/example/cms/activities/PreviousOrderItemsActivity.java
  com.example.cms.activities.PreviousOrderItemsActivity
  com.example.cms.activities.PreviousOrderItemsActivity$1
+com/example/cms/databinding/ListItemLayoutAdminBinding.java
+ com.example.cms.databinding.ListItemLayoutAdminBinding
 com/example/cms/activities/AdminMenuEditOptionsActivity.java
  com.example.cms.activities.AdminMenuEditOptionsActivity
 com/example/cms/adapters/MenuAdapter.java
@@ -55,14 +48,8 @@ com/example/cms/adapters/MenuAdapter.java
  com.example.cms.adapters.MenuAdapter$1
  com.example.cms.adapters.MenuAdapter$2
  com.example.cms.adapters.MenuAdapter$MenuViewHolder
-com/example/cms/activities/MenuEditorActivity.java
- com.example.cms.activities.MenuEditorActivity
- com.example.cms.activities.MenuEditorActivity$1
- com.example.cms.activities.MenuEditorActivity$2
- com.example.cms.activities.MenuEditorActivity$3
- com.example.cms.activities.MenuEditorActivity$4
- com.example.cms.activities.MenuEditorActivity$5
- com.example.cms.activities.MenuEditorActivity$5$1
+com/example/cms/activities/AdminOrderActivity.java
+ com.example.cms.activities.AdminOrderActivity
 com/example/cms/ui/profile/ProfileFragment.java
  com.example.cms.ui.profile.ProfileFragment
  com.example.cms.ui.profile.ProfileFragment$1
@@ -83,6 +70,8 @@ com/example/cms/databinding/ActivityCartBinding.java
 com/example/cms/adapters/OrderItemsAdapter.java
  com.example.cms.adapters.OrderItemsAdapter
  com.example.cms.adapters.OrderItemsAdapter$MyViewHolder
+com/example/cms/models/Bill.java
+ com.example.cms.models.Bill
 com/example/cms/databinding/FragmentPreviousOrdersBinding.java
  com.example.cms.databinding.FragmentPreviousOrdersBinding
 com/example/cms/databinding/ActivityAdminViewOrderItemsBinding.java
@@ -96,16 +85,21 @@ com/example/cms/databinding/NavHeaderMainBinding.java
 com/example/cms/activities/MainActivity.java
  com.example.cms.activities.MainActivity
  com.example.cms.activities.MainActivity$1
+ com.example.cms.activities.MainActivity$2
 com/example/cms/databinding/ActivityMenuEditorBinding.java
  com.example.cms.databinding.ActivityMenuEditorBinding
-com/example/cms/databinding/ActivityVerifyPhoneBinding.java
- com.example.cms.databinding.ActivityVerifyPhoneBinding
 com/example/cms/databinding/ActivityHomeBinding.java
  com.example.cms.databinding.ActivityHomeBinding
+com/example/cms/databinding/ActivityVerifyPhoneBinding.java
+ com.example.cms.databinding.ActivityVerifyPhoneBinding
+com/example/cms/models/OrderedItem.java
+ com.example.cms.models.OrderedItem
 com/example/cms/adapters/ExistingMenuEditorAdapter.java
  com.example.cms.adapters.ExistingMenuEditorAdapter
  com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder
  com.example.cms.adapters.ExistingMenuEditorAdapter$MyViewHolder$1
+com/example/cms/BuildConfig.java
+ com.example.cms.BuildConfig
 com/example/cms/databinding/ItemBinding.java
  com.example.cms.databinding.ItemBinding
 com/example/cms/activities/ExistingMenuEditorActivity.java
@@ -113,12 +107,18 @@ com/example/cms/activities/ExistingMenuEditorActivity.java
  com.example.cms.activities.ExistingMenuEditorActivity$1
 com/example/cms/databinding/ActivityAdminOrderBinding.java
  com.example.cms.databinding.ActivityAdminOrderBinding
+com/example/cms/models/FoodQuantity.java
+ com.example.cms.models.FoodQuantity
 com/example/cms/activities/PasswordResetActivity.java
  com.example.cms.activities.PasswordResetActivity
 com/example/cms/databinding/AppBarMainBinding.java
  com.example.cms.databinding.AppBarMainBinding
+com/example/cms/models/UserDB.java
+ com.example.cms.models.UserDB
 com/example/cms/databinding/ActivityPreviousOrderItemsBinding.java
  com.example.cms.databinding.ActivityPreviousOrderItemsBinding
+com/example/cms/ui/order/OrderViewModel.java
+ com.example.cms.ui.order.OrderViewModel
 com/example/cms/databinding/ActivityPasswordResetBinding.java
  com.example.cms.databinding.ActivityPasswordResetBinding
 com/example/cms/adapters/ViewOrderAdapter.java
@@ -135,16 +135,24 @@ com/example/cms/adapters/PreviousOrdersAdapter.java
  com.example.cms.adapters.PreviousOrdersAdapter$MyViewHolder
 com/example/cms/databinding/ActivityAdminHomeBinding.java
  com.example.cms.databinding.ActivityAdminHomeBinding
-com/example/cms/activities/EnterPhoneActivity.java
- com.example.cms.activities.EnterPhoneActivity
+com/example/cms/adapters/CurrentOrdersAdapter.java
+ com.example.cms.adapters.CurrentOrdersAdapter
+ com.example.cms.adapters.CurrentOrdersAdapter$1
+ com.example.cms.adapters.CurrentOrdersAdapter$2
+ com.example.cms.adapters.CurrentOrdersAdapter$MyViewHolder
 com/example/cms/databinding/ActivityMainBinding.java
  com.example.cms.databinding.ActivityMainBinding
+com/example/cms/ui/profile/ProfileViewModel.java
+ com.example.cms.ui.profile.ProfileViewModel
 com/example/cms/databinding/ActivityAdminMenuEditOptionsBinding.java
  com.example.cms.databinding.ActivityAdminMenuEditOptionsBinding
 com/example/cms/databinding/ActivityEnterPhoneBinding.java
  com.example.cms.databinding.ActivityEnterPhoneBinding
-com/example/cms/databinding/FragmentProfileBinding.java
- com.example.cms.databinding.FragmentProfileBinding
+com/example/cms/activities/AdminCurrentOrdersActivity.java
+ com.example.cms.activities.AdminCurrentOrdersActivity
+ com.example.cms.activities.AdminCurrentOrdersActivity$1
+com/example/cms/models/TempOrderItems.java
+ com.example.cms.models.TempOrderItems
 com/example/cms/activities/EditFoodActivity.java
  com.example.cms.activities.EditFoodActivity
  com.example.cms.activities.EditFoodActivity$1
@@ -157,6 +165,8 @@ com/example/cms/databinding/ActivitySignUpBinding.java
  com.example.cms.databinding.ActivitySignUpBinding
 com/example/cms/databinding/ActivityTestBinding.java
  com.example.cms.databinding.ActivityTestBinding
+com/example/cms/ui/previousOrders/PreviousOrdersViewModel.java
+ com.example.cms.ui.previousOrders.PreviousOrdersViewModel
 com/example/cms/activities/CartActivity.java
  com.example.cms.activities.CartActivity
  com.example.cms.activities.CartActivity$1
@@ -167,13 +177,16 @@ com/example/cms/databinding/ActivityEditFoodBinding.java
 com/example/cms/activities/AdminViewOrderItemsActivity.java
  com.example.cms.activities.AdminViewOrderItemsActivity
  com.example.cms.activities.AdminViewOrderItemsActivity$1
-com/example/cms/activities/AdminOrderActivity.java
- com.example.cms.activities.AdminOrderActivity
-com/example/cms/adapters/CurrentOrdersAdapter.java
- com.example.cms.adapters.CurrentOrdersAdapter
- com.example.cms.adapters.CurrentOrdersAdapter$1
- com.example.cms.adapters.CurrentOrdersAdapter$2
- com.example.cms.adapters.CurrentOrdersAdapter$MyViewHolder
-com/example/cms/activities/AdminCurrentOrdersActivity.java
- com.example.cms.activities.AdminCurrentOrdersActivity
- com.example.cms.activities.AdminCurrentOrdersActivity$1
+com/example/cms/activities/MenuEditorActivity.java
+ com.example.cms.activities.MenuEditorActivity
+ com.example.cms.activities.MenuEditorActivity$1
+ com.example.cms.activities.MenuEditorActivity$2
+ com.example.cms.activities.MenuEditorActivity$3
+ com.example.cms.activities.MenuEditorActivity$4
+ com.example.cms.activities.MenuEditorActivity$5
+ com.example.cms.activities.MenuEditorActivity$5$1
+com/example/cms/activities/AdminViewMenuActivity.java
+ com.example.cms.activities.AdminViewMenuActivity
+ com.example.cms.activities.AdminViewMenuActivity$1
+com/example/cms/activities/AdminHomeActivity.java
+ com.example.cms.activities.AdminHomeActivity

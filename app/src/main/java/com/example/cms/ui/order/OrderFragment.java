@@ -29,11 +29,11 @@ import java.util.concurrent.TimeUnit;
 
 public class OrderFragment extends Fragment {
 
-    ArrayList<MenuItem> menuItems = new ArrayList<>();
-    ArrayList<Integer> quantity = new ArrayList<>();
+    private ArrayList<MenuItem> menuItems = new ArrayList<>();
+    private ArrayList<Integer> quantity = new ArrayList<>();
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference dbref = database.getReference("Menu");
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference dbref = database.getReference("Menu");
 
     private String phoneNumber;
 

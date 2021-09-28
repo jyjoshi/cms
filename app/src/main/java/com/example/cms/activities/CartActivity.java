@@ -266,6 +266,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                 }
                 ref.child("Token").setValue(token);
                 UserDB temp = snapshot.child("Users").child(phoneNumber).getValue(UserDB.class);
+                Log.d("Phone Number", phoneNumber);
                 if (temp.getIsTeacher()) {
                     Log.i("TAG", "Teacher");
                     if(!stringAddress.equals("")) {

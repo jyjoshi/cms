@@ -21,7 +21,7 @@ public class AdminHomeActivity extends AppCompatActivity {
     }
 
     public void toMenu(View view) {
-        startActivity(new Intent(view.getContext(), HomeActivity.class));
+        startActivity(new Intent(view.getContext(), AdminViewMenuActivity.class));
     }
 
     public void toAdminMenuEditOptions(View view) {

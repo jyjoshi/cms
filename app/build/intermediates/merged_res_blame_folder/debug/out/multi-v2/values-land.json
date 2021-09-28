@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jay/StudioProjects/cms/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "/home/jay/.gradle/caches/transforms-2/files-2.1/802f4cd12ed4c7478ee03f0d5c60a96b/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\8f63d9c6eab1fc3ec3bd8e994478e6d9\\appcompat-1.2.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/jay/.gradle/caches/transforms-2/files-2.1/333747943989ac0b18350736b14b5293/material-1.2.1/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-2\\files-2.1\\870937bbb66e7ed8ecbc44b2bc3c0107\\material-1.2.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

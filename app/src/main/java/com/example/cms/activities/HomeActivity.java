@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.cms.R;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     String phoneNumber;
     String firstName;
     String lastName;
+    Button signOutButton;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -59,6 +62,14 @@ public class HomeActivity extends AppCompatActivity {
             firstName = (String) b.get("firstName");
             lastName = (String) b.get("lastName");
         }
+// Not possible because the button is not in the setcontentview Layout
+//        signOutButton = findViewById(R.id.btnSignOut);
+//
+//        signOutButton.setOnClickListener(v -> {
+//            FirebaseAuth.getInstance().signOut();
+//            startActivity(new Intent(v.getContext(), MainActivity.class));
+//
+//        });
     }
 
     @Override
@@ -104,4 +115,6 @@ public class HomeActivity extends AppCompatActivity {
     public String getLastName() {
         return lastName;
     }
+
+
 }

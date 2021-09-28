@@ -22,7 +22,7 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnSaveChanges;
+  public final Button btnSignOut;
 
   @NonNull
   public final EditText editTextProfName;
@@ -45,12 +45,12 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView textView3;
 
-  private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull Button btnSaveChanges,
+  private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull Button btnSignOut,
       @NonNull EditText editTextProfName, @NonNull EditText editTextProfPhone,
       @NonNull EditText editTextTextPostalAddress, @NonNull ImageView profImgId,
       @NonNull TextView textProfileName, @NonNull TextView textView2, @NonNull TextView textView3) {
     this.rootView = rootView;
-    this.btnSaveChanges = btnSaveChanges;
+    this.btnSignOut = btnSignOut;
     this.editTextProfName = editTextProfName;
     this.editTextProfPhone = editTextProfPhone;
     this.editTextTextPostalAddress = editTextTextPostalAddress;
@@ -87,9 +87,9 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnSaveChanges;
-      Button btnSaveChanges = rootView.findViewById(id);
-      if (btnSaveChanges == null) {
+      id = R.id.btnSignOut;
+      Button btnSignOut = rootView.findViewById(id);
+      if (btnSignOut == null) {
         break missingId;
       }
 
@@ -135,7 +135,7 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((LinearLayout) rootView, btnSaveChanges, editTextProfName,
+      return new FragmentProfileBinding((LinearLayout) rootView, btnSignOut, editTextProfName,
           editTextProfPhone, editTextTextPostalAddress, profImgId, textProfileName, textView2,
           textView3);
     }

@@ -1770,6 +1770,7 @@ id addImage
 id address
 id adjust_height
 id adjust_width
+id adminMenuList
 id admin_view_order_header_food_name
 id admin_view_order_header_price
 id admin_view_order_header_qty
@@ -1799,7 +1800,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btnSaveChanges
+id btnSignOut
 id btn_status
 id button
 id button2
@@ -2256,6 +2257,7 @@ layout activity_admin_current_orders
 layout activity_admin_home
 layout activity_admin_menu_edit_options
 layout activity_admin_order
+layout activity_admin_view_menu
 layout activity_admin_view_order
 layout activity_admin_view_order_items
 layout activity_cart
@@ -2297,6 +2299,7 @@ layout fragment_profile
 layout item
 layout item_2_columns
 layout list_item_layout
+layout list_item_layout_admin
 layout list_prev_item_layout
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2446,6 +2449,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string firebase_database_url
 string first_fragment_label
 string first_name
@@ -2543,6 +2547,7 @@ string save_changes
 string search_menu_title
 string second_fragment_label
 string send_otp
+string sign_out
 string smiley
 string status
 string status_bar_notification_info_overflow

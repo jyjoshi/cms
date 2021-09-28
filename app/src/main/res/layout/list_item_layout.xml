@@ -129,7 +129,8 @@
                         android:text="@string/add"
                         android:textColor="@color/white"
                         android:backgroundTint="@color/colorPrimary"
-                        tools:ignore="UnusedAttribute" />
+                        tools:ignore="UnusedAttribute"
+                        android:textAlignment="center"/>
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </LinearLayout>
