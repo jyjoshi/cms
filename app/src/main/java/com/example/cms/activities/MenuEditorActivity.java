@@ -6,11 +6,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -33,28 +37,29 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MenuEditorActivity extends AppCompatActivity {
-    int check;
+    private int check;
 
-    Button addImage;
-    ImageView imageView;
-    ProgressBar progressBar;
-    Uri imageUri;
-    String stringUri;
+    private ImageView imageView;
+    private ProgressBar progressBar;
+    private Uri imageUri;
+    private String stringUri;
 
-    EditText foodName;
-    EditText foodPrice;
-    EditText foodDescription;
+    private EditText foodName;
+    private EditText foodPrice;
+    private EditText foodDescription;
+    private Boolean imagePresent;
 
-    DatabaseReference root = FirebaseDatabase.getInstance().getReference().child("Menu");
-    StorageReference reference = FirebaseStorage.getInstance().getReference();
+    private final StorageReference reference = FirebaseStorage.getInstance().getReference();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         check = 0;
         stringUri="";
+        imagePresent = false;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_editor);
 
-        addImage = findViewById(R.id.addImage);
+        Button addImage = findViewById(R.id.addImage);
         imageView = findViewById(R.id.imageView2);
         progressBar = findViewById(R.id.progressBar);
 
@@ -81,7 +86,7 @@ public class MenuEditorActivity extends AppCompatActivity {
                     uploadToFirebase(imageUri);
                 }
                 else{
-                    Toast.makeText(MenuEditorActivity.this, "Image upload failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MenuEditorActivity.this, "Image upload failed. No image detected, so please select an image to upload.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -96,13 +101,46 @@ public class MenuEditorActivity extends AppCompatActivity {
         if(requestCode==2 && resultCode == RESULT_OK && data != null){
             imageUri = data.getData();
             imageView.setImageURI(imageUri);
-
-
+            imagePresent = true;
         }
     }
 
     public void addToMenu(View view) {
         checkDataEntered();
+        if (check == 1) {
+            if (stringUri.equals("")) {
+                LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+                View popupView = inflater.inflate(R.layout.popup_layout, null);
+
+                int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+                int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+                boolean focusable = true;
+
+                final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+                popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+
+                Button yesbutton = (Button) popupView.findViewById(R.id.yesbtn);
+                Button nobutton = (Button) popupView.findViewById(R.id.nobtn);
+
+                yesbutton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        check = 1;
+                        popupWindow.dismiss();
+                    }
+                });
+
+                nobutton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        check = 0;
+                        popupWindow.dismiss();
+                    }
+                });
+
+            }
+        }
         if(check==1)
         {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -116,8 +154,12 @@ public class MenuEditorActivity extends AppCompatActivity {
                     foodPrice.getText().toString()
             );
             database.getReference().child("Menu").child(key).setValue(menuItem);
-            Toast.makeText(this, "Item added successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Item added successfully", Toast.LENGTH_LONG).show();
             stringUri = "";
+            foodName.setText("");
+            foodDescription.setText("");
+            foodPrice.setText("");
+            imageUri = null;
 
         }
 
@@ -134,7 +176,7 @@ public class MenuEditorActivity extends AppCompatActivity {
                         progressBar.setVisibility(View.INVISIBLE);
                         stringUri = uri.toString();
                         Log.i("Value of stringUri", stringUri);
-                        Toast.makeText(MenuEditorActivity.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuEditorActivity.this, "Uploaded Successfully", Toast.LENGTH_LONG).show();
                     }
                 });
             }
@@ -148,7 +190,7 @@ public class MenuEditorActivity extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 progressBar.setVisibility(View.INVISIBLE);
-                Toast.makeText(MenuEditorActivity.this, "Uploading Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MenuEditorActivity.this, "Uploading Failed", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -164,7 +206,7 @@ public class MenuEditorActivity extends AppCompatActivity {
         return mime.getExtensionFromMimeType(cr.getType(uri));
     }
 
-    boolean isEmpty(EditText text) {
+    private boolean isEmpty(EditText text) {
         CharSequence str = text.getText().toString();
         return TextUtils.isEmpty(str);
     }
@@ -172,7 +214,7 @@ public class MenuEditorActivity extends AppCompatActivity {
     /**
      * Make sure that no fields required for a menu item are left empty.
      */
-    void checkDataEntered() {
+    private void checkDataEntered() {
         check=1;
         if (isEmpty(foodName)) {
             foodName.setError("Name is required");
@@ -186,11 +228,12 @@ public class MenuEditorActivity extends AppCompatActivity {
         if (isEmpty(foodPrice)) {
             foodPrice.setError("Last name is required!");
             check=0;
-        }/*
-        if (stringUri.equals("")){
-            foodDescription.setError("Uri can't be empty");
-            check=0;
-        }*/
+        }
+
+//        if (imagePresent = false){
+//            Toast.makeText(this, "No image inserted", Toast.LENGTH_LONG);
+//            check =0;
+//        }
 
 
     }

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_home.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
-    },
-    {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_order.xml",
         "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_home.xml",
+        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_current_orders.xml",
@@ -34,6 +34,10 @@
     {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_menu_edit_options.xml",
         "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_menu_edit_options.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\popup_layout.xml",
+        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\popup_layout.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_prev_item_layout.xml",
