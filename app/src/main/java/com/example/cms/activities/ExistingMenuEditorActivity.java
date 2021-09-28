@@ -54,7 +54,5 @@ public class ExistingMenuEditorActivity extends AppCompatActivity {
         });
 
     }
-    public void initDataset(){
 
-    }
 }

@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="30dp"
-        android:textSize="12sp"
+        android:textSize="9sp"
         android:textColor="@color/white"
-        android:text="Do you want to add item without Image?"/>
+        android:text="Do you want to add item without Image?"
+        />
     <Button
         android:id="@+id/yesbtn"
         android:layout_width="wrap_content"

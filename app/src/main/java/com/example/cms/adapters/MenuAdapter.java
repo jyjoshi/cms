@@ -56,6 +56,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
        // Glide.with(context).load(item.get(position).getImgUri()).into(holder.imgIcon);
         Picasso.get().load(Uri.parse(item.get(position).getImgUri())).into(holder.imgIcon);
         Log.i("Image","Image Check");
+        Log.d(item.get(position).getName(), item.get(position).getImgUri());
         holder.getTextTitle().setText("Name : "+item.get(position).getName());
         holder.getTextDescription().setText("Desc : "+item.get(position).getDescription());
         holder.getTextPrice().setText("Price : "+item.get(position).getPrice());

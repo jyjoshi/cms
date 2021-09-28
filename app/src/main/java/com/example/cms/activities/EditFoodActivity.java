@@ -10,11 +10,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -72,8 +76,10 @@ public class EditFoodActivity extends AppCompatActivity {
             stringUri = (String) b.get("uri");
             uid = (String) b.get("uid");
         }
-
-        Picasso.get().load(Uri.parse(stringUri)).into(imgIcon);
+        Log.d(name,  stringUri);
+        if(!stringUri.equals("")) {
+            Picasso.get().load(Uri.parse(stringUri)).into(imgIcon);
+        }
         foodPrice.setText(price);
         foodName.setText(name);
         foodDescription.setText(description);
@@ -120,6 +126,41 @@ public class EditFoodActivity extends AppCompatActivity {
 
     public void addToMenu(View view) {
         checkDataEntered();
+        if (check == 1) {
+            if (stringUri.equals("")) {
+                check = 0; //Just to be on the safer side. If the user clicks somewhere else except the yes button the query doesn't process through.
+                LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+                View popupView = inflater.inflate(R.layout.popup_layout, null);
+
+                int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+                int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+                boolean focusable = true;
+
+                final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+                popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+
+                Button yesbutton = (Button) popupView.findViewById(R.id.yesbtn);
+                Button nobutton = (Button) popupView.findViewById(R.id.nobtn);
+
+                yesbutton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        check = 1;
+                        popupWindow.dismiss();
+                    }
+                });
+
+                nobutton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        check = 0;
+                        popupWindow.dismiss();
+                    }
+                });
+
+            }
+        }
         if(check==1)
         {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -131,7 +172,7 @@ public class EditFoodActivity extends AppCompatActivity {
                     foodPrice.getText().toString()
             );
             database.getReference().child("Menu").child(uid).setValue(menuItem);
-            stringUri = "";
+            Toast.makeText(this, "Item edited successfully", Toast.LENGTH_LONG).show();
 
         }
 
@@ -193,11 +234,7 @@ public class EditFoodActivity extends AppCompatActivity {
         if (isEmpty(foodPrice)) {
             foodPrice.setError("Last name is required!");
             check=0;
-        }/*
-        if (stringUri.equals("")){
-            foodDescription.setError("Uri can't be empty");
-            check=0;
-        }*/
+        }
 
 
     }
