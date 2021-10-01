@@ -2799,6 +2799,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style CheckoutTheme
+style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text

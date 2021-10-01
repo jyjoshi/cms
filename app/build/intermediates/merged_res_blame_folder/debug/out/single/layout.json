@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\list_item_layout_admin.xml"
     },
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_enter_phone.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_enter_phone.xml"
-    },
-    {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_view_menu.xml",
         "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_view_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_enter_phone.xml",
+        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_enter_phone.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
