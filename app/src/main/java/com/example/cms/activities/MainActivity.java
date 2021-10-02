@@ -49,19 +49,21 @@ public class MainActivity extends AppCompatActivity {
         if(currentUser != null){
             String phoneNo = currentUser.getPhoneNumber().substring(3);
             Log.d("FirebaseAuth Phone", "Phone Number is " + phoneNo);
-            FirebaseDatabase.getInstance().getReference("Users").addListenerForSingleValueEvent(new ValueEventListener() {
+            FirebaseDatabase.getInstance().getReference("Users").child(phoneNo).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.exists()){
-                        for(DataSnapshot userSnapshot : snapshot.getChildren()){
+                        /*for(DataSnapshot userSnapshot : snapshot.getChildren()){
                             UserDB temp = userSnapshot.getValue(UserDB.class);
                             if (Objects.requireNonNull(temp).getPhone()!=null)
                                 if (temp.getPhone().equals(phoneNo)) {
                                     firstName = temp.getFirstName();
                                     lastName = temp.getLastName();
-                                    phoneNumber=temp.getPhone();
                                     break;
-                                }
+                                }*/
+                        UserDB temp = snapshot.getValue(UserDB.class);
+                        firstName = temp.getFirstName();
+                        lastName = temp.getLastName();
                     }
                         Intent intent = new Intent(getApplicationContext(), HomeActivity.class); //Check getApplicationContext() ; I put it because it didn't give error.
                         intent.putExtra("phone", phoneNo);
@@ -69,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra("lastName", lastName);
                         startActivity(intent);
                 }
-                }
-
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
 
@@ -123,12 +123,12 @@ public class MainActivity extends AppCompatActivity {
                                 UserDB temp = userSnapshot.getValue(UserDB.class);
                                 if (Objects.requireNonNull(temp).getPhone()!=null)
                                     if (temp.getPhone().equals(phone.getText().toString())) {
-                                        check2 = 1;
                                         if (temp.getPassword().equals(password.getText().toString())) {
-
-                                            firstName = temp.getFirstName();
-                                            lastName = temp.getLastName();
-                                            phoneNumber=temp.getPhone();
+                                            check2 = 1;
+                                            Intent intent = new Intent(view.getContext(), VerifyPhoneActivity.class);
+                                            intent.putExtra("phoneNo", phone.getText().toString());
+                                            intent.putExtra("requirement", "login");
+                                            startActivity(intent);
                                         } else {
                                             password.setError("Password Incorrect");
                                         }
@@ -139,11 +139,11 @@ public class MainActivity extends AppCompatActivity {
 
                             if(check2==1){
 
-                                Intent intent = new Intent(view.getContext(), HomeActivity.class);
+                                /*Intent intent = new Intent(view.getContext(), HomeActivity.class);
                                 intent.putExtra("phone", phoneNumber);
                                 intent.putExtra("firstName", firstName);
                                 intent.putExtra("lastName", lastName);
-                                startActivity(intent);
+                                startActivity(intent);*/
 
                                 /*Bundle bundle = new Bundle();
                                 bundle.putString("phone", phoneNumber);
@@ -204,7 +204,5 @@ public class MainActivity extends AppCompatActivity {
     public void toEnterPhone(View view) {
         startActivity(new Intent(this, EnterPhoneActivity.class));
     }
-    public String getPhoneNumber(){
-        return phoneNumber;
-    }
+
 }
