@@ -21,8 +21,11 @@ com/example/cms/databinding/CurrentOrderItemLayoutBinding.java
  com.example.cms.databinding.CurrentOrderItemLayoutBinding
 com/example/cms/databinding/ContentMainBinding.java
  com.example.cms.databinding.ContentMainBinding
-com/example/cms/services/MyFirebaseMessagingService.java
- com.example.cms.services.MyFirebaseMessagingService
+com/example/cms/activities/CartActivity.java
+ com.example.cms.activities.CartActivity
+ com.example.cms.activities.CartActivity$1
+ com.example.cms.activities.CartActivity$2
+ com.example.cms.activities.CartActivity$3
 com/example/cms/databinding/ActivityAdminViewMenuBinding.java
  com.example.cms.databinding.ActivityAdminViewMenuBinding
 com/example/cms/databinding/ActivityAdminCurrentOrdersBinding.java
@@ -52,9 +55,8 @@ com/example/cms/adapters/MenuAdapter.java
  com.example.cms.adapters.MenuAdapter$MenuViewHolder
 com/example/cms/activities/AdminOrderActivity.java
  com.example.cms.activities.AdminOrderActivity
-com/example/cms/ui/profile/ProfileFragment.java
- com.example.cms.ui.profile.ProfileFragment
- com.example.cms.ui.profile.ProfileFragment$1
+com/example/cms/services/MyFirebaseMessagingService.java
+ com.example.cms.services.MyFirebaseMessagingService
 com/example/cms/databinding/ActivityEditFoodBinding.java
  com.example.cms.databinding.ActivityEditFoodBinding
 com/example/cms/databinding/FragmentProfileBinding.java
@@ -105,8 +107,8 @@ com/example/cms/databinding/ActivityAdminOrderBinding.java
  com.example.cms.databinding.ActivityAdminOrderBinding
 com/example/cms/models/FoodQuantity.java
  com.example.cms.models.FoodQuantity
-com/example/cms/activities/PasswordResetActivity.java
- com.example.cms.activities.PasswordResetActivity
+com/example/cms/activities/AdminMenuEditOptionsActivity.java
+ com.example.cms.activities.AdminMenuEditOptionsActivity
 com/example/cms/databinding/AppBarMainBinding.java
  com.example.cms.databinding.AppBarMainBinding
 com/example/cms/models/UserDB.java
@@ -167,22 +169,21 @@ com/example/cms/databinding/ActivityTestBinding.java
  com.example.cms.databinding.ActivityTestBinding
 com/example/cms/ui/previousOrders/PreviousOrdersViewModel.java
  com.example.cms.ui.previousOrders.PreviousOrdersViewModel
-com/example/cms/activities/CartActivity.java
- com.example.cms.activities.CartActivity
- com.example.cms.activities.CartActivity$1
- com.example.cms.activities.CartActivity$2
- com.example.cms.activities.CartActivity$3
-com/example/cms/activities/AdminMenuEditOptionsActivity.java
- com.example.cms.activities.AdminMenuEditOptionsActivity
-com/example/cms/activities/MainActivity.java
- com.example.cms.activities.MainActivity
- com.example.cms.activities.MainActivity$1
- com.example.cms.activities.MainActivity$2
 com/example/cms/activities/EnterPhoneActivity.java
  com.example.cms.activities.EnterPhoneActivity
 com/example/cms/activities/SignUpActivity.java
  com.example.cms.activities.SignUpActivity
  com.example.cms.activities.SignUpActivity$1
+com/example/cms/activities/MainActivity.java
+ com.example.cms.activities.MainActivity
+ com.example.cms.activities.MainActivity$1
+ com.example.cms.activities.MainActivity$1$1
+ com.example.cms.activities.MainActivity$2
+com/example/cms/activities/PasswordResetActivity.java
+ com.example.cms.activities.PasswordResetActivity
+com/example/cms/ui/profile/ProfileFragment.java
+ com.example.cms.ui.profile.ProfileFragment
+ com.example.cms.ui.profile.ProfileFragment$1
 com/example/cms/activities/VerifyPhoneActivity.java
  com.example.cms.activities.VerifyPhoneActivity
  com.example.cms.activities.VerifyPhoneActivity$1

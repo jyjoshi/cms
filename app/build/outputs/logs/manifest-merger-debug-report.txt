@@ -385,12 +385,12 @@ service#com.example.cms.services.MyFirebaseMessagingService
 ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:18:9-22:19
 	android:name
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:18:18-69
-intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
 ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:13-21:29
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-80
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-77
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-75
 activity#com.example.cms.activities.AdminCurrentOrdersActivity
 ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:24:9-26:39
 	android:exported
@@ -737,14 +737,6 @@ ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\
 		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
 ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
 	android:value

@@ -70,9 +70,9 @@
 37-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:18:18-69
 38            <intent-filter>
 38-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:13-21:29
-39                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-39-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-80
-39-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-77
+39                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+39-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-77
+39-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-75
 40            </intent-filter>
 41        </service>
 42
@@ -388,11 +388,10 @@
 202            android:exported="false" >
 202-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
 203            <intent-filter android:priority="-500" >
-203-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
-203-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+203-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:13-21:29
 204                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-204-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
-204-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+204-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-77
+204-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-75
 205            </intent-filter>
 206        </service>
 207
