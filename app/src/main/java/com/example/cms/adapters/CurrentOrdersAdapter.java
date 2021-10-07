@@ -51,9 +51,14 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
         holder.getToken().setText(token.get(position));
         holder.getTime().setText(String.valueOf(time.get(position)));
         holder.getAmount().setText(String.valueOf(amount.get(position)));
+
         if(status.get(position).equals("1")){
-            holder.status_btn.setBackgroundColor(R.color.white);
+            holder.status_btn.setBackgroundResource(R.color.green);
             holder.status_btn.setText("R");
+        }
+        else{
+            holder.status_btn.setBackgroundResource(R.color.red);
+            holder.status_btn.setText("NR");
         }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,20 +75,21 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
             @Override
             public void onClick(View v) {
                 if(status.get(position).equals("0")){
-                    holder.status_btn.setBackgroundColor(R.color.white);
+                    holder.status_btn.setBackgroundResource(R.color.green);
                     holder.status_btn.setText("R");
                     FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).setValue("1");
                     status.set(position, "1");
                 }
                 else{
                     FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).removeValue();
-                    amount.remove(position);
-                    transactionId.remove(position);
-                    token.remove(position);
-                    time.remove(position);
-                    status.remove(position);
-                    notifyItemRemoved(position);
-                    notifyItemRangeChanged(position, transactionId.size());
+                    int pos = position;
+                    amount.remove(pos);
+                    transactionId.remove(pos);
+                    token.remove(pos);
+                    time.remove(pos);
+                    status.remove(pos);
+                    notifyItemRemoved(pos);
+                    notifyItemRangeChanged(pos, transactionId.size());
 //                    holder.itemView.setVisibility(View.GONE);
                 }
 
