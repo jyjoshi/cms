@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.cms.R;
+import com.example.cms.models.Bill;
 import com.example.cms.models.UserDB;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -45,7 +46,35 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
+//
         updateUI(currentUser);
+    }
+
+    private void initData() {
+        DatabaseReference root = FirebaseDatabase.getInstance().getReference("Bill");
+        int time = 100;
+        int price = 150;
+        int tId = 1001;
+        String phone = "8169052664";
+        int token = 501;
+        for(int i = 0; i < 10; i++){
+            String sTime = String.valueOf(time);
+            String sPrice = String.valueOf(price);
+            String sTId = String.valueOf(tId);
+
+            Bill bill = new Bill(sTime, sPrice, sTId, phone, token);
+            root.child(sTId).setValue(bill);
+
+            FirebaseDatabase.getInstance().getReference().child("Status").child(sTId).setValue(Integer.toString(0));
+
+            time++;
+            price++;
+            tId++;
+            token++;
+        }
+
+
+
     }
 
     private void updateUI(FirebaseUser currentUser) {
@@ -69,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                                         Log.w("TAG", "Fetching FCM registration token failed", task.getException());
                                         return;
                                     }
+                                    FirebaseMessaging.getInstance().setAutoInitEnabled(true);
 
                                     // Get new FCM registration token
                                     String token = task.getResult();

@@ -24,7 +24,7 @@ public class NotificationClass extends Application {
                     NotificationManager.IMPORTANCE_HIGH);
             notificationChannel.setDescription("DemoNotification");
 
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            NotificationManager notificationManager =(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             notificationManager.createNotificationChannel(notificationChannel);
 
             //now Run the App

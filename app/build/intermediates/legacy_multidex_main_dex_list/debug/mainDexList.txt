@@ -146,6 +146,7 @@ com/bumptech/glide/annotation/GlideType.class
 com/bumptech/glide/annotation/compiler/Index.class
 com/bumptech/glide/gifdecoder/GifDecoder$GifDecodeStatus.class
 com/bumptech/glide/util/Synthetic.class
+com/example/cms/activities/NotificationClass.class
 com/google/android/datatransport/runtime/dagger/Binds.class
 com/google/android/datatransport/runtime/dagger/BindsInstance.class
 com/google/android/datatransport/runtime/dagger/BindsOptionalOf.class

@@ -4,10 +4,10 @@ package com.example.cms.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import com.example.cms.R;
@@ -23,7 +23,7 @@ public final class CurrentOrderItemLayoutBinding implements ViewBinding {
   public final TextView amount;
 
   @NonNull
-  public final Button btnStatus;
+  public final AppCompatButton btnStatus;
 
   @NonNull
   public final TextView time;
@@ -32,7 +32,7 @@ public final class CurrentOrderItemLayoutBinding implements ViewBinding {
   public final TextView uid;
 
   private CurrentOrderItemLayoutBinding(@NonNull CardView rootView, @NonNull TextView amount,
-      @NonNull Button btnStatus, @NonNull TextView time, @NonNull TextView uid) {
+      @NonNull AppCompatButton btnStatus, @NonNull TextView time, @NonNull TextView uid) {
     this.rootView = rootView;
     this.amount = amount;
     this.btnStatus = btnStatus;
@@ -74,7 +74,7 @@ public final class CurrentOrderItemLayoutBinding implements ViewBinding {
       }
 
       id = R.id.btn_status;
-      Button btnStatus = rootView.findViewById(id);
+      AppCompatButton btnStatus = rootView.findViewById(id);
       if (btnStatus == null) {
         break missingId;
       }

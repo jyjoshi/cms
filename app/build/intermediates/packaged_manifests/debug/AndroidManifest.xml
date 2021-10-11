@@ -21,7 +21,7 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="androidx.multidex.MultiDexApplication"
+        android:name="com.example.cms.activities.NotificationClass"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -34,9 +34,12 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity android:name="com.example.cms.activities.AdminViewMenuActivity" />
 
-        <service android:name="com.example.cms.services.MyFirebaseMessagingService" >
+        <service
+            android:name="com.example.cms.services.MyFirebaseMessagingService"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_order.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_order.xml"
-    },
-    {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_home.xml",
         "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_order.xml",
+        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout\\activity_admin_order.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin_current_orders.xml",

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\775eb733fdfb5c5fadcc4eb1bf3474e0\jetified-viewbinding-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\480913dfb7b73ce9375e43aa9e1a997f\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a11a3334dafd1bedf09f4514f8bbb83\jetified-checkout-1.6.6\AndroidManifest.xml:2:1-32:12
@@ -88,22 +88,22 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Jay\.gradle\caches\
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\95845392fc02f66a0c202dabf7818a57\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\2951fc92df0b0491504555b9bee91436\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\5fa73615562d9d7e3f1e8b0405f83600\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
 	package
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-76:12
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:2:11-69
@@ -292,7 +292,7 @@ INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:6
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:6:5-54
 		INJECTED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:8:5-70:19
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:8:5-74:19
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a11a3334dafd1bedf09f4514f8bbb83\jetified-checkout-1.6.6\AndroidManifest.xml:11:5-30:19
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a11a3334dafd1bedf09f4514f8bbb83\jetified-checkout-1.6.6\AndroidManifest.xml:11:5-30:19
 MERGED from [com.google.firebase:firebase-database:19.5.1] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b8395e8963e08d8fdb4779e4642ca689\jetified-firebase-database-19.5.1\AndroidManifest.xml:28:5-36:19
@@ -376,147 +376,155 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Jay\.gradle\c
 	android:allowBackup
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:15:9-65
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:16:9-65
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:15:9-53
 activity#com.example.cms.activities.AdminViewMenuActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:16:9-79
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:9-79
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:16:19-67
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:19-67
 service#com.example.cms.services.MyFirebaseMessagingService
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:18:9-22:19
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:9-25:19
+	android:exported
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:18:18-69
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:13-21:29
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:19:18-69
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT+action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:21:13-24:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:20:25-75
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:22:25-75
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:23:25-77
 activity#com.example.cms.activities.AdminCurrentOrdersActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:24:9-26:39
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:28:9-30:39
 	android:exported
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:25:13-66
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:29:13-66
 activity#com.example.cms.activities.AdminOrderActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:27:9-31:50
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:31:9-35:50
 	android:label
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:30:13-63
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:34:13-63
 	android:exported
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:33:13-36
 	android:theme
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:31:13-47
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:35:13-47
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:28:13-58
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.example.cms.activities.EditFoodActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:32:9-65
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:36:9-65
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:32:19-62
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:36:19-62
 activity#com.example.cms.ui.EditFoodItemActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:33:9-61
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:37:9-61
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:33:19-58
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:37:19-58
 activity#com.example.cms.activities.PreviousOrderItemsActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:34:9-75
-	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:34:19-72
-activity#com.example.cms.activities.PasswordResetActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:35:9-70
-	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:35:19-67
-activity#com.example.cms.activities.EnterPhoneActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:36:9-67
-	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:36:19-64
-activity#com.example.cms.activities.AdminMenuEditOptionsActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:37:9-77
-	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:37:19-74
-activity#com.example.cms.activities.ExistingMenuEditorActivity
 ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:38:9-75
 	android:name
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:38:19-72
+activity#com.example.cms.activities.PasswordResetActivity
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:39:9-70
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:39:19-67
+activity#com.example.cms.activities.EnterPhoneActivity
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:40:9-67
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:40:19-64
+activity#com.example.cms.activities.AdminMenuEditOptionsActivity
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:41:9-77
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:41:19-74
+activity#com.example.cms.activities.ExistingMenuEditorActivity
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:42:9-75
+	android:name
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:42:19-72
 activity#com.example.cms.activities.VerifyPhoneActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:39:9-68
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:43:9-68
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:39:19-65
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:43:19-65
 activity#com.example.cms.activities.AdminViewOrderItemsActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:40:9-76
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:44:9-76
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:40:19-73
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:44:19-73
 activity#com.example.cms.activities.AdminViewOrderActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:41:9-71
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:45:9-71
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:41:19-68
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:45:19-68
 activity#com.example.cms.activities.CartActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:42:9-61
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:46:9-61
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:42:19-58
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:46:19-58
 activity#com.example.cms.activities.HomeActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:43:9-46:60
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:47:9-50:60
 	android:label
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:45:13-56
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:49:13-56
 	android:theme
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:46:13-57
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:50:13-57
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:44:13-52
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:48:13-52
 activity#com.example.cms.activities.AdminHomeActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:47:9-49:69
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:51:9-53:69
 	android:parentActivityName
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:49:13-66
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:53:13-66
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:48:13-57
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:52:13-57
 activity#com.example.cms.activities.MenuEditorActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:50:9-52:74
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:54:9-56:74
 	android:parentActivityName
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:52:13-71
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:56:13-71
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:51:13-58
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:55:13-58
 activity#com.example.cms.activities.TestActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:53:9-55:69
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:57:9-59:69
 	android:parentActivityName
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:55:13-66
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:59:13-66
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:54:13-52
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:58:13-52
 activity#com.example.cms.activities.SignUpActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:56:9-58:69
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:60:9-62:69
 	android:parentActivityName
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:58:13-66
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:62:13-66
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:57:13-54
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:61:13-54
 activity#com.example.cms.activities.MainActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:59:9-65:20
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:63:9-69:20
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:59:19-58
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:63:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:60:13-64:29
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:64:13-68:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:61:17-69
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:65:17-69
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:61:25-66
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:65:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:63:17-77
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:67:17-77
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:63:27-74
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:67:27-74
 meta-data#com.razorpay.ApiKey
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:67:9-69:55
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:71:9-73:55
 	android:value
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:69:13-52
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:73:13-52
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:68:13-47
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:72:13-47
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:71:5-72:37
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:75:5-76:37
 	android:maxSdkVersion
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:72:9-35
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:76:9-35
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:71:22-78
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:75:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:73:5-79
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:77:5-79
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:73:22-77
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:77:22-77
 uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:74:5-81
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:78:5-81
 	android:name
-		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:74:22-79
+		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:78:22-79
 uses-permission#android.permission.INTERNET
 ADDED from [com.razorpay:checkout:1.6.6] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\8a11a3334dafd1bedf09f4514f8bbb83\jetified-checkout-1.6.6\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-database:19.5.1] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\b8395e8963e08d8fdb4779e4642ca689\jetified-firebase-database-19.5.1\AndroidManifest.xml:26:5-67
@@ -737,6 +745,10 @@ ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\
 		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
 ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\Jay\.gradle\caches\transforms-2\files-2.1\d9361bd3532b3f8b7678d8be90bc8da9\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
 	android:value
