@@ -63,7 +63,7 @@
 34        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 34-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:16:9-65
 35        <activity android:name="com.example.cms.activities.AdminViewMenuActivity" />
-35-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:9-79
+35-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:9-70
 35-->C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:19-67
 36
 37        <service

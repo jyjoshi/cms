@@ -380,7 +380,7 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Jay\.gradle\c
 	android:name
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:15:9-53
 activity#com.example.cms.activities.AdminViewMenuActivity
-ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:9-79
+ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:9-70
 	android:name
 		ADDED from C:\Users\Jay\StudioProjects\cms\app\src\main\AndroidManifest.xml:17:19-67
 service#com.example.cms.services.MyFirebaseMessagingService

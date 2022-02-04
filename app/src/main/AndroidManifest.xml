@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:name=".activities.NotificationClass"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activities.AdminViewMenuActivity"></activity>
+        <activity android:name=".activities.AdminViewMenuActivity" />
 
         <service android:name=".services.MyFirebaseMessagingService"
             android:exported="false">

@@ -48,7 +48,7 @@ public class AdminCurrentOrdersActivity extends AppCompatActivity {
         Log.i("after initializing", String.valueOf((transactionId.size() )));
 
         linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setReverseLayout(false);
         linearLayoutManager.setStackFromEnd(true);
         recyclerView = findViewById(R.id.recyclerview_view_order);
         recyclerView.setLayoutManager(linearLayoutManager);
