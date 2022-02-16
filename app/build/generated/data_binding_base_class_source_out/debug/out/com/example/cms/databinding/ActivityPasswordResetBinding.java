@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -70,25 +71,25 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.confirm_reset_password;
-      EditText confirmResetPassword = rootView.findViewById(id);
+      EditText confirmResetPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmResetPassword == null) {
         break missingId;
       }
 
       id = R.id.enter_reset_password;
-      EditText enterResetPassword = rootView.findViewById(id);
+      EditText enterResetPassword = ViewBindings.findChildViewById(rootView, id);
       if (enterResetPassword == null) {
         break missingId;
       }
 
       id = R.id.reset_password_btn;
-      Button resetPasswordBtn = rootView.findViewById(id);
+      Button resetPasswordBtn = ViewBindings.findChildViewById(rootView, id);
       if (resetPasswordBtn == null) {
         break missingId;
       }
 
       id = R.id.textView6;
-      TextView textView6 = rootView.findViewById(id);
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
         break missingId;
       }

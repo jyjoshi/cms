@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -68,25 +69,25 @@ public final class ListItemLayoutAdminBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.img_icon;
-      ImageView imgIcon = rootView.findViewById(id);
+      ImageView imgIcon = ViewBindings.findChildViewById(rootView, id);
       if (imgIcon == null) {
         break missingId;
       }
 
       id = R.id.text_description;
-      TextView textDescription = rootView.findViewById(id);
+      TextView textDescription = ViewBindings.findChildViewById(rootView, id);
       if (textDescription == null) {
         break missingId;
       }
 
       id = R.id.text_price;
-      TextView textPrice = rootView.findViewById(id);
+      TextView textPrice = ViewBindings.findChildViewById(rootView, id);
       if (textPrice == null) {
         break missingId;
       }
 
       id = R.id.text_title;
-      TextView textTitle = rootView.findViewById(id);
+      TextView textTitle = ViewBindings.findChildViewById(rootView, id);
       if (textTitle == null) {
         break missingId;
       }

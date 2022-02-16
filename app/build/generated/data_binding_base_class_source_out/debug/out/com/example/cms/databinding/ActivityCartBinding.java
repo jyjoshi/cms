@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -93,55 +94,55 @@ public final class ActivityCartBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.address;
-      EditText address = rootView.findViewById(id);
+      EditText address = ViewBindings.findChildViewById(rootView, id);
       if (address == null) {
         break missingId;
       }
 
       id = R.id.header_food_name;
-      TextView headerFoodName = rootView.findViewById(id);
+      TextView headerFoodName = ViewBindings.findChildViewById(rootView, id);
       if (headerFoodName == null) {
         break missingId;
       }
 
       id = R.id.header_food_price;
-      TextView headerFoodPrice = rootView.findViewById(id);
+      TextView headerFoodPrice = ViewBindings.findChildViewById(rootView, id);
       if (headerFoodPrice == null) {
         break missingId;
       }
 
       id = R.id.header_food_qty;
-      TextView headerFoodQty = rootView.findViewById(id);
+      TextView headerFoodQty = ViewBindings.findChildViewById(rootView, id);
       if (headerFoodQty == null) {
         break missingId;
       }
 
       id = R.id.header_result;
-      TextView headerResult = rootView.findViewById(id);
+      TextView headerResult = ViewBindings.findChildViewById(rootView, id);
       if (headerResult == null) {
         break missingId;
       }
 
       id = R.id.place_order;
-      Button placeOrder = rootView.findViewById(id);
+      Button placeOrder = ViewBindings.findChildViewById(rootView, id);
       if (placeOrder == null) {
         break missingId;
       }
 
       id = R.id.recyclerview_view_order;
-      RecyclerView recyclerviewViewOrder = rootView.findViewById(id);
+      RecyclerView recyclerviewViewOrder = ViewBindings.findChildViewById(rootView, id);
       if (recyclerviewViewOrder == null) {
         break missingId;
       }
 
       id = R.id.text_for_address;
-      TextView textForAddress = rootView.findViewById(id);
+      TextView textForAddress = ViewBindings.findChildViewById(rootView, id);
       if (textForAddress == null) {
         break missingId;
       }
 
       id = R.id.total_cost;
-      TextView totalCost = rootView.findViewById(id);
+      TextView totalCost = ViewBindings.findChildViewById(rootView, id);
       if (totalCost == null) {
         break missingId;
       }

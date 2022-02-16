@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -76,7 +77,7 @@ public final class ActivityVerifyPhoneBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.enter_phone_for_verification;
-      EditText enterPhoneForVerification = rootView.findViewById(id);
+      EditText enterPhoneForVerification = ViewBindings.findChildViewById(rootView, id);
       if (enterPhoneForVerification == null) {
         break missingId;
       }
@@ -84,19 +85,19 @@ public final class ActivityVerifyPhoneBinding implements ViewBinding {
       ConstraintLayout enterPhoneNo = (ConstraintLayout) rootView;
 
       id = R.id.progressBar_verify_phone;
-      ProgressBar progressBarVerifyPhone = rootView.findViewById(id);
+      ProgressBar progressBarVerifyPhone = ViewBindings.findChildViewById(rootView, id);
       if (progressBarVerifyPhone == null) {
         break missingId;
       }
 
       id = R.id.textView;
-      TextView textView = rootView.findViewById(id);
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
         break missingId;
       }
 
       id = R.id.verify_phone_button;
-      Button verifyPhoneButton = rootView.findViewById(id);
+      Button verifyPhoneButton = ViewBindings.findChildViewById(rootView, id);
       if (verifyPhoneButton == null) {
         break missingId;
       }

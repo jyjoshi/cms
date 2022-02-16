@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\activity_verify_phone.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\activity_verify_phone.xml"
+        "merged": "C:\\Users\\niles\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\app_bar_main.xml",
+        "source": "C:\\Users\\niles\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\activity_enter_phone.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\activity_enter_phone.xml"
+        "merged": "C:\\Users\\niles\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\item_2_columns.xml",
+        "source": "C:\\Users\\niles\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\item_2_columns.xml"
     },
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\app_bar_main.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\app_bar_main.xml"
+        "merged": "C:\\Users\\niles\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\activity_enter_phone.xml",
+        "source": "C:\\Users\\niles\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\activity_enter_phone.xml"
     },
     {
-        "merged": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\item_2_columns.xml",
-        "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\item_2_columns.xml"
+        "merged": "C:\\Users\\niles\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-v21\\activity_verify_phone.xml",
+        "source": "C:\\Users\\niles\\StudioProjects\\cms\\app\\src\\main\\res\\layout-v21\\activity_verify_phone.xml"
     }
 ]

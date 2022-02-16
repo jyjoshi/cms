@@ -21,8 +21,8 @@ com/example/cms/databinding/CurrentOrderItemLayoutBinding.java
  com.example.cms.databinding.CurrentOrderItemLayoutBinding
 com/example/cms/databinding/ContentMainBinding.java
  com.example.cms.databinding.ContentMainBinding
-com/example/cms/activities/EnterPhoneActivity.java
- com.example.cms.activities.EnterPhoneActivity
+com/example/cms/services/MyFirebaseMessagingService.java
+ com.example.cms.services.MyFirebaseMessagingService
 com/example/cms/databinding/ActivityAdminViewMenuBinding.java
  com.example.cms.databinding.ActivityAdminViewMenuBinding
 com/example/cms/databinding/ActivityAdminCurrentOrdersBinding.java
@@ -51,8 +51,8 @@ com/example/cms/adapters/MenuAdapter.java
  com.example.cms.adapters.MenuAdapter$1
  com.example.cms.adapters.MenuAdapter$2
  com.example.cms.adapters.MenuAdapter$MenuViewHolder
-com/example/cms/services/MyFirebaseMessagingService.java
- com.example.cms.services.MyFirebaseMessagingService
+com/example/cms/activities/AdminOrderActivity.java
+ com.example.cms.activities.AdminOrderActivity
 com/example/cms/ui/profile/ProfileFragment.java
  com.example.cms.ui.profile.ProfileFragment
  com.example.cms.ui.profile.ProfileFragment$1
@@ -90,6 +90,8 @@ com/example/cms/activities/MainActivity.java
  com.example.cms.activities.MainActivity$1
  com.example.cms.activities.MainActivity$1$1
  com.example.cms.activities.MainActivity$2
+com/example/cms/models/Canteen.java
+ com.example.cms.models.Canteen
 com/example/cms/databinding/ActivityMenuEditorBinding.java
  com.example.cms.databinding.ActivityMenuEditorBinding
 com/example/cms/databinding/ActivityHomeBinding.java
@@ -152,8 +154,9 @@ com/example/cms/databinding/ActivityAdminMenuEditOptionsBinding.java
  com.example.cms.databinding.ActivityAdminMenuEditOptionsBinding
 com/example/cms/databinding/ActivityEnterPhoneBinding.java
  com.example.cms.databinding.ActivityEnterPhoneBinding
-com/example/cms/models/Canteen.java
- com.example.cms.models.Canteen
+com/example/cms/activities/AdminCurrentOrdersActivity.java
+ com.example.cms.activities.AdminCurrentOrdersActivity
+ com.example.cms.activities.AdminCurrentOrdersActivity$1
 com/example/cms/models/TempOrderItems.java
  com.example.cms.models.TempOrderItems
 com/example/cms/databinding/PopupLayoutBinding.java
@@ -188,8 +191,5 @@ com/example/cms/activities/MenuEditorActivity.java
  com.example.cms.activities.MenuEditorActivity
 com/example/cms/databinding/FragmentProfileBinding.java
  com.example.cms.databinding.FragmentProfileBinding
-com/example/cms/activities/AdminCurrentOrdersActivity.java
- com.example.cms.activities.AdminCurrentOrdersActivity
- com.example.cms.activities.AdminCurrentOrdersActivity$1
-com/example/cms/activities/AdminOrderActivity.java
- com.example.cms.activities.AdminOrderActivity
+com/example/cms/activities/EnterPhoneActivity.java
+ com.example.cms.activities.EnterPhoneActivity

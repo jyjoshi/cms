@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -88,49 +89,49 @@ public final class FragmentProfileBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btnSignOut;
-      Button btnSignOut = rootView.findViewById(id);
+      Button btnSignOut = ViewBindings.findChildViewById(rootView, id);
       if (btnSignOut == null) {
         break missingId;
       }
 
       id = R.id.editTextProfName;
-      EditText editTextProfName = rootView.findViewById(id);
+      EditText editTextProfName = ViewBindings.findChildViewById(rootView, id);
       if (editTextProfName == null) {
         break missingId;
       }
 
       id = R.id.editTextProfPhone;
-      EditText editTextProfPhone = rootView.findViewById(id);
+      EditText editTextProfPhone = ViewBindings.findChildViewById(rootView, id);
       if (editTextProfPhone == null) {
         break missingId;
       }
 
       id = R.id.editTextTextPostalAddress;
-      EditText editTextTextPostalAddress = rootView.findViewById(id);
+      EditText editTextTextPostalAddress = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPostalAddress == null) {
         break missingId;
       }
 
       id = R.id.prof_img_id;
-      ImageView profImgId = rootView.findViewById(id);
+      ImageView profImgId = ViewBindings.findChildViewById(rootView, id);
       if (profImgId == null) {
         break missingId;
       }
 
       id = R.id.text_profile_name;
-      TextView textProfileName = rootView.findViewById(id);
+      TextView textProfileName = ViewBindings.findChildViewById(rootView, id);
       if (textProfileName == null) {
         break missingId;
       }
 
       id = R.id.textView2;
-      TextView textView2 = rootView.findViewById(id);
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
         break missingId;
       }
 
       id = R.id.textView3;
-      TextView textView3 = rootView.findViewById(id);
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
         break missingId;
       }

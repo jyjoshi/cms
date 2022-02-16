@@ -77,11 +77,11 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
                 if(status.get(position).equals("0")){
                     holder.status_btn.setBackgroundResource(R.color.green);
                     holder.status_btn.setText("R");
-                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).setValue("1");
+                    FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("Status").child(transactionId.get(position)).setValue("1");
                     status.set(position, "1");
                 }
                 else{
-                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).removeValue();
+                    FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("Status").child(transactionId.get(position)).removeValue();
                     int pos = position;
                     amount.remove(pos);
                     transactionId.remove(pos);
@@ -100,7 +100,7 @@ public class CurrentOrdersAdapter extends RecyclerView.Adapter<CurrentOrdersAdap
 //            @Override
 //            public boolean onLongClick(View v) {
 //                if(status.get(position).equals("1")){
-//                    FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId.get(position)).removeValue();
+//                    FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("Status").child(transactionId.get(position)).removeValue();
 //                    amount.remove(position);
 //                    transactionId.remove(position);
 //                    token.remove(position);

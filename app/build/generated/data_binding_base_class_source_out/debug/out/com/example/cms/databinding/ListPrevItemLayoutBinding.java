@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -60,13 +61,13 @@ public final class ListPrevItemLayoutBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.prev_img_icon;
-      ImageView prevImgIcon = rootView.findViewById(id);
+      ImageView prevImgIcon = ViewBindings.findChildViewById(rootView, id);
       if (prevImgIcon == null) {
         break missingId;
       }
 
       id = R.id.text_prev_order;
-      TextView textPrevOrder = rootView.findViewById(id);
+      TextView textPrevOrder = ViewBindings.findChildViewById(rootView, id);
       if (textPrevOrder == null) {
         break missingId;
       }

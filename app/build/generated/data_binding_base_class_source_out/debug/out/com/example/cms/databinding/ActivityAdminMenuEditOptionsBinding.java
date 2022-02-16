@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -59,13 +60,13 @@ public final class ActivityAdminMenuEditOptionsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.existing_editor_btn;
-      Button existingEditorBtn = rootView.findViewById(id);
+      Button existingEditorBtn = ViewBindings.findChildViewById(rootView, id);
       if (existingEditorBtn == null) {
         break missingId;
       }
 
       id = R.id.menu_editor_btn;
-      Button menuEditorBtn = rootView.findViewById(id);
+      Button menuEditorBtn = ViewBindings.findChildViewById(rootView, id);
       if (menuEditorBtn == null) {
         break missingId;
       }

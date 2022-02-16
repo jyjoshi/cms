@@ -32,7 +32,7 @@ public class OrderFragment extends Fragment {
     private ArrayList<MenuItem> menuItems = new ArrayList<>();
     private ArrayList<Integer> quantity = new ArrayList<>();
 
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/");
     private DatabaseReference dbref = database.getReference("Menu");
 
     private String phoneNumber;

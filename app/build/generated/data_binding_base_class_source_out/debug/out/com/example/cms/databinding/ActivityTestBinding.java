@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -64,19 +65,19 @@ public final class ActivityTestBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.imageView3;
-      ImageView imageView3 = rootView.findViewById(id);
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
         break missingId;
       }
 
       id = R.id.order_placed_text;
-      TextView orderPlacedText = rootView.findViewById(id);
+      TextView orderPlacedText = ViewBindings.findChildViewById(rootView, id);
       if (orderPlacedText == null) {
         break missingId;
       }
 
       id = R.id.textView4;
-      TextView textView4 = rootView.findViewById(id);
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
       if (textView4 == null) {
         break missingId;
       }

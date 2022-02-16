@@ -92,7 +92,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/");
     DatabaseReference dbRef = database.getReference("Users");
 
 

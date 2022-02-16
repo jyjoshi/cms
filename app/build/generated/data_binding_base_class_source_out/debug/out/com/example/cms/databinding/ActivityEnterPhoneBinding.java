@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -65,19 +66,19 @@ public final class ActivityEnterPhoneBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button3;
-      Button button3 = rootView.findViewById(id);
+      Button button3 = ViewBindings.findChildViewById(rootView, id);
       if (button3 == null) {
         break missingId;
       }
 
       id = R.id.phone_no_for_password_reset;
-      EditText phoneNoForPasswordReset = rootView.findViewById(id);
+      EditText phoneNoForPasswordReset = ViewBindings.findChildViewById(rootView, id);
       if (phoneNoForPasswordReset == null) {
         break missingId;
       }
 
       id = R.id.textView5;
-      TextView textView5 = rootView.findViewById(id);
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
       if (textView5 == null) {
         break missingId;
       }

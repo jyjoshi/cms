@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -59,13 +60,13 @@ public final class ActivityAdminOrderBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.toAllOrder;
-      Button toAllOrder = rootView.findViewById(id);
+      Button toAllOrder = ViewBindings.findChildViewById(rootView, id);
       if (toAllOrder == null) {
         break missingId;
       }
 
       id = R.id.toCurrentOrder;
-      Button toCurrentOrder = rootView.findViewById(id);
+      Button toCurrentOrder = ViewBindings.findChildViewById(rootView, id);
       if (toCurrentOrder == null) {
         break missingId;
       }

@@ -122,7 +122,15 @@ public class Canteen {
         this.isOpen = false;
     }
 
-
-
-
+    public Canteen(String uid, String phone, String email, String password, String name) {
+        this.uid = uid;
+        this.phone = phone;
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.bankAccountNumber = null;
+        this.bankIFSCCode = null;
+        this.bankMMID = null;
+        this.upiId = null;
+    }
 }

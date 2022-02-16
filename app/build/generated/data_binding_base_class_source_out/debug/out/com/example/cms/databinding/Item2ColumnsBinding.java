@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -59,13 +60,13 @@ public final class Item2ColumnsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.cart_food_name;
-      TextView cartFoodName = rootView.findViewById(id);
+      TextView cartFoodName = ViewBindings.findChildViewById(rootView, id);
       if (cartFoodName == null) {
         break missingId;
       }
 
       id = R.id.cart_food_qty;
-      TextView cartFoodQty = rootView.findViewById(id);
+      TextView cartFoodQty = ViewBindings.findChildViewById(rootView, id);
       if (cartFoodQty == null) {
         break missingId;
       }

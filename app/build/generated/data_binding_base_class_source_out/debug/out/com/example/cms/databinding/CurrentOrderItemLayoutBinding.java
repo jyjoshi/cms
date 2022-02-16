@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -68,25 +69,25 @@ public final class CurrentOrderItemLayoutBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.amount;
-      TextView amount = rootView.findViewById(id);
+      TextView amount = ViewBindings.findChildViewById(rootView, id);
       if (amount == null) {
         break missingId;
       }
 
       id = R.id.btn_status;
-      AppCompatButton btnStatus = rootView.findViewById(id);
+      AppCompatButton btnStatus = ViewBindings.findChildViewById(rootView, id);
       if (btnStatus == null) {
         break missingId;
       }
 
       id = R.id.time;
-      TextView time = rootView.findViewById(id);
+      TextView time = ViewBindings.findChildViewById(rootView, id);
       if (time == null) {
         break missingId;
       }
 
       id = R.id.uid;
-      TextView uid = rootView.findViewById(id);
+      TextView uid = ViewBindings.findChildViewById(rootView, id);
       if (uid == null) {
         break missingId;
       }

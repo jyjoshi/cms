@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -55,7 +56,7 @@ public final class ActivityExistingMenuEditorBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.existing_menu_editor_recyclerview;
-      RecyclerView existingMenuEditorRecyclerview = rootView.findViewById(id);
+      RecyclerView existingMenuEditorRecyclerview = ViewBindings.findChildViewById(rootView, id);
       if (existingMenuEditorRecyclerview == null) {
         break missingId;
       }

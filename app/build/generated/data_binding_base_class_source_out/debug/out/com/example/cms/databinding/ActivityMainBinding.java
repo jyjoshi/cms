@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -74,31 +75,31 @@ public final class ActivityMainBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.button;
-      Button button = rootView.findViewById(id);
+      Button button = ViewBindings.findChildViewById(rootView, id);
       if (button == null) {
         break missingId;
       }
 
       id = R.id.button2;
-      Button button2 = rootView.findViewById(id);
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
       if (button2 == null) {
         break missingId;
       }
 
       id = R.id.forgot_password_text;
-      TextView forgotPasswordText = rootView.findViewById(id);
+      TextView forgotPasswordText = ViewBindings.findChildViewById(rootView, id);
       if (forgotPasswordText == null) {
         break missingId;
       }
 
       id = R.id.password;
-      EditText password = rootView.findViewById(id);
+      EditText password = ViewBindings.findChildViewById(rootView, id);
       if (password == null) {
         break missingId;
       }
 
       id = R.id.username;
-      EditText username = rootView.findViewById(id);
+      EditText username = ViewBindings.findChildViewById(rootView, id);
       if (username == null) {
         break missingId;
       }

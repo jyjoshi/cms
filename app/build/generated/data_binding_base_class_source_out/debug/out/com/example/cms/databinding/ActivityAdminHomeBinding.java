@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -67,25 +68,25 @@ public final class ActivityAdminHomeBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.toMenu;
-      Button toMenu = rootView.findViewById(id);
+      Button toMenu = ViewBindings.findChildViewById(rootView, id);
       if (toMenu == null) {
         break missingId;
       }
 
       id = R.id.toMenuEditor;
-      Button toMenuEditor = rootView.findViewById(id);
+      Button toMenuEditor = ViewBindings.findChildViewById(rootView, id);
       if (toMenuEditor == null) {
         break missingId;
       }
 
       id = R.id.toOrderList;
-      Button toOrderList = rootView.findViewById(id);
+      Button toOrderList = ViewBindings.findChildViewById(rootView, id);
       if (toOrderList == null) {
         break missingId;
       }
 
       id = R.id.toTeacherSignUp;
-      Button toTeacherSignUp = rootView.findViewById(id);
+      Button toTeacherSignUp = ViewBindings.findChildViewById(rootView, id);
       if (toTeacherSignUp == null) {
         break missingId;
       }

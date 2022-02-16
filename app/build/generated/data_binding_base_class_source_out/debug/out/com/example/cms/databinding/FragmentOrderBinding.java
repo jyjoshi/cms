@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -54,7 +55,7 @@ public final class FragmentOrderBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.menuList;
-      RecyclerView menuList = rootView.findViewById(id);
+      RecyclerView menuList = ViewBindings.findChildViewById(rootView, id);
       if (menuList == null) {
         break missingId;
       }

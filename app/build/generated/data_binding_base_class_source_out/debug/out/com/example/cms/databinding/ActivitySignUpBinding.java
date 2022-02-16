@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -97,61 +98,61 @@ public final class ActivitySignUpBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.editTextPhone;
-      EditText editTextPhone = rootView.findViewById(id);
+      EditText editTextPhone = ViewBindings.findChildViewById(rootView, id);
       if (editTextPhone == null) {
         break missingId;
       }
 
       id = R.id.editTextTextPassword;
-      EditText editTextTextPassword = rootView.findViewById(id);
+      EditText editTextTextPassword = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPassword == null) {
         break missingId;
       }
 
       id = R.id.editTextTextPassword2;
-      EditText editTextTextPassword2 = rootView.findViewById(id);
+      EditText editTextTextPassword2 = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPassword2 == null) {
         break missingId;
       }
 
       id = R.id.editTextTextPersonLastName2;
-      EditText editTextTextPersonLastName2 = rootView.findViewById(id);
+      EditText editTextTextPersonLastName2 = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPersonLastName2 == null) {
         break missingId;
       }
 
       id = R.id.editTextTextPersonName;
-      EditText editTextTextPersonName = rootView.findViewById(id);
+      EditText editTextTextPersonName = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPersonName == null) {
         break missingId;
       }
 
       id = R.id.textViewFirstName;
-      TextView textViewFirstName = rootView.findViewById(id);
+      TextView textViewFirstName = ViewBindings.findChildViewById(rootView, id);
       if (textViewFirstName == null) {
         break missingId;
       }
 
       id = R.id.textViewLastName;
-      TextView textViewLastName = rootView.findViewById(id);
+      TextView textViewLastName = ViewBindings.findChildViewById(rootView, id);
       if (textViewLastName == null) {
         break missingId;
       }
 
       id = R.id.textViewPassword;
-      TextView textViewPassword = rootView.findViewById(id);
+      TextView textViewPassword = ViewBindings.findChildViewById(rootView, id);
       if (textViewPassword == null) {
         break missingId;
       }
 
       id = R.id.textViewPhoneNo;
-      TextView textViewPhoneNo = rootView.findViewById(id);
+      TextView textViewPhoneNo = ViewBindings.findChildViewById(rootView, id);
       if (textViewPhoneNo == null) {
         break missingId;
       }
 
       id = R.id.uploadFood;
-      Button uploadFood = rootView.findViewById(id);
+      Button uploadFood = ViewBindings.findChildViewById(rootView, id);
       if (uploadFood == null) {
         break missingId;
       }

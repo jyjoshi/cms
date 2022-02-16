@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -55,7 +56,7 @@ public final class ActivityAdminViewMenuBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.adminMenuList;
-      RecyclerView adminMenuList = rootView.findViewById(id);
+      RecyclerView adminMenuList = ViewBindings.findChildViewById(rootView, id);
       if (adminMenuList == null) {
         break missingId;
       }

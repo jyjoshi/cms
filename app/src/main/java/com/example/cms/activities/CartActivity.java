@@ -97,7 +97,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
 
         // Name, Quantity and Price are being retrieved properly
-        root = FirebaseDatabase.getInstance().getReference();
+        root = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference();
 
 
         root.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -129,7 +129,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                                 cartAdapter = new CartAdapter(foodName, quantity, price, result);
                                 recyclerView.setAdapter(cartAdapter);
 
-                            /*DatabaseReference totemp2 = FirebaseDatabase.getInstance().getReference().child("temp2");
+                            /*DatabaseReference totemp2 = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("temp2");
                             for(int i=0; i<foodName.size(); i++){
                                 totemp2.child(String.valueOf(i+1)).setValue(new MenuItem(foodName.get(i), String.valueOf(price.get(i)), String.valueOf(quantity.get(i)), String.valueOf(result.get(i))));
                             }*/
@@ -215,15 +215,15 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
         //Generating transaction id
         transactionId = root.push().getKey();
-        root = FirebaseDatabase.getInstance().getReference().child("Bill");
+        root = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("Bill");
 
 
         //Create the orderItems in database
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference ref = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference();
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                DatabaseReference toOrderedItems = FirebaseDatabase.getInstance().getReference().child("OrderedItems");
+                DatabaseReference toOrderedItems = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("OrderedItems");
                 for (DataSnapshot snapshot1 : snapshot.child("temp").child(phoneNumber).getChildren()) {
                     Log.i("TAG", "INSIDE TEMPORDERITEMS");
                     String name = snapshot1.getKey();
@@ -251,7 +251,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
             }
         });
 
-        FirebaseDatabase.getInstance().getReference().addListenerForSingleValueEvent(new ValueEventListener() {
+        FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 token = snapshot.child("Token").getValue(Integer.class) + 1;
@@ -277,7 +277,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                     Bill bill = new Bill(time, String.valueOf(totalCost), transactionId, phoneNumber, token);
                     root.child(transactionId).setValue(bill);
                 }
-                FirebaseDatabase.getInstance().getReference().child("Status").child(transactionId).setValue(Integer.toString(0)); // Set the status regardless of who ordered to 0
+                FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference().child("Status").child(transactionId).setValue(Integer.toString(0)); // Set the status regardless of who ordered to 0
             }
 
             @Override

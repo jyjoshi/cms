@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -59,13 +60,13 @@ public final class PopupLayoutBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.nobtn;
-      Button nobtn = rootView.findViewById(id);
+      Button nobtn = ViewBindings.findChildViewById(rootView, id);
       if (nobtn == null) {
         break missingId;
       }
 
       id = R.id.yesbtn;
-      Button yesbtn = rootView.findViewById(id);
+      Button yesbtn = ViewBindings.findChildViewById(rootView, id);
       if (yesbtn == null) {
         break missingId;
       }

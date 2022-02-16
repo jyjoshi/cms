@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -74,31 +75,31 @@ public final class ActivityAdminViewOrderItemsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.admin_view_order_header_food_name;
-      TextView adminViewOrderHeaderFoodName = rootView.findViewById(id);
+      TextView adminViewOrderHeaderFoodName = ViewBindings.findChildViewById(rootView, id);
       if (adminViewOrderHeaderFoodName == null) {
         break missingId;
       }
 
       id = R.id.admin_view_order_header_price;
-      TextView adminViewOrderHeaderPrice = rootView.findViewById(id);
+      TextView adminViewOrderHeaderPrice = ViewBindings.findChildViewById(rootView, id);
       if (adminViewOrderHeaderPrice == null) {
         break missingId;
       }
 
       id = R.id.admin_view_order_header_qty;
-      TextView adminViewOrderHeaderQty = rootView.findViewById(id);
+      TextView adminViewOrderHeaderQty = ViewBindings.findChildViewById(rootView, id);
       if (adminViewOrderHeaderQty == null) {
         break missingId;
       }
 
       id = R.id.admin_view_order_header_result;
-      TextView adminViewOrderHeaderResult = rootView.findViewById(id);
+      TextView adminViewOrderHeaderResult = ViewBindings.findChildViewById(rootView, id);
       if (adminViewOrderHeaderResult == null) {
         break missingId;
       }
 
       id = R.id.recyclerview_view_order;
-      RecyclerView recyclerviewViewOrder = rootView.findViewById(id);
+      RecyclerView recyclerviewViewOrder = ViewBindings.findChildViewById(rootView, id);
       if (recyclerviewViewOrder == null) {
         break missingId;
       }

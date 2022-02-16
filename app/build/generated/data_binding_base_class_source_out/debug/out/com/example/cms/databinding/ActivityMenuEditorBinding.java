@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -98,61 +99,61 @@ public final class ActivityMenuEditorBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.addImage;
-      Button addImage = rootView.findViewById(id);
+      Button addImage = ViewBindings.findChildViewById(rootView, id);
       if (addImage == null) {
         break missingId;
       }
 
       id = R.id.editFoodDescription;
-      EditText editFoodDescription = rootView.findViewById(id);
+      EditText editFoodDescription = ViewBindings.findChildViewById(rootView, id);
       if (editFoodDescription == null) {
         break missingId;
       }
 
       id = R.id.editFoodName;
-      EditText editFoodName = rootView.findViewById(id);
+      EditText editFoodName = ViewBindings.findChildViewById(rootView, id);
       if (editFoodName == null) {
         break missingId;
       }
 
       id = R.id.editPrice;
-      EditText editPrice = rootView.findViewById(id);
+      EditText editPrice = ViewBindings.findChildViewById(rootView, id);
       if (editPrice == null) {
         break missingId;
       }
 
       id = R.id.imageView2;
-      ImageView imageView2 = rootView.findViewById(id);
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
       if (imageView2 == null) {
         break missingId;
       }
 
       id = R.id.progressBar;
-      ProgressBar progressBar = rootView.findViewById(id);
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
         break missingId;
       }
 
       id = R.id.textPrice;
-      TextView textPrice = rootView.findViewById(id);
+      TextView textPrice = ViewBindings.findChildViewById(rootView, id);
       if (textPrice == null) {
         break missingId;
       }
 
       id = R.id.textViewFoodDescription;
-      TextView textViewFoodDescription = rootView.findViewById(id);
+      TextView textViewFoodDescription = ViewBindings.findChildViewById(rootView, id);
       if (textViewFoodDescription == null) {
         break missingId;
       }
 
       id = R.id.textViewFoodName;
-      TextView textViewFoodName = rootView.findViewById(id);
+      TextView textViewFoodName = ViewBindings.findChildViewById(rootView, id);
       if (textViewFoodName == null) {
         break missingId;
       }
 
       id = R.id.uploadFood;
-      Button uploadFood = rootView.findViewById(id);
+      Button uploadFood = ViewBindings.findChildViewById(rootView, id);
       if (uploadFood == null) {
         break missingId;
       }

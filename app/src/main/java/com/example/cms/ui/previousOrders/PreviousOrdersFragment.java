@@ -51,7 +51,7 @@ public class PreviousOrdersFragment extends Fragment {
         amount = new ArrayList<>();
         token = new ArrayList<>();
 
-        dbref = FirebaseDatabase.getInstance().getReference("Bill");
+        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference("Bill");
 
         linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setReverseLayout(true);
