@@ -44,6 +44,7 @@ public class PreviousOrdersFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_previous_orders, container, false);
 
         phoneNumber = ((HomeActivity) getActivity()).getPhoneNumber();
+        Log.i("PhoneNumber:", phoneNumber);
 
         transactionId = new ArrayList<>();
         phone = new ArrayList<>();
@@ -51,7 +52,7 @@ public class PreviousOrdersFragment extends Fragment {
         amount = new ArrayList<>();
         token = new ArrayList<>();
 
-        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference("Bill");
+        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app//").getReference("Bill");
 
         linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setReverseLayout(true);
@@ -64,6 +65,7 @@ public class PreviousOrdersFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Bill temp = dataSnapshot.getValue(Bill.class);
+                    Log.i("DB PHONE :", temp.getPhone());
                     if(temp.getPhone().equals(phoneNumber)) {
                         transactionId.add(temp.getTransactionId().toString());
                         phone.add(temp.getPhone());

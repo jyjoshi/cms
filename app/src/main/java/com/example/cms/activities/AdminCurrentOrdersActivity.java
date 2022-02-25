@@ -42,7 +42,7 @@ public class AdminCurrentOrdersActivity extends AppCompatActivity {
         amount = new ArrayList<>();
         status = new ArrayList<>();
 
-        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference();
+        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
 
         //initDataset();
         Log.i("after initializing", String.valueOf((transactionId.size() )));

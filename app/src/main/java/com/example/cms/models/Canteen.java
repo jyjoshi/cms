@@ -133,4 +133,17 @@ public class Canteen {
         this.bankMMID = null;
         this.upiId = null;
     }
+
+    public Canteen(String uid, String phone, String password, String name) {
+        this.uid = uid;
+        this.phone = phone;
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.bankAccountNumber = null;
+        this.bankIFSCCode = null;
+        this.bankMMID = null;
+        this.upiId = null;
+        this.email = null;
+    }
 }

@@ -37,12 +37,12 @@ public class TestActivity extends AppCompatActivity{
         }
 
         //Deleting the temporary node created. 
-        DatabaseReference deleter = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference();
+        DatabaseReference deleter = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
         deleter.child("temp").removeValue();
         /*deleter.child("tempOrderItems").removeValue();*/
 
         /*//After data has been passed to Order Items we can safely delete this node.
-        DatabaseReference deleter = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/").getReference();
+        DatabaseReference deleter = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
         deleter.child("tempOrderItems").removeValue();*/
 
 

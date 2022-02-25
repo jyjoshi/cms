@@ -32,7 +32,7 @@ public class OrderFragment extends Fragment {
     private ArrayList<MenuItem> menuItems = new ArrayList<>();
     private ArrayList<Integer> quantity = new ArrayList<>();
 
-    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://canteen-management-systems-19bce.asia-southeast1.firebasedatabase.app/");
+    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app//");
     private DatabaseReference dbref = database.getReference("Menu");
 
     private String phoneNumber;
@@ -63,6 +63,11 @@ public class OrderFragment extends Fragment {
         menuList.setLayoutManager(new LinearLayoutManager(getActivity()));
         MenuAdapter adapter = new MenuAdapter(menuItems, quantity, phoneNumber);
         menuList.setAdapter(adapter);
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return root;
 
