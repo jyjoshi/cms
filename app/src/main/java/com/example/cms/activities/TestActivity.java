@@ -24,6 +24,8 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class TestActivity extends AppCompatActivity{
+
+    private String phoneNumber;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +38,15 @@ public class TestActivity extends AppCompatActivity{
             e.printStackTrace();
         }
 
+        Intent intentIn = getIntent();
+        Bundle b = intentIn.getExtras();
+        if (b != null) {
+            phoneNumber = (String) b.get("phoneNumber");
+        }
+
         //Deleting the temporary node created. 
         DatabaseReference deleter = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
-        deleter.child("temp").removeValue();
+        deleter.child("temp").child(phoneNumber).removeValue();
         /*deleter.child("tempOrderItems").removeValue();*/
 
         /*//After data has been passed to Order Items we can safely delete this node.
