@@ -48,6 +48,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
     ArrayList<Integer> quantity;
     ArrayList<Integer> price;
     ArrayList<Integer> result;
+    ArrayList<OrderedItem> orderedItems;
     String transactionId;
     String time;
     TextView costDisplay;
@@ -219,6 +220,9 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
 
         //Create the orderItems in database
+        orderedItems = new ArrayList<>();
+        HashMap<String, OrderedItem> orderedItemHashMap = new HashMap<>();
+
         DatabaseReference ref = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -235,14 +239,17 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
                             Log.i("TAG", "ITEM FOUND IN MENU");
                             String price = tempItem.getPrice();
                             String result = String.valueOf(Integer.parseInt(price) * qty);
-                            OrderedItem ob = new OrderedItem(transactionId, name, String.valueOf(qty), price, result);
-                            String key = toOrderedItems.push().getKey();
-                            toOrderedItems.child(key).setValue(ob);
+//                            OrderedItem ob = new OrderedItem(transactionId, name, String.valueOf(qty), price, result);
+//                            orderedItems.add(new OrderedItem(transactionId, name, String.valueOf(qty), price, result, tempItem.getUid()));
+                            orderedItemHashMap.put(tempItem.getUid(), new OrderedItem(name, String.valueOf(qty), price, result));
+//                            String key = toOrderedItems.push().getKey();
+//                            toOrderedItems.child(key).setValue(ob);
                             break;
                         }
                     }
 
                 }
+                toOrderedItems.child(transactionId).setValue(orderedItemHashMap);
             }
 
             @Override
