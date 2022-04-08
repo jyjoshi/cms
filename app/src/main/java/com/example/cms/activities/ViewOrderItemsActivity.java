@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class AdminViewOrderItemsActivity extends AppCompatActivity {
+public class ViewOrderItemsActivity extends AppCompatActivity {
 
     private String transactionId;
     private ArrayList<OrderedItem> orderedItems;

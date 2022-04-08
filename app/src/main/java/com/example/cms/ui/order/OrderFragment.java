@@ -2,6 +2,7 @@ package com.example.cms.ui.order;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,19 +76,24 @@ public class OrderFragment extends Fragment {
 
     public void initDataset()
     {
-        dbref.addValueEventListener(new ValueEventListener() {
+        new Handler().post(new Runnable() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    menuItems.add(dataSnapshot.getValue(MenuItem.class));
-                    quantity.add(0);
-                }
+            public void run() {
+                dbref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                            menuItems.add(dataSnapshot.getValue(MenuItem.class));
+                            quantity.add(0);
+                        }
 
-            }
+                    }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
+                    }
+                });
             }
         });
     }

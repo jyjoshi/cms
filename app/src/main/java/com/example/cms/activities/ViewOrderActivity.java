@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class AdminViewOrderActivity extends AppCompatActivity {
+public class ViewOrderActivity extends AppCompatActivity {
     DatabaseReference dbref;
     private ArrayList<String> transactionId;
     private ArrayList<String> phone;
@@ -65,7 +65,7 @@ public class AdminViewOrderActivity extends AppCompatActivity {
                     time.add(temp.getTime());
                     token.add(temp.getToken().toString());
                     Log.i("Check", "transaction"+transactionId);
-                    viewOrderAdapter = new ViewOrderAdapter(AdminViewOrderActivity.this, transactionId, phone, time, amount, token);
+                    viewOrderAdapter = new ViewOrderAdapter(ViewOrderActivity.this, transactionId, phone, time, amount, token);
                     recyclerView.setAdapter(viewOrderAdapter);
                 }
 

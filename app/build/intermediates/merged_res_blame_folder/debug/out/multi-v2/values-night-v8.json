@@ -4,26 +4,7 @@
             "outputFile": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "852"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "732",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "1468"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\cb8f88741a7d0d56b96f3d64afee13af\\transformed\\material-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\a3e8948cf3b285e1c3a752e227add13f\\transformed\\material-1.2.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\cabc625a33e288201aac77ca2f06231b\\transformed\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\9cc7b7ea224b93ee0dd98c42c29e4554\\transformed\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -54,6 +35,25 @@
                         "startOffsets": "100,170,254,338,434,536,638,3335",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "165,249,333,429,531,633,727,3419"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "852"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "732",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1468"
                     }
                 }
             ]

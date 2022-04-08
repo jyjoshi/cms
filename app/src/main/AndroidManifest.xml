@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:name=".activities.NotificationClass"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activities.AdminViewMenuActivity" />
 
         <service android:name=".services.MyFirebaseMessagingService"
             android:exported="false">
@@ -25,32 +24,20 @@
         </service>
 
 
-        <activity
-            android:name=".activities.AdminCurrentOrdersActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activities.AdminOrderActivity"
-            android:exported="true"
-            android:label="@string/title_activity_admin_order"
-            android:theme="@style/NoActionBar" />
         <activity android:name=".activities.EditFoodActivity" />
         <activity android:name=".ui.EditFoodItemActivity" />
         <activity android:name=".activities.PreviousOrderItemsActivity" />
         <activity android:name=".activities.PasswordResetActivity" />
         <activity android:name=".activities.EnterPhoneActivity" />
-        <activity android:name=".activities.AdminMenuEditOptionsActivity" />
         <activity android:name=".activities.ExistingMenuEditorActivity" />
         <activity android:name=".activities.VerifyPhoneActivity" />
-        <activity android:name=".activities.AdminViewOrderItemsActivity" />
-        <activity android:name=".activities.AdminViewOrderActivity" />
+        <activity android:name=".activities.ViewOrderItemsActivity" />
+        <activity android:name=".activities.ViewOrderActivity" />
         <activity android:name=".activities.CartActivity" />
         <activity
             android:name=".activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.CMS.NoActionBar" />
-        <activity
-            android:name=".activities.AdminHomeActivity"
-            android:parentActivityName=".activities.MainActivity" />
         <activity
             android:name=".activities.MenuEditorActivity"
             android:parentActivityName=".activities.AdminHomeActivity" />

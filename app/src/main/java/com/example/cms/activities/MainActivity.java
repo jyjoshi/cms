@@ -164,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
         String phoneNo = phone.getText().toString();
         if (check == 1) {
             if (phoneNo.equals("admin") && (password.getText().toString().equals("admin"))){
-                startActivity(new Intent(view.getContext(), AdminHomeActivity.class));
             }
             else{
                 dbRef.child("Users").addValueEventListener(new ValueEventListener() {

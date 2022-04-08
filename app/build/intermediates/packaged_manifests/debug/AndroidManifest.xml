@@ -32,8 +32,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        <activity android:name="com.example.cms.activities.AdminViewMenuActivity" />
-
         <service
             android:name="com.example.cms.services.MyFirebaseMessagingService"
             android:exported="false" >
@@ -43,32 +41,20 @@
             </intent-filter>
         </service>
 
-        <activity
-            android:name="com.example.cms.activities.AdminCurrentOrdersActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.cms.activities.AdminOrderActivity"
-            android:exported="true"
-            android:label="@string/title_activity_admin_order"
-            android:theme="@style/NoActionBar" />
         <activity android:name="com.example.cms.activities.EditFoodActivity" />
         <activity android:name="com.example.cms.ui.EditFoodItemActivity" />
         <activity android:name="com.example.cms.activities.PreviousOrderItemsActivity" />
         <activity android:name="com.example.cms.activities.PasswordResetActivity" />
         <activity android:name="com.example.cms.activities.EnterPhoneActivity" />
-        <activity android:name="com.example.cms.activities.AdminMenuEditOptionsActivity" />
         <activity android:name="com.example.cms.activities.ExistingMenuEditorActivity" />
         <activity android:name="com.example.cms.activities.VerifyPhoneActivity" />
-        <activity android:name="com.example.cms.activities.AdminViewOrderItemsActivity" />
-        <activity android:name="com.example.cms.activities.AdminViewOrderActivity" />
+        <activity android:name="com.example.cms.activities.ViewOrderItemsActivity" />
+        <activity android:name="com.example.cms.activities.ViewOrderActivity" />
         <activity android:name="com.example.cms.activities.CartActivity" />
         <activity
             android:name="com.example.cms.activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.CMS.NoActionBar" />
-        <activity
-            android:name="com.example.cms.activities.AdminHomeActivity"
-            android:parentActivityName="com.example.cms.activities.MainActivity" />
         <activity
             android:name="com.example.cms.activities.MenuEditorActivity"
             android:parentActivityName="com.example.cms.activities.AdminHomeActivity" />

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cms.activities.AdminViewOrderItemsActivity;
+import com.example.cms.activities.ViewOrderItemsActivity;
 import com.example.cms.R;
 
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class ViewOrderAdapter extends RecyclerView.Adapter<ViewOrderAdapter.MyVi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, AdminViewOrderItemsActivity.class);
+                Intent i = new Intent(context, ViewOrderItemsActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 i.putExtra("transactionId", transactionId.get(position));
                 context.startActivity(i);
