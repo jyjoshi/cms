@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.example.cms.R;
 import com.example.cms.adapters.OrderItemsAdapter;
@@ -35,20 +34,24 @@ public class PreviousOrderItemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_order_items);
-
-        orderedItems = new ArrayList<>();
-        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference().child("OrderedItems");
+        initDataSet();
         recyclerView = findViewById(R.id.recyclerview_view_order);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        orderItemsAdapter = new OrderItemsAdapter(orderedItems);
+        recyclerView.setAdapter(orderItemsAdapter);
+    }
 
+    private void initDataSet() {
+        orderedItems = new ArrayList<>();
+        dbref = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference().child("OrderedItems");
         Intent intentIn = getIntent();
         Bundle b = intentIn.getExtras();
         if (b!=null) {
-            Log.i("getextra", "no null");
             transactionId = (String) b.get("transactionId");
             phoneNo = (String) b.get("phoneNo");
-            Log.i("tid", transactionId);
         }
+
+
 
         dbref.child(transactionId).addValueEventListener(new ValueEventListener() {
             @Override
@@ -56,24 +59,18 @@ public class PreviousOrderItemsActivity extends AppCompatActivity {
                 for(DataSnapshot snapshot1 : snapshot.getChildren()){
                     OrderedItem orderedItem = snapshot1.getValue(OrderedItem.class);
                     orderedItems.add(orderedItem);
-                    orderItemsAdapter = new OrderItemsAdapter(orderedItems);
-                    recyclerView.setAdapter(orderItemsAdapter);
-
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
-
-
     }
+
     @Override
     protected void onResume() {
         super.onResume();
         recyclerView.setAdapter(orderItemsAdapter);
-
     }
 }

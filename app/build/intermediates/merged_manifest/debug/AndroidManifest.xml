@@ -25,11 +25,12 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <service
@@ -42,7 +43,6 @@
         </service>
 
         <activity android:name="com.example.cms.activities.EditFoodActivity" />
-        <activity android:name="com.example.cms.ui.EditFoodItemActivity" />
         <activity android:name="com.example.cms.activities.PreviousOrderItemsActivity" />
         <activity android:name="com.example.cms.activities.PasswordResetActivity" />
         <activity android:name="com.example.cms.activities.EnterPhoneActivity" />
@@ -57,7 +57,7 @@
             android:theme="@style/Theme.CMS.NoActionBar" />
         <activity
             android:name="com.example.cms.activities.MenuEditorActivity"
-            android:parentActivityName="com.example.cms.activities.AdminHomeActivity" />
+            android:parentActivityName="com.example.cms.activities.MainActivity" />
         <activity
             android:name="com.example.cms.activities.TestActivity"
             android:parentActivityName="com.example.cms.activities.MainActivity" />
