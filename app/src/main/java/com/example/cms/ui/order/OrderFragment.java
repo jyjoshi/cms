@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,18 +39,19 @@ public class OrderFragment extends Fragment {
 
     private String phoneNumber;
 
+    private TextView testText;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initDataset();
+//        initDataset();
 
-        //Wait for HomeActivity to fetch phoneNumber
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        //Wait for HomeActivity to fetch phoneNumber
+//        try {
+//            TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         phoneNumber = ((HomeActivity) getActivity()).getPhoneNumber();
 
 
@@ -60,45 +62,39 @@ public class OrderFragment extends Fragment {
 
         //phoneNumber = ((HomeActivity) getActivity()).getPhoneNumber();
         View root = inflater.inflate(R.layout.fragment_order, container, false);
-        RecyclerView menuList = root.findViewById(R.id.menuList);
+        RecyclerView menuList = (RecyclerView) root.findViewById(R.id.menuList);
+        testText = root.findViewById(R.id.testText);
         menuList.setLayoutManager(new LinearLayoutManager(getActivity()));
-        MenuAdapter adapter = new MenuAdapter(menuItems, quantity, phoneNumber);
-        menuList.setAdapter(adapter);
+        initDataset();
         try {
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        MenuAdapter adapter = new MenuAdapter(menuItems, quantity, phoneNumber);
+        menuList.setAdapter(adapter);
         return root;
 
     }
 
-    public void initDataset()
-    {
-        new Handler().post(new Runnable() {
+    public void initDataset() {
+        dbref.addValueEventListener(new ValueEventListener() {
             @Override
-            public void run() {
-                dbref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                            menuItems.add(dataSnapshot.getValue(MenuItem.class));
-                            quantity.add(0);
-                        }
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    menuItems.add(dataSnapshot.getValue(MenuItem.class));
+                    quantity.add(0);
+                }
+            }
 
-                    }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
             }
         });
     }
-    public void goToCart()
-    {
+
+    public void goToCart() {
         startActivity(new Intent(getActivity(), TestActivity.class));
     }
 }
