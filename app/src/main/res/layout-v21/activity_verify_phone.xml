@@ -5,7 +5,7 @@
     android:id="@+id/enter_phone_no"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@drawable/bg_image"
     tools:context=".activities.VerifyPhoneActivity">
 
     <TextView
@@ -32,6 +32,7 @@
         android:layout_marginBottom="5dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textSize="18sp"
         android:hint="@string/enter_otp"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
@@ -51,7 +52,9 @@
         android:layout_marginBottom="24dp"
         android:text="@string/verify"
         android:textColor="@color/white"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/black"
+        android:textSize="18sp"
+        android:background="@drawable/btn_bg"
         app:layout_constraintBottom_toTopOf="@+id/progressBar_verify_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

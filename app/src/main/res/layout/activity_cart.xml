@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/gray"
+    android:background="@drawable/bg_image"
     tools:context=".activities.CartActivity">
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -19,9 +19,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="@string/name"
-            android:textColor="@color/colorPrimary"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="14sp" />
+            android:textColor="#FEAB40"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/header_food_qty"
@@ -29,7 +29,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="@string/Qty"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FEAB40"
+            android:textSize="18sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
@@ -37,7 +38,8 @@
             android:layout_width="93dp"
             android:layout_height="wrap_content"
             android:text="@string/price"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FEAB40"
+            android:textSize="18sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
@@ -46,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="@string/total"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#FEAB40"
+            android:textSize="18sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:layout_marginStart="10dp" />
     </androidx.appcompat.widget.LinearLayoutCompat>

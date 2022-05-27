@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jay\\StudioProjects\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\9cc7b7ea224b93ee0dd98c42c29e4554\\transformed\\appcompat-1.2.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\amans\\.gradle\\caches\\transforms-3\\9cc7b7ea224b93ee0dd98c42c29e4554\\transformed\\appcompat-1.2.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-3\\a3e8948cf3b285e1c3a752e227add13f\\transformed\\material-1.2.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\amans\\.gradle\\caches\\transforms-3\\a3e8948cf3b285e1c3a752e227add13f\\transformed\\material-1.2.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
