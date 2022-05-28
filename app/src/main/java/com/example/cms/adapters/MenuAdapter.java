@@ -55,8 +55,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
        // Glide.with(context).load(item.get(position).getImgUri()).into(holder.imgIcon);
         Picasso.get().load(Uri.parse(item.get(position).getImgUri())).into(holder.imgIcon);
-        Log.i("Image","Image Check");
-        Log.d(item.get(position).getName(), item.get(position).getImgUri());
         holder.getTextTitle().setText("Name : "+item.get(position).getName());
         holder.getTextDescription().setText("Desc : "+item.get(position).getDescription());
         holder.getTextPrice().setText("Price : "+item.get(position).getPrice());
@@ -76,7 +74,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         holder.decrementBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(quantity.get(position)>0){
+                if(quantity.get(holder.getAdapterPosition())>0){
                     quantity.set(position, quantity.get(position)-1);
                     holder.getTextQuantity().setText(quantity.get(position).toString());
 
@@ -85,12 +83,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                 }
             }
         });
-
-
-
-
-
-
     }
 
     @Override
