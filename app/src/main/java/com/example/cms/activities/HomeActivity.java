@@ -27,14 +27,12 @@ public class HomeActivity extends AppCompatActivity {
     String phoneNumber;
     String firstName;
     String lastName;
-    Button signOutButton;
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomeBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d("nav","in on create");
         super.onCreate(savedInstanceState);
 
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
@@ -53,11 +51,9 @@ public class HomeActivity extends AppCompatActivity {
                 .setOpenableLayout(drawer)
                 .build();
 
-        Log.d("nav","before");
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        Log.d("nav", "after");
         //NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         //NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         //NavigationUI.setupWithNavController(navigationView, navController);
@@ -69,14 +65,6 @@ public class HomeActivity extends AppCompatActivity {
             firstName = (String) b.get("firstName");
             lastName = (String) b.get("lastName");
         }
-// Not possible because the button is not in the setcontentview Layout
-//        signOutButton = findViewById(R.id.btnSignOut);
-//
-//        signOutButton.setOnClickListener(v -> {
-//            FirebaseAuth.getInstance().signOut();
-//            startActivity(new Intent(v.getContext(), MainActivity.class));
-//
-//        });
     }
 
     @Override
