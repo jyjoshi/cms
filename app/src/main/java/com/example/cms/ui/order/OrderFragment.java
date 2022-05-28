@@ -78,7 +78,6 @@ public class OrderFragment extends Fragment {
         Log.i("item","Shown");
         View root = inflater.inflate(R.layout.fragment_order, container, false);
         menuList = (RecyclerView) root.findViewById(R.id.menuList);
-        testText = root.findViewById(R.id.testText);
         menuList.setLayoutManager(new LinearLayoutManager(getActivity()));
 //        initDataset();
 //        try {
