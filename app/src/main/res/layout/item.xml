@@ -3,7 +3,7 @@
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:layout_margin="20dp"
     android:background="@android:color/transparent"
-    android:layout_marginVertical="10dp">
+    >
 
 
     <LinearLayout
@@ -11,7 +11,8 @@
         android:layout_height="60dp"
         android:background="@color/gray"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/white">
 
         <TextView
             android:id="@+id/cart_food_name"
@@ -19,7 +20,7 @@
             android:layout_marginLeft="4dp"
             android:layout_height="wrap_content"
             android:text="@string/textview"
-            android:textColor="@color/white"
+            android:textColor="@color/textColor"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
 
@@ -28,7 +29,7 @@
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:text="@string/textview"
-            android:textColor="@color/white"
+            android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -37,7 +38,7 @@
             android:layout_width="93dp"
             android:layout_height="wrap_content"
             android:text="@string/textview"
-            android:textColor="@color/white"
+            android:textColor="@color/textColor"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -47,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="@string/textview"
             android:textSize="15sp"
-            android:textColor="@color/white"
+            android:textColor="@color/textColor"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     </LinearLayout>

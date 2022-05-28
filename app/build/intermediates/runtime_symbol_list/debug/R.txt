@@ -1049,6 +1049,7 @@ int color greyBg1 0x7f0500e6
 int color greyBg2 0x7f0500e7
 int color highlighted_text_material_dark 0x7f050072
 int color highlighted_text_material_light 0x7f050073
+int color hintColor 0x7f0500ec
 int color lightgray 0x7f050074
 int color material_blue_grey_800 0x7f050075
 int color material_blue_grey_900 0x7f050076
@@ -1647,6 +1648,10 @@ int drawable googleg_disabled_color_18 0x7f070082
 int drawable googleg_standard_color_18 0x7f070083
 int drawable ic_baseline_add_24 0x7f0700c4
 int drawable ic_baseline_add_photo_alternate_24 0x7f070084
+int drawable ic_baseline_call_24 0x7f0700c7
+int drawable ic_baseline_edit_24 0x7f0700ca
+int drawable ic_baseline_email_24 0x7f0700c8
+int drawable ic_baseline_home_24 0x7f0700c9
 int drawable ic_baseline_remove_24 0x7f0700c6
 int drawable ic_baseline_shopping_cart_24 0x7f070085
 int drawable ic_baseline_tag_faces_24 0x7f070086
@@ -1887,8 +1892,6 @@ int id editFoodDescription 0x7f0800ad
 int id editFoodName 0x7f0800ae
 int id editPrice 0x7f0800af
 int id editTextPhone 0x7f0800b0
-int id editTextProfName 0x7f0800b1
-int id editTextProfPhone 0x7f0800b2
 int id editTextTextPassword 0x7f0800b3
 int id editTextTextPassword2 0x7f0800b4
 int id editTextTextPersonLastName2 0x7f0800b5
@@ -2133,12 +2136,13 @@ int id text 0x7f0801a3
 int id text2 0x7f0801a4
 int id textEnd 0x7f0801a5
 int id textPrice 0x7f0801a6
+int id textProfEmail 0x7f0801f2
+int id textProfName 0x7f0801f0
+int id textProfPhone 0x7f0801f1
 int id textSpacerNoButtons 0x7f0801a7
 int id textSpacerNoTitle 0x7f0801a8
 int id textStart 0x7f0801a9
 int id textView 0x7f0801aa
-int id textView2 0x7f0801ab
-int id textView3 0x7f0801ac
 int id textView4 0x7f0801ad
 int id textView5 0x7f0801ae
 int id textView6 0x7f0801af
@@ -2154,7 +2158,6 @@ int id text_input_end_icon 0x7f0801b8
 int id text_input_start_icon 0x7f0801b9
 int id text_prev_order 0x7f0801ba
 int id text_price 0x7f0801bb
-int id text_profile_name 0x7f0801bc
 int id text_quantity 0x7f0801bd
 int id text_title 0x7f0801be
 int id textinput_counter 0x7f0801bf
@@ -2812,7 +2815,6 @@ int style CardView 0x7f1200e1
 int style CardView_Dark 0x7f1200e2
 int style CardView_Light 0x7f1200e3
 int style CheckoutTheme 0x7f1200e4
-int style CustomTextMenu 0x7f1202bf
 int style Dexter_Internal_Theme_Transparent 0x7f1200e5
 int style EmptyTheme 0x7f1200e6
 int style MaterialAlertDialog_MaterialComponents 0x7f1200e7

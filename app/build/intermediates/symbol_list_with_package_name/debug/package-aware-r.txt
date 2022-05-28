@@ -1050,6 +1050,7 @@ color greyBg1
 color greyBg2
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hintColor
 color lightgray
 color material_blue_grey_800
 color material_blue_grey_900
@@ -1648,6 +1649,10 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_add_24
 drawable ic_baseline_add_photo_alternate_24
+drawable ic_baseline_call_24
+drawable ic_baseline_edit_24
+drawable ic_baseline_email_24
+drawable ic_baseline_home_24
 drawable ic_baseline_remove_24
 drawable ic_baseline_shopping_cart_24
 drawable ic_baseline_tag_faces_24
@@ -1888,8 +1893,6 @@ id editFoodDescription
 id editFoodName
 id editPrice
 id editTextPhone
-id editTextProfName
-id editTextProfPhone
 id editTextTextPassword
 id editTextTextPassword2
 id editTextTextPersonLastName2
@@ -2134,12 +2137,13 @@ id text
 id text2
 id textEnd
 id textPrice
+id textProfEmail
+id textProfName
+id textProfPhone
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
-id textView3
 id textView4
 id textView5
 id textView6
@@ -2155,7 +2159,6 @@ id text_input_end_icon
 id text_input_start_icon
 id text_prev_order
 id text_price
-id text_profile_name
 id text_quantity
 id text_title
 id textinput_counter
@@ -2813,7 +2816,6 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style CheckoutTheme
-style CustomTextMenu
 style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents

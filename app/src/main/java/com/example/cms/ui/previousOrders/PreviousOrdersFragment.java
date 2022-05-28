@@ -44,8 +44,6 @@ public class PreviousOrdersFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_previous_orders, container, false);
 
         phoneNumber = ((HomeActivity) getActivity()).getPhoneNumber();
-        Log.i("PhoneNumber:", phoneNumber);
-
         transactionId = new ArrayList<>();
         phone = new ArrayList<>();
         time = new ArrayList<>();
@@ -65,14 +63,12 @@ public class PreviousOrdersFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Bill temp = dataSnapshot.getValue(Bill.class);
-                    Log.i("DB PHONE :", temp.getPhone());
                     if(temp.getPhone().equals(phoneNumber)) {
                         transactionId.add(temp.getTransactionId().toString());
                         phone.add(temp.getPhone());
                         amount.add(temp.getTotalPrice());
                         time.add(temp.getTime());
                         token.add(temp.getToken().toString());
-                        Log.i("Check", "transaction" + transactionId);
                         viewOrderAdapter = new PreviousOrdersAdapter(getContext(), transactionId, phone, time, amount, token);
                         recyclerView.setAdapter(viewOrderAdapter);
                     }

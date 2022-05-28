@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,39 +25,31 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final Button btnSignOut;
 
   @NonNull
-  public final EditText editTextProfName;
-
-  @NonNull
-  public final EditText editTextProfPhone;
-
-  @NonNull
-  public final EditText editTextTextPostalAddress;
+  public final TextView editTextTextPostalAddress;
 
   @NonNull
   public final ImageView profImgId;
 
   @NonNull
-  public final TextView textProfileName;
+  public final TextView textProfEmail;
 
   @NonNull
-  public final TextView textView2;
+  public final TextView textProfName;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView textProfPhone;
 
   private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull Button btnSignOut,
-      @NonNull EditText editTextProfName, @NonNull EditText editTextProfPhone,
-      @NonNull EditText editTextTextPostalAddress, @NonNull ImageView profImgId,
-      @NonNull TextView textProfileName, @NonNull TextView textView2, @NonNull TextView textView3) {
+      @NonNull TextView editTextTextPostalAddress, @NonNull ImageView profImgId,
+      @NonNull TextView textProfEmail, @NonNull TextView textProfName,
+      @NonNull TextView textProfPhone) {
     this.rootView = rootView;
     this.btnSignOut = btnSignOut;
-    this.editTextProfName = editTextProfName;
-    this.editTextProfPhone = editTextProfPhone;
     this.editTextTextPostalAddress = editTextTextPostalAddress;
     this.profImgId = profImgId;
-    this.textProfileName = textProfileName;
-    this.textView2 = textView2;
-    this.textView3 = textView3;
+    this.textProfEmail = textProfEmail;
+    this.textProfName = textProfName;
+    this.textProfPhone = textProfPhone;
   }
 
   @Override
@@ -94,20 +85,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editTextProfName;
-      EditText editTextProfName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextProfName == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextProfPhone;
-      EditText editTextProfPhone = ViewBindings.findChildViewById(rootView, id);
-      if (editTextProfPhone == null) {
-        break missingId;
-      }
-
       id = R.id.editTextTextPostalAddress;
-      EditText editTextTextPostalAddress = ViewBindings.findChildViewById(rootView, id);
+      TextView editTextTextPostalAddress = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextPostalAddress == null) {
         break missingId;
       }
@@ -118,27 +97,26 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_profile_name;
-      TextView textProfileName = ViewBindings.findChildViewById(rootView, id);
-      if (textProfileName == null) {
+      id = R.id.textProfEmail;
+      TextView textProfEmail = ViewBindings.findChildViewById(rootView, id);
+      if (textProfEmail == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.textProfName;
+      TextView textProfName = ViewBindings.findChildViewById(rootView, id);
+      if (textProfName == null) {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.textProfPhone;
+      TextView textProfPhone = ViewBindings.findChildViewById(rootView, id);
+      if (textProfPhone == null) {
         break missingId;
       }
 
-      return new FragmentProfileBinding((LinearLayout) rootView, btnSignOut, editTextProfName,
-          editTextProfPhone, editTextTextPostalAddress, profImgId, textProfileName, textView2,
-          textView3);
+      return new FragmentProfileBinding((LinearLayout) rootView, btnSignOut,
+          editTextTextPostalAddress, profImgId, textProfEmail, textProfName, textProfPhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

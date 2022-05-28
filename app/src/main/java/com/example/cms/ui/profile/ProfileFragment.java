@@ -47,20 +47,13 @@ public class ProfileFragment extends Fragment {
         lastName = ((HomeActivity)getActivity()).getLastName();
         phone = ((HomeActivity)getActivity()).getPhoneNumber();
 
-        EditText name = root.findViewById(R.id.editTextProfName);
-        EditText phoneNum = root.findViewById(R.id.editTextProfPhone);
+        TextView name = root.findViewById(R.id.textProfName);
+        TextView phoneNum = root.findViewById(R.id.textProfPhone);
         fullName = firstName+" "+lastName;
 
         name.setText(fullName);
         phoneNum.setText(phone);
 
-        final TextView textView = root.findViewById(R.id.text_profile_name);
-        profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 
