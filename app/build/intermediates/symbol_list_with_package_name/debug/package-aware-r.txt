@@ -1048,6 +1048,7 @@ color gray
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightgray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1601,6 +1602,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_image
+drawable btn_bg
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1655,6 +1658,7 @@ drawable ic_nav_profile
 drawable ic_order
 drawable ic_previous_orders
 drawable ic_profile
+drawable list_item_layout_bg
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp

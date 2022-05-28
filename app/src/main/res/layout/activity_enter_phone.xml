@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@drawable/bg_image"
     tools:context=".activities.EnterPhoneActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="150dp"
         android:text="@string/enter_your_phone_number_for_otp_verification"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,6 +32,7 @@
         android:hint="@string/enter_your_mobile_number"
         android:inputType="text"
         android:textColor="@color/white"
+        android:textSize="18sp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -42,14 +43,17 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
         android:text="@string/send_otp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/phone_no_for_password_reset"
         android:onClick="toVerifyPhone"
         tools:targetApi="lollipop" />

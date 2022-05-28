@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/white"
+    android:background="@drawable/bg_image"
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
@@ -15,21 +15,38 @@
         android:src="@mipmap/ic_launcher"
         android:layout_marginBottom="120dp"
         android:contentDescription="@string/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterMaxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        android:textColorHint="@color/lightgray"
+        app:boxStrokeColor="@color/lightgray"
+        app:counterTextColor="@color/lightgray">
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:textColor="@color/black"
+        android:textColor="@color/lightgray"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:textSize="18sp"
         android:hint="@string/mobile_number"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="224dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:inputType="phone"
+        android:layout_marginHorizontal="30dp"
+        android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/lightgray"
+        app:passwordToggleTint="@color/lightgray"
+        app:boxStrokeColor="@color/lightgray"
+        >
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -37,25 +54,25 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:autofillHints=""
-        android:ems="10"
-        android:textColor="@color/black"
+        android:textColor="@color/lightgray"
         android:hint="@string/password"
         android:layout_marginTop="8dp"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="277dp"
-        android:layout_marginHorizontal="30dp"/>
-
+        android:layout_marginHorizontal="30dp"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
     <TextView
         android:id="@+id/forgot_password_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
+        android:textColor="@color/lightgray"
         android:onClick="toEnterPhone"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="109dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -63,13 +80,14 @@
         android:onClick="toLogin"
         android:text="@string/login"
         android:textColor="@color/white"
+        android:background="@drawable/btn_bg"
         app:backgroundTint="@color/black"
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="338dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="109dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -78,6 +96,7 @@
         android:text="@string/new_user"
         android:textColor="@color/white"
         app:backgroundTint="@color/black"
+        android:background="@drawable/btn_bg"
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="394dp" />
 

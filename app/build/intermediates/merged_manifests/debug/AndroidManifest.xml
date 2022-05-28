@@ -30,8 +30,7 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="false"
-        android:testOnly="true"
+        android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <service
             android:name="com.example.cms.services.MyFirebaseMessagingService"
@@ -64,7 +63,9 @@
         <activity
             android:name="com.example.cms.activities.SignUpActivity"
             android:parentActivityName="com.example.cms.activities.MainActivity" />
-        <activity android:name="com.example.cms.activities.MainActivity" >
+        <activity
+            android:name="com.example.cms.activities.MainActivity"
+            android:theme="@style/Theme.CMS.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
