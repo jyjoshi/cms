@@ -39,6 +39,10 @@ public class OrderFragment extends Fragment {
     private DatabaseReference dbref = database.getReference("Menu");
 
     private String phoneNumber;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     RecyclerView menuList;
 
 
