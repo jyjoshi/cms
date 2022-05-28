@@ -8,11 +8,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="azure">#F0FFFF</color>
-    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimary">#ee4c2a</color>
     <color name="colorPrimaryDark">#FF5252</color>
-    <color name="colorAccent">#FFA726</color>
+    <color name="colorAccent">#ee4c2a</color>
     <color name="gray">#282828</color>
     <color name="lightgray">#959595</color>
     <color name="red">#FF0000</color>
     <color name="green">#0F8239</color>
+
+    <color name = "navyBlue">#0f172b</color>
+    <color name = "orange">#ee4c2a</color>
+    <color name = "textgrey">#b5b5b5</color>
+    <color name = "greyBg1">#e5e7e8</color>
+    <color name = "greyBg2">#ecedef</color>
+    <color name = "textColor">#1d1e22</color>
+
 </resources>

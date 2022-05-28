@@ -1046,6 +1046,8 @@ color foreground_material_dark
 color foreground_material_light
 color gray
 color green
+color greyBg1
+color greyBg2
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color lightgray
@@ -1128,8 +1130,10 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color navyBlue
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1159,6 +1163,8 @@ color teal_200
 color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color textColor
+color textgrey
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -1637,9 +1643,12 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drawer_item_color
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_baseline_add_24
 drawable ic_baseline_add_photo_alternate_24
+drawable ic_baseline_remove_24
 drawable ic_baseline_shopping_cart_24
 drawable ic_baseline_tag_faces_24
 drawable ic_launcher_background
@@ -1688,6 +1697,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable order_now_btn
 drawable rzp_border
 drawable rzp_border_bottom
 drawable rzp_green_button
@@ -2803,6 +2813,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style CheckoutTheme
+style CustomTextMenu
 style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
@@ -3275,6 +3286,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style roundImage
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

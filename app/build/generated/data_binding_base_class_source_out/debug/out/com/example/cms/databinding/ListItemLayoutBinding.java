@@ -4,8 +4,7 @@ package com.example.cms.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +12,7 @@ import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,13 +22,13 @@ public final class ListItemLayoutBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button add;
+  public final ImageButton add;
 
   @NonNull
-  public final ImageView imgIcon;
+  public final ShapeableImageView imgIcon;
 
   @NonNull
-  public final Button sub;
+  public final ImageButton sub;
 
   @NonNull
   public final TextView textDescription;
@@ -42,9 +42,10 @@ public final class ListItemLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView textTitle;
 
-  private ListItemLayoutBinding(@NonNull CardView rootView, @NonNull Button add,
-      @NonNull ImageView imgIcon, @NonNull Button sub, @NonNull TextView textDescription,
-      @NonNull TextView textPrice, @NonNull TextView textQuantity, @NonNull TextView textTitle) {
+  private ListItemLayoutBinding(@NonNull CardView rootView, @NonNull ImageButton add,
+      @NonNull ShapeableImageView imgIcon, @NonNull ImageButton sub,
+      @NonNull TextView textDescription, @NonNull TextView textPrice,
+      @NonNull TextView textQuantity, @NonNull TextView textTitle) {
     this.rootView = rootView;
     this.add = add;
     this.imgIcon = imgIcon;
@@ -83,19 +84,19 @@ public final class ListItemLayoutBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.add;
-      Button add = ViewBindings.findChildViewById(rootView, id);
+      ImageButton add = ViewBindings.findChildViewById(rootView, id);
       if (add == null) {
         break missingId;
       }
 
       id = R.id.img_icon;
-      ImageView imgIcon = ViewBindings.findChildViewById(rootView, id);
+      ShapeableImageView imgIcon = ViewBindings.findChildViewById(rootView, id);
       if (imgIcon == null) {
         break missingId;
       }
 
       id = R.id.sub;
-      Button sub = ViewBindings.findChildViewById(rootView, id);
+      ImageButton sub = ViewBindings.findChildViewById(rootView, id);
       if (sub == null) {
         break missingId;
       }

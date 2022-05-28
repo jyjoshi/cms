@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -54,7 +55,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     @Override
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
        // Glide.with(context).load(item.get(position).getImgUri()).into(holder.imgIcon);
-        Picasso.get().load(Uri.parse(item.get(position).getImgUri())).into(holder.imgIcon);
+        Picasso.get().load(Uri.parse(item.get(position).getImgUri())).into(holder.getImgIcon());
         holder.getTextTitle().setText("Name : "+item.get(position).getName());
         holder.getTextDescription().setText("Desc : "+item.get(position).getDescription());
         holder.getTextPrice().setText("Price : "+item.get(position).getPrice());
@@ -96,8 +97,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         TextView textDescription;
         TextView textPrice;
         TextView textQuantity;
-        Button incrementBtn;
-        Button decrementBtn;
+        ImageButton incrementBtn;
+        ImageButton decrementBtn;
 
         public MenuViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -44,10 +44,6 @@
         <activity
             android:name=".activities.MenuEditorActivity"
             android:parentActivityName=".activities.MainActivity" />
-
-
-
-
         <activity
             android:name=".activities.TestActivity"
             android:parentActivityName=".activities.MainActivity" />

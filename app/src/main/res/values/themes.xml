@@ -29,6 +29,11 @@
     </style>
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="roundImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
 </resources>

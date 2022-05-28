@@ -4,14 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_image"
+    android:backgroundTint="@color/greyBg2"
+    android:background="@color/greyBg2"
     tools:context=".ui.order.OrderFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>

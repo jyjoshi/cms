@@ -38,8 +38,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:tint="@color/white"
-        android:backgroundTint="#F0FFFF"
+        android:backgroundTint="#FFFFFF"
+        app:borderWidth="0dp"
         app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
 
 
