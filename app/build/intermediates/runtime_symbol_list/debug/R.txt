@@ -1672,6 +1672,7 @@ int drawable ic_nav_profile 0x7f07009b
 int drawable ic_order 0x7f07009c
 int drawable ic_previous_orders 0x7f07009d
 int drawable ic_profile 0x7f07009e
+int drawable item_bg 0x7f0700cb
 int drawable list_item_layout_bg 0x7f07009f
 int drawable material_ic_calendar_black_24dp 0x7f0700a0
 int drawable material_ic_clear_black_24dp 0x7f0700a1
@@ -1702,6 +1703,7 @@ int drawable notification_template_icon_bg 0x7f0700b9
 int drawable notification_template_icon_low_bg 0x7f0700ba
 int drawable notification_tile_bg 0x7f0700bb
 int drawable notify_panel_notification_icon_bg 0x7f0700bc
+int drawable orange_btn_bg 0x7f0700cc
 int drawable order_now_btn 0x7f0700bd
 int drawable rzp_border 0x7f0700be
 int drawable rzp_border_bottom 0x7f0700bf

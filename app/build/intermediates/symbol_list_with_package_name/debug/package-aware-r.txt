@@ -1673,6 +1673,7 @@ drawable ic_nav_profile
 drawable ic_order
 drawable ic_previous_orders
 drawable ic_profile
+drawable item_bg
 drawable list_item_layout_bg
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1703,6 +1704,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable orange_btn_bg
 drawable order_now_btn
 drawable rzp_border
 drawable rzp_border_bottom

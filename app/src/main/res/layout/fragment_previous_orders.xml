@@ -30,7 +30,7 @@
             android:textColor="@color/colorPrimary"
             android:fontFamily="sans-serif-medium"
             android:text="@string/phone"
-
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:text="@string/time"
             android:textColor="@color/colorPrimary"
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:text="@string/amount"
             android:textColor="@color/colorPrimary"
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 

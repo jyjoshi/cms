@@ -38,8 +38,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder>{
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.getName().setText(names.get(position));
         holder.getQty().setText(String.valueOf(quantities.get(position)));
-        holder.getPrice().setText(String.valueOf(prices.get(position)));
-        holder.getResult().setText(String.valueOf(result.get(position)));
+        holder.getPrice().setText("₹ " +String.valueOf(prices.get(position)));
+        holder.getResult().setText("₹ " +String.valueOf(result.get(position)));
 
 
     }

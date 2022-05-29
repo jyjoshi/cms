@@ -93,7 +93,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
         cartAdapter = new CartAdapter(foodName, quantity, price, result);
         recyclerView.setAdapter(cartAdapter);
-        String stringForCostDisplay = "Total : " + totalCost + " Rs";
+        String stringForCostDisplay = "Total : ₹ " + totalCost;
         costDisplay.setText(stringForCostDisplay);
 
 
@@ -119,7 +119,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
                                 //Display the total cost of all the items added to the cart
                                 totalCost = sum(result);
-                                String stringForCostDisplay = "Total : " + totalCost + " Rs";
+                                String stringForCostDisplay = "Total : ₹ " + totalCost;
                                 costDisplay.setText(stringForCostDisplay);
 
 

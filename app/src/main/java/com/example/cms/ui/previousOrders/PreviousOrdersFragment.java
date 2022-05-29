@@ -66,7 +66,7 @@ public class PreviousOrdersFragment extends Fragment {
                     if(temp.getPhone().equals(phoneNumber)) {
                         transactionId.add(temp.getTransactionId().toString());
                         phone.add(temp.getPhone());
-                        amount.add(temp.getTotalPrice());
+                        amount.add("₹ "+temp.getTotalPrice());
                         time.add(temp.getTime());
                         token.add(temp.getToken().toString());
                         viewOrderAdapter = new PreviousOrdersAdapter(getContext(), transactionId, phone, time, amount, token);
