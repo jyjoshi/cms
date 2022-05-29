@@ -35,7 +35,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
             android:name="com.example.cms.activities.EditProfile"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleInstance" />
 
         <service
             android:name="com.example.cms.services.MyFirebaseMessagingService"

@@ -23,7 +23,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".activities.EditProfile"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleInstance"/>
 
         <service
             android:name=".services.MyFirebaseMessagingService"
@@ -61,7 +62,6 @@
             android:theme="@style/Theme.CMS.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

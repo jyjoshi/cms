@@ -396,101 +396,103 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\amans\.gradle
 	android:name
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:15:9-53
 activity#com.example.cms.activities.EditProfile
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:24:9-27:50
+	android:launchMode
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:27:13-48
 	android:exported
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:25:13-51
 service#com.example.cms.services.MyFirebaseMessagingService
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:28:9-35:19
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:29:9-36:19
 	android:exported
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:29:13-64
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:30:13-64
 intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT+action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:31:13-34:29
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:32:13-35:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:32:17-78
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:33:17-78
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:32:25-75
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:33:25-75
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:33:17-80
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:34:17-80
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:33:25-77
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:34:25-77
 activity#com.example.cms.activities.EditFoodActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:37:9-65
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:9-65
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:37:19-62
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:19-62
 activity#com.example.cms.activities.PreviousOrderItemsActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:9-75
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:9-75
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:19-72
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:19-72
 activity#com.example.cms.activities.PasswordResetActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:9-70
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:9-70
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:19-67
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:19-67
 activity#com.example.cms.activities.EnterPhoneActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:9-67
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:9-67
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:19-64
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:19-64
 activity#com.example.cms.activities.ExistingMenuEditorActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:9-75
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:9-75
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:19-72
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:19-72
 activity#com.example.cms.activities.VerifyPhoneActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:9-68
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:9-68
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:19-65
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:19-65
 activity#com.example.cms.activities.ViewOrderItemsActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:9-71
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:9-71
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:19-68
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:19-68
 activity#com.example.cms.activities.ViewOrderActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:9-66
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:9-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:19-63
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:19-63
 activity#com.example.cms.activities.CartActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:9-61
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:9-61
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:19-58
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:19-58
 activity#com.example.cms.activities.HomeActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:9-49:60
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:47:9-50:60
 	android:label
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:48:13-56
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:49:13-56
 	android:theme
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:49:13-57
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:50:13-57
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:47:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:48:13-52
 activity#com.example.cms.activities.MenuEditorActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:50:9-52:69
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:51:9-53:69
 	android:parentActivityName
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:52:13-66
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:53:13-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:51:13-58
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:52:13-58
 activity#com.example.cms.activities.TestActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:53:9-55:69
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:54:9-56:69
 	android:parentActivityName
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:55:13-66
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:56:13-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:54:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:55:13-52
 activity#com.example.cms.activities.SignUpActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:56:9-58:69
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:57:9-59:69
 	android:parentActivityName
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:58:13-66
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:59:13-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:57:13-54
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:58:13-54
 activity#com.example.cms.activities.MainActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:59:9-67:20
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:60:9-67:20
 	android:theme
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:61:13-57
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:62:13-57
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:60:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:61:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:62:13-66:29
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:63:13-66:29
 action#android.intent.action.MAIN
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:63:17-69
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:64:17-69
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:63:25-66
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:64:25-66
 category#android.intent.category.LAUNCHER
 ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:65:17-77
 	android:name
