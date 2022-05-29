@@ -16,6 +16,7 @@
         android:layout_marginRight="10dp">
 
         <TextView
+            android:paddingLeft="12dp"
             android:id="@+id/cart_food_name"
             android:layout_width="83dp"
             android:layout_marginLeft="4dp"
