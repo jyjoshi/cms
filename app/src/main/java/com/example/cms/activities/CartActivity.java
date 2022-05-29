@@ -100,6 +100,27 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
         // Name, Quantity and Price are being retrieved properly
         root = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/").getReference();
 
+        /*
+            Restricting User to edit address
+            Need to be implemented
+         */
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://canteen-management-systems-20a8c.asia-southeast1.firebasedatabase.app/");
+        DatabaseReference dbRef = database.getReference("Users");
+        dbRef.child(phoneNumber).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                UserDB temp = snapshot.getValue(UserDB.class);
+                address.setText(String.valueOf(temp.getIsTeacher()));
+                if(!temp.getIsTeacher()){
+                    address.setKeyListener(null);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         root.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

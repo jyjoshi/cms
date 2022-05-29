@@ -5,6 +5,12 @@ public class UserDB {
     private String lastName;
     private String password;
     private String phone;
+    private String email;
+    private String postalAddress;
+
+    private Boolean isTeacher;
+
+    public UserDB(){}
 
     public UserDB(String firstName, String lastName, String password, String phone, String email, String postalAddress) {
         this.firstName = firstName;
@@ -15,12 +21,15 @@ public class UserDB {
         this.postalAddress = postalAddress;
         this.isTeacher = false;
     }
-
-    private String email;
-    private String postalAddress;
-    private Boolean isTeacher;
-
-    public UserDB(){}
+    public UserDB(String firstName, String lastName, String password, String phone, String email, String postalAddress,Boolean isTeacher) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.phone = phone;
+        this.email = email;
+        this.postalAddress = postalAddress;
+        this.isTeacher = isTeacher;
+    }
 
     public UserDB(String phone, String firstName, String lastName, String password){
         this.firstName = firstName;
