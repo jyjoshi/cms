@@ -52,20 +52,20 @@
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
     },
     {
-        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_edit_food.xml.flat",
-        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_edit_food.xml"
-    },
-    {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_edit_food.xml.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_edit_food.xml"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

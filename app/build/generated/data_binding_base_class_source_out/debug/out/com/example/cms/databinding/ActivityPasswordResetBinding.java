@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cms.R;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,10 +23,16 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextInputLayout confirmReset;
+
+  @NonNull
   public final EditText confirmResetPassword;
 
   @NonNull
   public final EditText enterResetPassword;
+
+  @NonNull
+  public final TextInputLayout resetPassword;
 
   @NonNull
   public final Button resetPasswordBtn;
@@ -34,11 +41,14 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
   public final TextView textView6;
 
   private ActivityPasswordResetBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText confirmResetPassword, @NonNull EditText enterResetPassword,
+      @NonNull TextInputLayout confirmReset, @NonNull EditText confirmResetPassword,
+      @NonNull EditText enterResetPassword, @NonNull TextInputLayout resetPassword,
       @NonNull Button resetPasswordBtn, @NonNull TextView textView6) {
     this.rootView = rootView;
+    this.confirmReset = confirmReset;
     this.confirmResetPassword = confirmResetPassword;
     this.enterResetPassword = enterResetPassword;
+    this.resetPassword = resetPassword;
     this.resetPasswordBtn = resetPasswordBtn;
     this.textView6 = textView6;
   }
@@ -70,6 +80,12 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.confirm_reset;
+      TextInputLayout confirmReset = ViewBindings.findChildViewById(rootView, id);
+      if (confirmReset == null) {
+        break missingId;
+      }
+
       id = R.id.confirm_reset_password;
       EditText confirmResetPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmResetPassword == null) {
@@ -79,6 +95,12 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
       id = R.id.enter_reset_password;
       EditText enterResetPassword = ViewBindings.findChildViewById(rootView, id);
       if (enterResetPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.reset_password;
+      TextInputLayout resetPassword = ViewBindings.findChildViewById(rootView, id);
+      if (resetPassword == null) {
         break missingId;
       }
 
@@ -94,8 +116,8 @@ public final class ActivityPasswordResetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPasswordResetBinding((ConstraintLayout) rootView, confirmResetPassword,
-          enterResetPassword, resetPasswordBtn, textView6);
+      return new ActivityPasswordResetBinding((ConstraintLayout) rootView, confirmReset,
+          confirmResetPassword, enterResetPassword, resetPassword, resetPasswordBtn, textView6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

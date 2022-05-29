@@ -1853,6 +1853,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id confirm_reset
 id confirm_reset_password
 id container
 id content
@@ -2063,6 +2064,7 @@ id radio
 id ratio
 id rectangles
 id recyclerview_view_order
+id reset_password
 id reset_password_btn
 id reverseSawtooth
 id right
