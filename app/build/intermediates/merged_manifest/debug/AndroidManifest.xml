@@ -47,14 +47,11 @@
             </intent-filter>
         </service>
 
-        <activity android:name="com.example.cms.activities.EditFoodActivity" />
         <activity android:name="com.example.cms.activities.PreviousOrderItemsActivity" />
         <activity android:name="com.example.cms.activities.PasswordResetActivity" />
         <activity android:name="com.example.cms.activities.EnterPhoneActivity" />
-        <activity android:name="com.example.cms.activities.ExistingMenuEditorActivity" />
         <activity android:name="com.example.cms.activities.VerifyPhoneActivity" />
         <activity android:name="com.example.cms.activities.ViewOrderItemsActivity" />
-        <activity android:name="com.example.cms.activities.ViewOrderActivity" />
         <activity android:name="com.example.cms.activities.CartActivity" />
         <activity
             android:name="com.example.cms.activities.HomeActivity"

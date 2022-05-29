@@ -110,7 +110,6 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserDB temp = snapshot.getValue(UserDB.class);
-                address.setText(String.valueOf(temp.getIsTeacher()));
                 if(!temp.getIsTeacher()){
                     address.setKeyListener(null);
                 }

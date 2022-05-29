@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\amans\.gradle\caches\transforms-3\744137a5c563132782629852acfb6727\transformed\jetified-viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\amans\.gradle\caches\transforms-3\83acf93023d706368fe8654e6ec203c2\transformed\jetified-checkout-1.6.6\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.browser:browser:1.3.0] C:\Users\amans\.gradle\caches\transforms-3\af2bf8f7dbd534d1a82ee271dd5eb8c1\transformed\browser-1.3.0\AndroidManifest.xml:17:1-24:12
@@ -88,22 +88,22 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\amans\.gradle\cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\amans\.gradle\caches\transforms-3\81759f06a5ee92879ac62e242da2574d\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\amans\.gradle\caches\transforms-3\3a31d19f57dea310ca078fa6984b56b7\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\amans\.gradle\caches\transforms-3\ce6b68f5c0831d8f59e79c624c1e9561\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
 	package
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:1-71:12
 		INJECTED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:2:11-69
@@ -306,7 +306,7 @@ ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:12:5-82
 	android:name
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:12:22-79
 application
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:14:5-72:19
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:14:5-69:19
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\amans\.gradle\caches\transforms-3\83acf93023d706368fe8654e6ec203c2\transformed\jetified-checkout-1.6.6\AndroidManifest.xml:11:5-30:19
 MERGED from [com.razorpay:checkout:1.6.6] C:\Users\amans\.gradle\caches\transforms-3\83acf93023d706368fe8654e6ec203c2\transformed\jetified-checkout-1.6.6\AndroidManifest.xml:11:5-30:19
 MERGED from [com.google.firebase:firebase-database:19.5.1] C:\Users\amans\.gradle\caches\transforms-3\29b1bead3c52e5105690544e7e6df756\transformed\jetified-firebase-database-19.5.1\AndroidManifest.xml:28:5-36:19
@@ -419,90 +419,78 @@ action#com.google.firebase.INSTANCE_ID_EVENT
 ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:34:17-80
 	android:name
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:34:25-77
-activity#com.example.cms.activities.EditFoodActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:9-65
-	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:19-62
 activity#com.example.cms.activities.PreviousOrderItemsActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:9-75
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:9-75
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:19-72
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:38:19-72
 activity#com.example.cms.activities.PasswordResetActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:9-70
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:9-70
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:19-67
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:39:19-67
 activity#com.example.cms.activities.EnterPhoneActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:9-67
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:9-67
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:19-64
-activity#com.example.cms.activities.ExistingMenuEditorActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:9-75
-	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:19-72
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:40:19-64
 activity#com.example.cms.activities.VerifyPhoneActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:9-68
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:9-68
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:19-65
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:41:19-65
 activity#com.example.cms.activities.ViewOrderItemsActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:9-71
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:9-71
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:19-68
-activity#com.example.cms.activities.ViewOrderActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:9-66
-	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:19-63
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:42:19-68
 activity#com.example.cms.activities.CartActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:9-61
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:9-61
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:19-58
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:43:19-58
 activity#com.example.cms.activities.HomeActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:47:9-50:60
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:44:9-47:60
 	android:label
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:49:13-56
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:46:13-56
 	android:theme
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:50:13-57
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:47:13-57
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:48:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:45:13-52
 activity#com.example.cms.activities.MenuEditorActivity
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:48:9-50:69
+	android:parentActivityName
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:50:13-66
+	android:name
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:49:13-58
+activity#com.example.cms.activities.TestActivity
 ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:51:9-53:69
 	android:parentActivityName
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:53:13-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:52:13-58
-activity#com.example.cms.activities.TestActivity
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:52:13-52
+activity#com.example.cms.activities.SignUpActivity
 ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:54:9-56:69
 	android:parentActivityName
 		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:56:13-66
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:55:13-52
-activity#com.example.cms.activities.SignUpActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:57:9-59:69
-	android:parentActivityName
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:59:13-66
-	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:58:13-54
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:55:13-54
 activity#com.example.cms.activities.MainActivity
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:60:9-67:20
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:57:9-64:20
 	android:theme
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:62:13-57
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:59:13-57
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:61:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:58:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:63:13-66:29
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:60:13-63:29
 action#android.intent.action.MAIN
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:64:17-69
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:61:17-69
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:64:25-66
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:61:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:65:17-77
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:65:27-74
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:62:27-74
 meta-data#com.razorpay.ApiKey
-ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:69:9-71:55
+ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:66:9-68:55
 	android:value
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:71:13-52
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:68:13-52
 	android:name
-		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:70:13-47
+		ADDED from D:\Projects\Jumbo\cms\app\src\main\AndroidManifest.xml:67:13-47
 uses-permission#android.permission.INTERNET
 ADDED from [com.razorpay:checkout:1.6.6] C:\Users\amans\.gradle\caches\transforms-3\83acf93023d706368fe8654e6ec203c2\transformed\jetified-checkout-1.6.6\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-database:19.5.1] C:\Users\amans\.gradle\caches\transforms-3\29b1bead3c52e5105690544e7e6df756\transformed\jetified-firebase-database-19.5.1\AndroidManifest.xml:26:5-67

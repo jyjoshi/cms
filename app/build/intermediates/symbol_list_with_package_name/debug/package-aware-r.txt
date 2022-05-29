@@ -1788,7 +1788,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addImage
 id address
 id adjust_height
 id adjust_width
@@ -1893,9 +1892,6 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
-id editFoodDescription
-id editFoodName
-id editPrice
 id editProfileButton
 id editTextPhone
 id editTextPostalAddress
@@ -1914,8 +1910,6 @@ id enterAlwaysCollapsed
 id enter_phone_for_verification
 id enter_phone_no
 id enter_reset_password
-id existing_editor_btn
-id existing_menu_editor_recyclerview
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1960,7 +1954,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
 id imageView3
 id img_icon
 id info
@@ -1982,7 +1975,6 @@ id list_item
 id ll_loader
 id masked
 id menuList
-id menu_editor_btn
 id message
 id middle
 id mini
@@ -2027,7 +2019,6 @@ id nav_view
 id navigation_header_container
 id never
 id noScroll
-id nobtn
 id none
 id normal
 id notification_background
@@ -2148,7 +2139,6 @@ id text
 id text2
 id textEnd
 id textPostalAddress
-id textPrice
 id textProfEmail
 id textProfName
 id textProfPhone
@@ -2160,8 +2150,6 @@ id textView4
 id textView5
 id textView6
 id textViewFirstName
-id textViewFoodDescription
-id textViewFoodName
 id textViewLastName
 id textViewPassword
 id textViewPhoneNo
@@ -2183,8 +2171,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toAllOrder
-id toCurrentOrder
 id toMenu
 id toMenuEditor
 id toOrderList
@@ -2220,7 +2206,6 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
-id yesbtn
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2286,19 +2271,14 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin_current_orders
 layout activity_admin_home
-layout activity_admin_menu_edit_options
-layout activity_admin_order
 layout activity_admin_view_menu
-layout activity_admin_view_order
 layout activity_admin_view_order_items
 layout activity_cart
 layout activity_edit_food
 layout activity_edit_profile
 layout activity_enter_phone
-layout activity_existing_menu_editor
 layout activity_home
 layout activity_main
-layout activity_menu_editor
 layout activity_password_reset
 layout activity_previous_order_items
 layout activity_sign_up
@@ -2331,7 +2311,6 @@ layout fragment_profile
 layout item
 layout item_2_columns
 layout list_item_layout
-layout list_item_layout_admin
 layout list_prev_item_layout
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2368,7 +2347,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout popup_layout
 layout rzp_loader
 layout rzp_magic_base
 layout select_dialog_item_material
