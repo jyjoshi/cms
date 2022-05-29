@@ -38,7 +38,7 @@ public class PreviousOrderItemsActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview_view_order);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         orderItemsAdapter = new OrderItemsAdapter(orderedItems);
-        recyclerView.setAdapter(orderItemsAdapter);
+
     }
 
     private void initDataSet() {
@@ -60,6 +60,7 @@ public class PreviousOrderItemsActivity extends AppCompatActivity {
                     OrderedItem orderedItem = snapshot1.getValue(OrderedItem.class);
                     orderedItems.add(orderedItem);
                 }
+                recyclerView.setAdapter(orderItemsAdapter);
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
