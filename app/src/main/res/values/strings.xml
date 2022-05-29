@@ -66,7 +66,7 @@
     <string name="amount">Amount</string>
     <string name="phone">Phone</string>
     <string name="enter_new_password">Enter new password</string>
-    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed!</string>
+    <string name="your_order_has_been_successfully_placed">Thank You,order placed successfully!</string>
     <string name="your_food_will_be_waiting_for_you">Your food will be waiting for you!</string>
     <string name="smiley">Smiley</string>
     <string name="uid">UID</string>
