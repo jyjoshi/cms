@@ -52,20 +52,20 @@
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_admin_home.xml"
     },
     {
-        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_edit_food.xml.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_edit_food.xml"
     },
     {
-        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
-        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -268,6 +268,10 @@
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\drawable\\order_now_btn.xml"
     },
     {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_tag_faces_24.xml.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\drawable\\ic_baseline_tag_faces_24.xml"
     },
@@ -278,6 +282,10 @@
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_call_24.xml.flat",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\drawable\\ic_baseline_call_24.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\merged_res\\debug\\layout_list_item_layout_admin.xml.flat",

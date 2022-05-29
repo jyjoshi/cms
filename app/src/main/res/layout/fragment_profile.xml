@@ -8,13 +8,15 @@
     android:background="@color/greyBg2"
     tools:context=".ui.profile.ProfileFragment">
 
-    <androidx.drawerlayout.widget.DrawerLayout
+    <ImageButton
+        android:id="@+id/editProfileButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="right"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/ic_baseline_edit_24"
+        android:clickable="true"
         />
 
     <ImageView
@@ -72,10 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="25dp"
-        android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
-        android:inputType="phone"
         android:paddingStart="10dp"
         android:paddingLeft="8dp"
         android:paddingTop="4dp"
@@ -90,15 +90,13 @@
         android:textColorHint="@color/hintColor"/>
 
     <TextView
-        android:id="@+id/editTextTextPostalAddress"
+        android:id="@+id/textPostalAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="25dp"
-        android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
-        android:inputType="phone"
         android:paddingStart="10dp"
         android:paddingLeft="8dp"
         android:paddingTop="4dp"

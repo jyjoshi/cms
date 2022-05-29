@@ -1653,6 +1653,7 @@ drawable ic_baseline_call_24
 drawable ic_baseline_edit_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
+drawable ic_baseline_person_24
 drawable ic_baseline_remove_24
 drawable ic_baseline_shopping_cart_24
 drawable ic_baseline_tag_faces_24
@@ -1892,12 +1893,17 @@ id easeOut
 id editFoodDescription
 id editFoodName
 id editPrice
+id editProfileButton
 id editTextPhone
+id editTextPostalAddress
+id editTextProfEmail
+id editTextProfFirstName
+id editTextProfLastName
+id editTextProfPhone
 id editTextTextPassword
 id editTextTextPassword2
 id editTextTextPersonLastName2
 id editTextTextPersonName
-id editTextTextPostalAddress
 id edit_query
 id end
 id enterAlways
@@ -2066,6 +2072,7 @@ id rzp_innerbox
 id rzp_outerbox
 id rzp_securedpayments
 id rzp_theMainMagicView
+id saveBtn
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2136,6 +2143,7 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textPostalAddress
 id textPrice
 id textProfEmail
 id textProfName
@@ -2281,6 +2289,7 @@ layout activity_admin_view_order
 layout activity_admin_view_order_items
 layout activity_cart
 layout activity_edit_food
+layout activity_edit_profile
 layout activity_enter_phone
 layout activity_existing_menu_editor
 layout activity_home

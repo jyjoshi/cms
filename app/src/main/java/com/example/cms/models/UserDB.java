@@ -1,11 +1,24 @@
 package com.example.cms.models;
 
 public class UserDB {
-    String firstName;
-    String lastName;
-    String password;
-    String phone;
-    Boolean isTeacher;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private String phone;
+
+    public UserDB(String firstName, String lastName, String password, String phone, String email, String postalAddress) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.phone = phone;
+        this.email = email;
+        this.postalAddress = postalAddress;
+        this.isTeacher = false;
+    }
+
+    private String email;
+    private String postalAddress;
+    private Boolean isTeacher;
 
     public UserDB(){}
 
@@ -42,4 +55,19 @@ public class UserDB {
     }
 
     public Boolean getIsTeacher(){ return isTeacher;}
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPostalAddress() {
+        return postalAddress;
+    }
+
+    public void setPostalAddress(String postalAddress) {
+        this.postalAddress = postalAddress;
+    }
 }

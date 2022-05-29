@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_2_columns.xml",
-        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\item_2_columns.xml"
-    },
-    {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu_editor.xml",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_menu_editor.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_2_columns.xml",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\item_2_columns.xml"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
@@ -14,6 +14,10 @@
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\popup_layout.xml",
         "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\popup_layout.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_edit_profile.xml",
+        "source": "D:\\Projects\\Jumbo\\cms\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
     },
     {
         "merged": "D:\\Projects\\Jumbo\\cms\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_test.xml",
